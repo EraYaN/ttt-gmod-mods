@@ -32,8 +32,8 @@ SWEP.AutoSpawnable = true
 
 SWEP.AmmoEnt = "item_ammo_smg1_ttt"
 
-SWEP.ViewModel  = "models/weapons/v_smg_famas.mdl"
-SWEP.WorldModel = "models/weapons/w_smg_famas.mdl"
+SWEP.ViewModel  = "models/weapons/v_rif_famas.mdl"
+SWEP.WorldModel = "models/weapons/w_rif_famas.mdl"
 
 SWEP.HeadshotMultiplier = 2.3
 
