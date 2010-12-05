@@ -20,15 +20,15 @@ SWEP.AdminSpawnable = true
 
 SWEP.Kind = WEAPON_HEAVY
 
-SWEP.Primary.Delay          = 0.4
+SWEP.Primary.Delay          = 0.3
 SWEP.Primary.Recoil         = 4
 SWEP.Primary.Automatic = true
 SWEP.Primary.Ammo = "pistol"
 SWEP.Primary.Damage = 20
 SWEP.Primary.Cone = 0.00035
-SWEP.Primary.ClipSize = 30
-SWEP.Primary.ClipMax = 60 -- keep mirrored to ammo
-SWEP.Primary.DefaultClip = 30
+SWEP.Primary.ClipSize = 20
+SWEP.Primary.ClipMax = 40 -- keep mirrored to ammo
+SWEP.Primary.DefaultClip = 20
 
 SWEP.HeadshotMultiplier = 5
 
