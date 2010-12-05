@@ -20,7 +20,7 @@ SWEP.AdminSpawnable = true
 
 SWEP.Kind = WEAPON_HEAVY
 
-SWEP.Primary.Delay          = 0,2
+SWEP.Primary.Delay          = 0.2
 SWEP.Primary.Recoil         = 4
 SWEP.Primary.Automatic = true
 SWEP.Primary.Ammo = "pistol"
