@@ -1,0 +1,11 @@
+"AddonInfo"
+{
+	"name"		"TTT Modification of weapons and some rearm scripts"
+	"version"	"0.1"
+	"up_date"	"12/05/10"
+	"author_name"	"EraYaN & NinjaTuna"
+	"author_email"	"n/a"
+	"author_url"	"http://erayan.eu/"
+	"info"		"n/a"
+	"override"	"1"
+}
