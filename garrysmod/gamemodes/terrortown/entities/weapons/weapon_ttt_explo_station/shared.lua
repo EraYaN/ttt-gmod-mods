@@ -15,7 +15,7 @@ if CLIENT then
    SWEP.EquipMenuData = {
       type="Weapon",
       model="models/props/cs_office/microwave.mdl",
-      desc="Allows people to heal when placed.\n\nSlow recharge. Anyone can use it, and\nit can be damaged. Can be checked for\nDNA samples of its users."
+      desc="Allows people to die when placed.\n\nFaster recharge. Anyone can use it, and\nit can be damaged plus an nasty suprise against vandalism. Can be checked for\nDNA samples of its users."
    };
 
    SWEP.Icon = "VGUI/ttt/icon_health"
@@ -43,9 +43,8 @@ SWEP.Secondary.Delay = 1.0
 
 
 SWEP.Kind = WEAPON_EQUIP
-SWEP.CanBuy = {ROLE_DETECTIVE} -- only detectives can buy
+SWEP.CanBuy = {ROLE_TRAITOR} -- only traitors can buy
 SWEP.LimitedStock = true -- only buyable once
-SWEP.WeaponID = AMMO_HEALTHSTATION
 
 SWEP.AllowDrop = false
 
