@@ -6,11 +6,11 @@ end
 SWEP.HoldType           = "ar2"
 
 if CLIENT then
-   SWEP.PrintName          = "SIG 550 Sniper"
+   SWEP.PrintName          = "Steyr Scout"
 
    SWEP.Slot               = 2
 
-   SWEP.Icon = "VGUI/ttt/icon_ninjah_sg550"
+   SWEP.Icon = "VGUI/ttt/icon_scout"
 end
 
 
@@ -19,30 +19,31 @@ SWEP.Spawnable = true
 SWEP.AdminSpawnable = true
 
 SWEP.Kind = WEAPON_HEAVY
+SWEP.WeaponID = AMMO_RIFLE
 
-SWEP.Primary.Delay          = 0.3
-SWEP.Primary.Recoil         = 4
+SWEP.Primary.Delay          = 1.5
+SWEP.Primary.Recoil         = 7
 SWEP.Primary.Automatic = true
-SWEP.Primary.Ammo = "pistol"
-SWEP.Primary.Damage = 20
-SWEP.Primary.Cone = 0.00035
-SWEP.Primary.ClipSize = 20
-SWEP.Primary.ClipMax = 40 -- keep mirrored to ammo
-SWEP.Primary.DefaultClip = 20
+SWEP.Primary.Ammo = "357"
+SWEP.Primary.Damage = 50
+SWEP.Primary.Cone = 0.005
+SWEP.Primary.ClipSize = 10
+SWEP.Primary.ClipMax = 20 -- keep mirrored to ammo
+SWEP.Primary.DefaultClip = 10
 
-SWEP.HeadshotMultiplier = 5
+SWEP.HeadshotMultiplier = 4
 
 SWEP.AutoSpawnable      = true
-SWEP.AmmoEnt = "item_ammo_pistol_ttt"
-SWEP.ViewModel          = Model("models/weapons/v_snip_sg550.mdl")
-SWEP.WorldModel         = Model("models/weapons/w_snip_sg550.mdl")
+SWEP.AmmoEnt = "item_ammo_357_ttt"
+SWEP.ViewModel          = Model("models/weapons/v_snip_scout.mdl")
+SWEP.WorldModel         = Model("models/weapons/w_snip_scout.mdl")
 
-SWEP.Primary.Sound = Sound("Weapon_SG550.Single")
+SWEP.Primary.Sound = Sound(")weapons/scout/scout_fire-1.wav")
 
 SWEP.Secondary.Sound = Sound("Default.Zoom")
 
-SWEP.IronSightsPos			= Vector (5.5977, -35, 1.8911)
-SWEP.IronSightsAng 			= Vector (0, 0, 0)
+SWEP.IronSightsPos      = Vector( 5, -15, -2 )
+SWEP.IronSightsAng      = Vector( 2.6, 1.37, 3.5 )
 
 function SWEP:SetZoom(state)
     if CLIENT then 

@@ -6,7 +6,7 @@ SWEP.HoldType = "ar2"
 
 if CLIENT then
 
-   SWEP.PrintName = "TMP"			
+   SWEP.PrintName = "Steyr TMP"			
    SWEP.Slot = 2
 
    SWEP.Icon = "VGUI/ttt/icon_ninjah_tmp"
