@@ -20,7 +20,7 @@ SWEP.AdminSpawnable = true
 
 SWEP.Kind = WEAPON_HEAVY
 
-SWEP.Primary.Delay          = 0.2
+SWEP.Primary.Delay          = 0.4
 SWEP.Primary.Recoil         = 4
 SWEP.Primary.Automatic = true
 SWEP.Primary.Ammo = "pistol"
@@ -41,7 +41,7 @@ SWEP.Primary.Sound = Sound("Weapon_SG550.Single")
 
 SWEP.Secondary.Sound = Sound("Default.Zoom")
 
-SWEP.IronSightsPos			= Vector (5.5977, -3, 1.8911)
+SWEP.IronSightsPos			= Vector (5.5977, -35, 1.8911)
 SWEP.IronSightsAng 			= Vector (0, 0, 0)
 
 function SWEP:SetZoom(state)
