@@ -6,7 +6,7 @@ SWEP.HoldType = "ar2"
 
 if CLIENT then
 
-   SWEP.PrintName = "FAMAS"			
+   SWEP.PrintName = "FAMAS G1"			
    SWEP.Slot = 2
 
    SWEP.Icon = "VGUI/ttt/icon_famas"
