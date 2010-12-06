@@ -7,9 +7,9 @@ if CLIENT then
    ENT.Icon = "VGUI/ttt/icon_health"
    ENT.PrintName = "Death Station"
 
-   ENT.TargetIDHint = {
+   
    if LocalPlayer():IsTraitor() then
-	name="DEATH Station",
+	ENT.TargetIDHint = {name="DEATH Station",
       hint= "Do not press " .. Key("+use", "USE") .. " to receive death. Charge: %d.",
       fmt=function(ent, str)
              return Format(str, IsValid(ent) and ent:GetStoredHealth() or 0)
@@ -17,7 +17,7 @@ if CLIENT then
    
       
 		  else
-		  name="Health Station",
+		  ENT.TargetIDHint = {name="Health Station",
       hint= "Press " .. Key("+use", "USE") .. " to receive health. Charge: %d.",
       fmt=function(ent, str)
              return Format(str, IsValid(ent) and ent:GetStoredHealth() or 0)
