@@ -7,7 +7,7 @@ end
 
 if CLIENT then
    SWEP.PrintName = "AK-47"
-   SWEP.Slot      = 6 -- add 1 to get the slot number key
+   SWEP.Slot      = 2 -- add 1 to get the slot number key
 
    SWEP.ViewModelFOV  = 72
    SWEP.ViewModelFlip = true
@@ -25,7 +25,7 @@ SWEP.Primary.Recoil      = 1.9
 SWEP.Primary.Automatic   = true
 SWEP.Primary.Damage      = 20
 SWEP.Primary.Cone        = 0.025
-SWEP.Primary.Ammo        = "pistol"
+SWEP.Primary.Ammo        = "ak47"
 SWEP.Primary.ClipSize    = 45
 SWEP.Primary.ClipMax     = 90
 SWEP.Primary.DefaultClip = 45
