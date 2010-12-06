@@ -4,3 +4,5 @@ SIG 550 	- NinjaTuna
 AK-47		- NinjaTuna
 FAMAS F1	- EraYaN
 Others (DS, beacon and the like)	- EraYaN
+
+Cooperation - NinjaTuna & EraYaN
