@@ -127,7 +127,7 @@ function ENT:OnTakeDamage(dmginfo)
 	--this creates the explosion through your self.Owner:GetEyeTrace, which is why I put eyetrace in front
 	explode:SetOwner( self.Owner ) -- this sets you as the person who made the explosion
 	explode:Spawn() --this actually spawns the explosion
-	explode:SetKeyValue( "iMagnitude", "1000" ) --the magnitude
+	explode:SetKeyValue( "iMagnitude", "1500" ) --the magnitude
 	SetKeyValue("radius", r_outer)
 	explode:Fire( "Explode", 0, 0 )
 	explode:EmitSound( "weapon_AWP.Single", 1500, 1500 ) --the sound for the explosion, and how far away it can be heard
