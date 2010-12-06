@@ -8,11 +8,21 @@ if CLIENT then
    ENT.PrintName = "Death Station"
 
    ENT.TargetIDHint = {
-      name="Health Station",
+   if LocalPlayer():IsTraitor() then
+	name="DEATH Station",
+      hint= "Do not press " .. Key("+use", "USE") .. " to receive death. Charge: %d.",
+      fmt=function(ent, str)
+             return Format(str, IsValid(ent) and ent:GetStoredHealth() or 0)
+          end
+   
+      
+		  else
+		  name="Health Station",
       hint= "Press " .. Key("+use", "USE") .. " to receive health. Charge: %d.",
       fmt=function(ent, str)
              return Format(str, IsValid(ent) and ent:GetStoredHealth() or 0)
           end
+		  end
    };
 end
 
@@ -35,7 +45,9 @@ end
 
 function ENT:Initialize()
    self.Entity:SetModel(self.Model)
-
+	if LocalPlayer():IsTraitor() then
+	 self.Entity:SetColor(255,10,10)
+	end
    self.Entity:PhysicsInit(SOLID_VPHYSICS)
    self.Entity:SetMoveType(MOVETYPE_VPHYSICS)
    self.Entity:SetSolid(SOLID_VPHYSICS)
