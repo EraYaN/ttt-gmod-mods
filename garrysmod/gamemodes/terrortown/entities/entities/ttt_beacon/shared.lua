@@ -87,10 +87,10 @@ function ENT:OnTakeDamage(dmginfo)
 end
 
 if SERVER then
-   --local beep = Sound("weapons/c4/c4_beep1.wav")
+   local beep = Sound("weapons/c4/c4_beep2.wav")
    function ENT:Think()
       if SERVER then
-         --WorldSound(beep, self:GetPos(), 100, 80)
+         WorldSound(beep, self:GetPos(), 100, 80)
       else
          local dlight = DynamicLight(self:EntIndex())
          if dlight then
