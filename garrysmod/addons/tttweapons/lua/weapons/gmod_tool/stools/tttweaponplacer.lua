@@ -36,9 +36,13 @@ local weps = {
    weapon_ttt_tmp = {name="Steyr TMP", snd="item_ammo_smg1_ttt"},
    weapon_ttt_sg550 = {name="SIG 550", snd="item_ammo_pistol_ttt"},
    weapon_ttt_m3 = {name="Benelli M3", snd="item_box_buckshot_ttt"},   
+   
+	weapon_ttt_knife = {name="weapon_ttt_knife", snd=nil},
 
    ttt_random_weapon = {name="Random weapon", snd=nil},
    ttt_random_ammo = {name="Random ammo", snd=nil},
+   
+   
 
    ttt_playerspawn = {name="Player spawn", snd=nil}
 }
@@ -60,6 +64,8 @@ local mdls = {
    weapon_ttt_famas = "models/weapons/w_rif_famas.mdl",
    weapon_ttt_sg550 = "models/weapons/w_snip_sg550.mdl",
    weapon_ttt_tmp = "models/weapons/w_smg_tmp.mdl",
+   
+   weapon_ttt_knife = "models/weapons/w_knife_t.mdl",
 
    ttt_random_weapon = "models/weapons/w_shotgun.mdl",
    ttt_random_ammo = "models/Items/battery.mdl",
