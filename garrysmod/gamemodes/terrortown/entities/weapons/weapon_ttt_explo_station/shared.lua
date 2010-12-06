@@ -7,7 +7,7 @@ SWEP.HoldType = "normal"
 
 
 if CLIENT then
-   SWEP.PrintName = "Health Station"
+   SWEP.PrintName = "Death Station"
    SWEP.Slot = 6
 
    SWEP.ViewModelFOV = 10
@@ -79,7 +79,7 @@ function SWEP:HealthDrop()
       
       local vthrow = vvel + vang * 200
 
-      local health = ents.Create("ttt_health_station")
+      local health = ents.Create("ttt_explo_station")
       if ValidEntity(health) then
          health:SetPos(vsrc + vang * 10)
          health:SetOwner(ply)
@@ -111,7 +111,7 @@ function SWEP:OnRemove()
 end
 
 if CLIENT then
-   local hudtxt = {text="Click to place the health station", font="TabLarge", xalign=TEXT_ALIGN_RIGHT}
+   local hudtxt = {text="Click to place the death station", font="TabLarge", xalign=TEXT_ALIGN_RIGHT}
    function SWEP:DrawHUD()
       hudtxt.pos = {ScrW() - 80, ScrH() - 80}
       draw.TextShadow(hudtxt, 2)

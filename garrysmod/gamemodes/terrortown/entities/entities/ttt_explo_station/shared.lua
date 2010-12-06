@@ -92,7 +92,6 @@ local failsound = Sound("items/medshotno1.wav")
 function ENT:GiveHealth(ply)
    if self:GetStoredHealth() > 0 then
       local dmg = ply:GetMaxHealth() - ply:Health()
-      if dmg > 0 then
          -- constant clamping, no risks
          local healed = self:TakeFromStorage(math.min(self.MaxHeal, dmg))
          local new = math.min(ply:GetMaxHealth(), ply:Health() - healed)
@@ -104,10 +103,7 @@ function ENT:GiveHealth(ply)
          if not table.HasValue(self.fingerprints, ply) then
             table.insert(self.fingerprints, ply)
          end
-      else
-         ply:ChatPrint("Your health is full.")
-         self:EmitSound(failsound)
-      end
+     
    else
       ply:ChatPrint("The health station is empty!")
       self:EmitSound(failsound)
