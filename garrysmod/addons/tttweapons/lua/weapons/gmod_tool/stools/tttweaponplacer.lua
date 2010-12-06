@@ -253,6 +253,8 @@ local enttypes = {
    ["weapon_zm_molotov"] = WEAPON_NADE,
    ["weapon_ttt_smokegrenade"] = WEAPON_NADE,
    ["weapon_ttt_confgrenade"] = WEAPON_NADE,
+   
+   ["weapon_ttt_knife"] = WEAPON_EQUIP1,
 
    ["ttt_random_weapon"] = WEAPON_RANDOM,
 
