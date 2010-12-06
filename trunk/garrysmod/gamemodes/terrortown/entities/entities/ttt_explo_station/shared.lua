@@ -14,7 +14,7 @@ if CLIENT then
       fmt=function(ent, str)
              return Format(str, IsValid(ent) and ent:GetStoredHealth() or 0)
           end
-   
+   }
       
 		  else
 		  ENT.TargetIDHint = {name="Health Station",
@@ -22,8 +22,9 @@ if CLIENT then
       fmt=function(ent, str)
              return Format(str, IsValid(ent) and ent:GetStoredHealth() or 0)
           end
+		  }
 		  end
-   };
+   
 end
 
 ENT.Type = "anim"
