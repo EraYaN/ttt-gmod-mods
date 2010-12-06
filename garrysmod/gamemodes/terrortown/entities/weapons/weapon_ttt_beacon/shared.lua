@@ -7,7 +7,7 @@
 -- entity to make it all work.
 
 if SERVER then
-   DISABLED
+   
    AddCSLuaFile( "shared.lua" )
 end
 
