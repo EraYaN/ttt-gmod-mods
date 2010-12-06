@@ -1,0 +1,13 @@
+"AddonInfo"
+ {
+ 	"name"		"TTT Weapon Placer"
+ 	"version"	"2"
+ 	"up_date"	"2010/09/10"
+
+ 	"author_name"	"Bad King Urgrain"
+ 	"author_email"	""
+ 	"author_url"	"ttt.badking.net"
+
+ 	"info"		"Make Rearm scripts for TTT"
+ 	"override"	"0"
+ }
