@@ -1,7 +1,10 @@
-AK-47 Automatic Rifle (with custom ammo)
-Benelli M3 Pump action shotgun
+Guns:
+	AK-47 Automatic Rifle (with custom ammo)
+	Benelli M3 Pump action shotgun
 FAMAS G1 Automatic Rifle
 SIG 550 Autosniper
 Steyr TMP Micro SMG
-
+Entities/Extras:
+And moar (by me[EraYaN])
+Maps:
 Rearms of some maps
