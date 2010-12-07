@@ -123,8 +123,8 @@ function ENT:OnTakeDamage(dmginfo)
    self:SetHealth(self:Health() - dmginfo:GetDamage())
    if self:Health() < 0 then
       self:Remove()
-	 local explode = ents.Create( "env_explosion" ) //creates the explosion
-	explode:SetPos( self:Pos )
+	 local explode = ents.Create( "env_explosion" ) --creates the explosion
+	explode:SetPos( self:GetPos() )
 	explode:SetOwner( self.Owner ) -- this sets you as the person who made the explosion
 	explode:Spawn() --this actually spawns the explosion
 	explode:SetKeyValue( "iMagnitude", "1500" ) --the magnitude
