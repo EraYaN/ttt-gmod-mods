@@ -21,6 +21,7 @@ ENT.TargetIDHint = {name="Health Station",
 				 return Format(str, IsValid(ent) and ent:GetStoredHealth() or 0)
 			  end
 		}
+		self.Entity:SetColor(255,180,180,255)
 	else
 		ENT.TargetIDHint = {name="Health Station",
 			hint= "Press " .. Key("+use", "USE") .. " to receive health. Charge: %d.",
@@ -28,6 +29,7 @@ ENT.TargetIDHint = {name="Health Station",
 				return Format(str, IsValid(ent) and ent:GetStoredHealth() or 0)
 			end
 		}
+		self.Entity:SetColor(180, 180, 255, 255)
 	end
   end
   hook.Add("TTTBeginRound", "EraYaNExploStationMessageTraitorHook", MessageTraitorHook)
@@ -54,29 +56,26 @@ function ENT:SetupDataTables()
 end
 
 function ENT:Initialize()
-   self.Entity:SetModel(self.Model)
-	if LocalPlayer():IsTraitor() then
-	 self.Entity:SetColor(255,10,10)
+	self.Entity:SetModel(self.Model)
+	self.Entity:PhysicsInit(SOLID_VPHYSICS)
+	self.Entity:SetMoveType(MOVETYPE_VPHYSICS)
+	self.Entity:SetSolid(SOLID_VPHYSICS)
+	self.Entity:SetCollisionGroup(COLLISION_GROUP_NONE)
+	if SERVER then
+		self.Entity:SetMaxHealth(200)
+
+		local phys = self.Entity:GetPhysicsObject()
+		if IsValid(phys) then
+			phys:SetMass(200)
+		end
 	end
-   self.Entity:PhysicsInit(SOLID_VPHYSICS)
-   self.Entity:SetMoveType(MOVETYPE_VPHYSICS)
-   self.Entity:SetSolid(SOLID_VPHYSICS)
-   self.Entity:SetCollisionGroup(COLLISION_GROUP_NONE)
-   if SERVER then
-      self.Entity:SetMaxHealth(200)
+	self.Entity:SetHealth(200)
 
-      local phys = self.Entity:GetPhysicsObject()
-      if IsValid(phys) then
-         phys:SetMass(200)
-      end
-   end
-   self.Entity:SetHealth(200)
+	self.Entity:SetColor(180, 180, 255, 255)
 
-   self.Entity:SetColor(180, 180, 255, 255)
+	self:SetStoredHealth(200)
 
-   self:SetStoredHealth(200)
-
-   self.fingerprints = {}
+	self.fingerprints = {}
 end
 
 function ENT:UseOverride(activator)
