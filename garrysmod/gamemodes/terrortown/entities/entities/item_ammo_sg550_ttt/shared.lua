@@ -6,7 +6,7 @@ end
 
 ENT.Type = "anim"
 ENT.Base = "base_ammo_ttt"
-ENT.AmmoType = "sg550"
+ENT.AmmoType = "AirboatGun"
 ENT.AmmoAmount = 20
 ENT.AmmoMax = 40
 ENT.Model = Model("models/items/357ammo.mdl")
