@@ -27,9 +27,9 @@ SWEP.Primary.Automatic   = true
 SWEP.Primary.Damage      = 20
 SWEP.Primary.Cone        = 0.025
 SWEP.Primary.Ammo        = "ak47"
-SWEP.Primary.ClipSize    = 45
-SWEP.Primary.ClipMax     = 90
-SWEP.Primary.DefaultClip = 45
+SWEP.Primary.ClipSize    = 30
+SWEP.Primary.ClipMax     = 60
+SWEP.Primary.DefaultClip = 30
 SWEP.Primary.Sound       = Sound( "Weapon_AK47.Single" )
 
 SWEP.IronSightsPos = Vector( 6.05, -5, 2.4 )
