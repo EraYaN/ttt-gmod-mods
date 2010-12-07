@@ -23,7 +23,7 @@ SWEP.Kind = WEAPON_HEAVY
 SWEP.Primary.Delay          = 0.3
 SWEP.Primary.Recoil         = 4
 SWEP.Primary.Automatic = true
-SWEP.Primary.Ammo = "pistol"
+SWEP.Primary.Ammo = "sg550"
 SWEP.Primary.Damage = 20
 SWEP.Primary.Cone = 0.00035
 SWEP.Primary.ClipSize = 20
@@ -33,7 +33,7 @@ SWEP.Primary.DefaultClip = 20
 SWEP.HeadshotMultiplier = 5
 
 SWEP.AutoSpawnable      = true
-SWEP.AmmoEnt = "item_ammo_pistol_ttt"
+SWEP.AmmoEnt = "item_ammo_sg550_ttt"
 SWEP.ViewModel          = Model("models/weapons/v_snip_sg550.mdl")
 SWEP.WorldModel         = Model("models/weapons/w_snip_sg550.mdl")
 
