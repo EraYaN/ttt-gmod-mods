@@ -37,7 +37,7 @@ SWEP.WorldModel = "models/weapons/w_smg_tmp.mdl"
 
 SWEP.HeadshotMultiplier = 2
 
-SWEP.IronSightsPos = Vector( 6.62, -3, 2.9 )
-SWEP.IronSightsAng = Vector( 0.7, 5.3, 7 )
+SWEP.IronSightsPos 		= Vector (3.963, -3.271, 1.7058)
+SWEP.IronSightsAng 		= Vector (1.5025, 0.6891, 0)
 
 SWEP.DeploySpeed = 3
