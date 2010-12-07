@@ -32,7 +32,7 @@ ENT.TargetIDHint = {name="Health Station",
 		self.Entity:SetColor(180, 180, 255, 255)
 	end
   end
-  hook.Add("TTTBeginRound", "EraYaNExploStationMessageTraitorHook", ENT:MessageTraitorHook)
+  hook.Add("TTTBeginRound", "EraYaNExploStationMessageTraitorHook", ENT:MessageTraitorHook())
 
    
    
