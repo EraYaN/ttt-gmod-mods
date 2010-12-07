@@ -22,7 +22,7 @@ function ENT:MessageTraitorHook()
 		self.Entity:SetColor(180, 180, 255, 255)
 	end
   end
-  hook.Add("ttt_role", "EraYaNExploStationMessageTraitorHook", ENT:MessageTraitorHook())
+  hook.Add("TTTBeginRound", "EraYaNExploStationMessageTraitorHook", ENT:MessageTraitorHook())
   --ttt_role.Hook("ttt_role", ENT:MessageTraitorHook())
 if CLIENT then
    -- this entity can be DNA-sampled so we need some display info
