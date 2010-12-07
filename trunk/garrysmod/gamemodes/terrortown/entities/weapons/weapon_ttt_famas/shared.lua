@@ -10,12 +10,8 @@ if CLIENT then
    SWEP.Slot = 2
 
    SWEP.Icon = "VGUI/ttt/icon_ninjah_famas"
-<<<<<<< .mine
-   SWEP.ViewModelFOV  = 72
-   SWEP.ViewModelFlip = true
-=======
-   SWEP.ViewModelFlip = false
->>>>>>> .r56
+   --SWEP.ViewModelFOV  = 72
+   --SWEP.ViewModelFlip = false
 end
 
 
@@ -24,7 +20,7 @@ SWEP.Base = "weapon_tttbase"
 SWEP.Kind = WEAPON_HEAVY
 
 SWEP.Primary.Damage      = 7
-SWEP.Primary.Delay       = 0.075
+SWEP.Primary.Delay       = 0.04
 SWEP.Primary.Cone        = 0.018 -- 0.025
 SWEP.Primary.ClipSize    = 45
 SWEP.Primary.ClipMax     = 90
@@ -43,7 +39,7 @@ SWEP.WorldModel = "models/weapons/w_rif_famas.mdl"
 
 SWEP.HeadshotMultiplier = 2
 
-SWEP.IronSightsPos 		= Vector (-3.1053, -5.4546, 2.973)
-SWEP.IronSightsAng 		= Vector (0, 0, 0)
+SWEP.IronSightsPos = Vector (-2.9917, -7.5747, 2.4776)
+SWEP.IronSightsAng = Vector (0.9064, 0.4293, 3.6684)
 
 SWEP.DeploySpeed = 2.2
