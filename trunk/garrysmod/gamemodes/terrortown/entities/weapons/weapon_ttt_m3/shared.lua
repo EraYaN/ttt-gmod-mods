@@ -189,3 +189,7 @@ function SWEP:GetHeadshotMultiplier(victim, dmginfo)
    -- decay from 3.1 to 1 slowly as distance increases
    return 1 + math.max(0, (2.1 - 0.002 * (d ^ 1.25)))
 end
+if SERVER then
+
+   resource.AddFile("materials/VGUI/ttt/icon_ninjah_m3.vmt")
+end

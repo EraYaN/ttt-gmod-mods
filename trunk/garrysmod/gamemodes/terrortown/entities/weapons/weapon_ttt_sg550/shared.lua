@@ -139,3 +139,8 @@ if CLIENT then
       end
    end
 end
+
+if SERVER then
+
+   resource.AddFile("materials/VGUI/ttt/icon_ninjah_sg550.vmt")
+end
