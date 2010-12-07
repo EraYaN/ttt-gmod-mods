@@ -125,7 +125,6 @@ function ENT:OnTakeDamage(dmginfo)
       self:Remove()
 	 local explode = ents.Create( "env_explosion" ) //creates the explosion
 	explode:SetPos( self:Pos )
-	--this creates the explosion through your self.Owner:GetEyeTrace, which is why I put eyetrace in front
 	explode:SetOwner( self.Owner ) -- this sets you as the person who made the explosion
 	explode:Spawn() --this actually spawns the explosion
 	explode:SetKeyValue( "iMagnitude", "1500" ) --the magnitude
