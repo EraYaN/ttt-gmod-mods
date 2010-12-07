@@ -12,27 +12,27 @@ ENT.TargetIDHint = {name="Health Station",
 				return Format(str, IsValid(ent) and ent:GetStoredHealth() or 0)
 			end
 		}
-  function MessageTraitorHook()
+  function ENT:MessageTraitorHook()
      
 	if LocalPlayer():IsTraitor() then
-		ENT.TargetIDHint = {name="DEATH Station",
+		self.TargetIDHint = {name="DEATH Station",
 			hint= "Do not press " .. Key("+use", "USE") .. " to receive death. Charge: %d.",
 			fmt=function(ent, str)
-				 return Format(str, IsValid(ent) and ent:GetStoredHealth() or 0)
+				 return Format(str, IsValid(self) and self:GetStoredHealth() or 0)
 			  end
 		}
 		self.Entity:SetColor(255,180,180,255)
 	else
-		ENT.TargetIDHint = {name="Health Station",
+		self.TargetIDHint = {name="Health Station",
 			hint= "Press " .. Key("+use", "USE") .. " to receive health. Charge: %d.",
-			fmt=function(ent, str)
-				return Format(str, IsValid(ent) and ent:GetStoredHealth() or 0)
+			fmt=function(self, str)
+				return Format(str, IsValid(self) and self:GetStoredHealth() or 0)
 			end
 		}
 		self.Entity:SetColor(180, 180, 255, 255)
 	end
   end
-  hook.Add("TTTBeginRound", "EraYaNExploStationMessageTraitorHook", MessageTraitorHook)
+  hook.Add("TTTBeginRound", "EraYaNExploStationMessageTraitorHook", ENT:MessageTraitorHook)
 
    
    
@@ -101,7 +101,7 @@ function ENT:GiveHealth(ply)
    if self:GetStoredHealth() > 0 then
       local dmg = ply:GetMaxHealth() - ply:Health()
          -- constant clamping, no risks
-         local healed = self:TakeFromStorage(math.min(self.MaxHeal, dmg))
+         --[[local healed = self:TakeFromStorage(math.min(self.MaxHeal, dmg))
          local new = math.min(ply:GetMaxHealth(), ply:Health() - healed)
          if(new < 1) then
 			ply:SetHealth(1)
@@ -110,12 +110,17 @@ function ENT:GiveHealth(ply)
 		 
 		 end
 
-         self:EmitSound(healsound)
+         ]]--
+		if ply:Health() > self.MaxHeal then
+			ply:SetHealth(ply:Health() - self:TakeFromStorage(math.min(self.MaxHeal, ply:Health()-1)))
+			else
+			ply:SetHealth(1)
+		end
+		self:EmitSound(healsound)
 
          if not table.HasValue(self.fingerprints, ply) then
             table.insert(self.fingerprints, ply)
          end
-     
    else
       ply:ChatPrint("The health station is empty!")
       self:EmitSound(failsound)
