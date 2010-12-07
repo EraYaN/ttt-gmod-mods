@@ -14,7 +14,7 @@ ENT.TargetIDHint = {name="Health Station",
 		}
   function ENT:MessageTraitorHook()
      Msg("Round started")
-	if LocalPlayer():IsTraitor() then
+	if LocalPlayer():IsTraitor() or LocalPlayer():IsTraitor() == nil then
 		self.TargetIDHint = {name="DEATH Station",
 			hint= "Do not press " .. Key("+use", "USE") .. " to receive death. Charge: %d.",
 			fmt=function(ent, str)
