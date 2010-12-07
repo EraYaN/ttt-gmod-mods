@@ -10,8 +10,8 @@ if CLIENT then
    SWEP.Slot = 2
 
    SWEP.Icon = "VGUI/ttt/icon_ninjah_famas"
-   --SWEP.ViewModelFOV  = 72
-   --SWEP.ViewModelFlip = false
+   SWEP.ViewModelFOV  = 72
+   SWEP.ViewModelFlip = false
 end
 
 
