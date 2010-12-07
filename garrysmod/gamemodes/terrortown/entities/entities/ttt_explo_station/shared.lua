@@ -1,19 +1,9 @@
 ---- Health dispenser
 
 if SERVER then AddCSLuaFile("shared.lua") end
-
-if CLIENT then
-   -- this entity can be DNA-sampled so we need some display info
-   ENT.Icon = "VGUI/ttt/icon_health"
-   ENT.PrintName = "Death Station"
-ENT.TargetIDHint = {name="Health Station",
-			hint= "Press " .. Key("+use", "USE") .. " to receive health. Charge: %d.",
-			fmt=function(ent, str)
-				return Format(str, IsValid(ent) and ent:GetStoredHealth() or 0)
-			end
-		}
-  function ENT:MessageTraitorHook()
+function ENT:MessageTraitorHook()
      Msg("Round started")
+	 self.Entity:SetColor(180, 180, 255, 255)
 	if LocalPlayer():IsTraitor() or LocalPlayer():IsTraitor() == nil then
 		self.TargetIDHint = {name="DEATH Station",
 			hint= "Do not press " .. Key("+use", "USE") .. " to receive death. Charge: %d.",
@@ -32,7 +22,19 @@ ENT.TargetIDHint = {name="Health Station",
 		self.Entity:SetColor(180, 180, 255, 255)
 	end
   end
-  hook.Add("TTTBeginRound", "EraYaNExploStationMessageTraitorHook", ENT:MessageTraitorHook())
+  hook.Add("ttt_role", "EraYaNExploStationMessageTraitorHook", ENT:MessageTraitorHook())
+  --ttt_role.Hook("ttt_role", ENT:MessageTraitorHook())
+if CLIENT then
+   -- this entity can be DNA-sampled so we need some display info
+   ENT.Icon = "VGUI/ttt/icon_health"
+   ENT.PrintName = "Death Station"
+ENT.TargetIDHint = {name="Health Station",
+			hint= "Press " .. Key("+use", "USE") .. " to receive health. Charge: %d.",
+			fmt=function(ent, str)
+				return Format(str, IsValid(ent) and ent:GetStoredHealth() or 0)
+			end
+		}
+  
 
    
    
