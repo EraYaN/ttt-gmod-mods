@@ -6,24 +6,33 @@ if CLIENT then
    -- this entity can be DNA-sampled so we need some display info
    ENT.Icon = "VGUI/ttt/icon_health"
    ENT.PrintName = "Death Station"
+ENT.TargetIDHint = {name="Health Station",
+			hint= "Press " .. Key("+use", "USE") .. " to receive health. Charge: %d.",
+			fmt=function(ent, str)
+				return Format(str, IsValid(ent) and ent:GetStoredHealth() or 0)
+			end
+		}
+  function MessageTraitorHook()
+     
+	if LocalPlayer():IsTraitor() then
+		ENT.TargetIDHint = {name="DEATH Station",
+			hint= "Do not press " .. Key("+use", "USE") .. " to receive death. Charge: %d.",
+			fmt=function(ent, str)
+				 return Format(str, IsValid(ent) and ent:GetStoredHealth() or 0)
+			  end
+		}
+	else
+		ENT.TargetIDHint = {name="Health Station",
+			hint= "Press " .. Key("+use", "USE") .. " to receive health. Charge: %d.",
+			fmt=function(ent, str)
+				return Format(str, IsValid(ent) and ent:GetStoredHealth() or 0)
+			end
+		}
+	end
+  end
+  hook.Add("TTTBeginRound", "EraYaNExploStationMessageTraitorHook", MessageTraitorHook)
 
    
-   if LocalPlayer():IsTraitor() then
-	ENT.TargetIDHint = {name="DEATH Station",
-      hint= "Do not press " .. Key("+use", "USE") .. " to receive death. Charge: %d.",
-      fmt=function(ent, str)
-             return Format(str, IsValid(ent) and ent:GetStoredHealth() or 0)
-          end
-   }
-      
-		  else
-		  ENT.TargetIDHint = {name="Health Station",
-      hint= "Press " .. Key("+use", "USE") .. " to receive health. Charge: %d.",
-      fmt=function(ent, str)
-             return Format(str, IsValid(ent) and ent:GetStoredHealth() or 0)
-          end
-		  }
-		  end
    
 end
 
