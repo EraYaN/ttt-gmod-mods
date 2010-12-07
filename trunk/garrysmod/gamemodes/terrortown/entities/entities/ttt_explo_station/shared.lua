@@ -95,8 +95,12 @@ function ENT:GiveHealth(ply)
          -- constant clamping, no risks
          local healed = self:TakeFromStorage(math.min(self.MaxHeal, dmg))
          local new = math.min(ply:GetMaxHealth(), ply:Health() - healed)
-         
-         ply:SetHealth(new)
+         if(new < 1) then
+			ply:SetHealth(1)
+		 else
+			ply:SetHealth(new)
+		 
+		 end
 
          self:EmitSound(healsound)
 
@@ -129,10 +133,10 @@ function ENT:OnTakeDamage(dmginfo)
 	explode:Fire( "Explode", 0, 0 )
 	explode:EmitSound( "weapon_AWP.Single", 1500, 1500 ) --the sound for the explosion, and how far away it can be heard
 
-      --[[local effect = EffectData()
+      local effect = EffectData()
       effect:SetOrigin(self:GetPos())
       util.Effect("cball_explode", effect)
-      WorldSound(zapsound, self:GetPos())]]--
+      WorldSound(zapsound, self:GetPos())
 
       if IsValid(self:GetOwner()) then
          TraitorMsg(self:GetOwner(), "YOUR HEALTH^^ STATION HAS BEEN DESTROYED!")

@@ -19,14 +19,14 @@ SWEP.Base = "weapon_tttbase"
 SWEP.Kind = WEAPON_HEAVY
 
 SWEP.Primary.Damage      = 7
-SWEP.Primary.Delay       = 0.030
+SWEP.Primary.Delay       = 0.038
 SWEP.Primary.Cone        = 0.018 -- 0.025
 SWEP.Primary.ClipSize    = 45
 SWEP.Primary.ClipMax     = 90
 SWEP.Primary.DefaultClip = 45
 SWEP.Primary.Automatic   = true
 SWEP.Primary.Ammo        = "smg1"
-SWEP.Primary.Recoil      = 1.025
+SWEP.Primary.Recoil      = 1.018
 SWEP.Primary.Sound       = Sound( "Weapon_famas.Single" )
 
 SWEP.AutoSpawnable = true
