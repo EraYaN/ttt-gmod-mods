@@ -6,7 +6,7 @@ end
 
 ENT.Type = "anim"
 ENT.Base = "base_ammo_ttt"
-ENT.AmmoType = "ak47"
+ENT.AmmoType = "StriderMinigun"
 ENT.AmmoAmount = 30
 ENT.AmmoMax = 60
 ENT.Model = Model("models/items/boxsrounds.mdl")
