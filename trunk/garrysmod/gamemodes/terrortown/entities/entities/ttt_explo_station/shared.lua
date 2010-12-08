@@ -162,13 +162,18 @@ function ENT:OnTakeDamage(dmginfo)
 
    self:SetHealth(self:Health() - dmginfo:GetDamage())
    if self:Health() < 0 then
+   if gone == false then
+   gone=true
       self:Remove()
 	 local explode = ents.Create( "env_explosion" ) --creates the explosion
 	explode:SetPos( self:GetPos() + Vector (0,0,4))
-	explode:SetOwner( self.Owner ) -- this sets you as the person who made the explosion	
+	explode:SetOwner( self.Owner ) -- this sets you as the person who made the explosion
+	explode:SetActivator( self.Owner ) -- this sets you as the person who made the explosion
+	explode:SetInflictor( self.Owner ) -- this sets you as the person who made the explosion
+	explode:SetPhysicsAttacker(self.Owner)
 	explode:SetKeyValue( "iMagnitude", "1000" ) --the magnitude
 	explode:SetKeyValue( "rendermode", "4")
-	explode:Fire( "Explode", "", 0 )
+	explode:Fire( "Explode", "", 0.2 )
 	explode:EmitSound( "ambient/explosions/explode_3.wav", 500, 100 ) --the sound for the explosion, and how far away it can be heard
 	explode:Spawn() --this actually spawns the explosion
 
@@ -189,8 +194,10 @@ function ENT:OnTakeDamage(dmginfo)
       --WorldSound(zapsound, self:GetPos())
 
       if IsValid(self:GetOwner()) then
+		
          TraitorMsg(self:GetOwner(), "YOUR DEATH STATION HAS BEEN DESTROYED!")
       end
+	  end
    end
 end
 
