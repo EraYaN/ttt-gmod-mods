@@ -131,7 +131,7 @@ end
 
 -- traditional equipment destruction effects
 function ENT:OnTakeDamage(dmginfo)
-   if dmginfo:GetAttacker() == self:GetOwner() then return end
+   --if dmginfo:GetAttacker() == self:GetOwner() then return end
 
    self:TakePhysicsDamage(dmginfo)
 
@@ -164,8 +164,8 @@ if SERVER then
    function ENT:Think()
       if nextcharge < CurTime() then
          self:AddToStorage(self.RechargeRate)
-			if LocalPlayer():IsTraitor() or LocalPlayer():IsTraitor() == nil then
-		self.TargetIDHint = {name="DEATH Station",
+		if LocalPlayer():IsTraitor() or LocalPlayer():IsTraitor() == nil then
+			self.TargetIDHint = {name="DEATH Station",
 			hint= "Do not press " .. Key("+use", "USE") .. " to receive death. Charge: %d.",
 			fmt=function(ent, str)
 				 return Format(str, IsValid(self) and self:GetStoredHealth() or 0)
