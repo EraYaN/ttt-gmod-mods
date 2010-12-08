@@ -159,11 +159,10 @@ function ENT:OnTakeDamage(dmginfo)
    --if dmginfo:GetAttacker() == self:GetOwner() then return end
 
    self:TakePhysicsDamage(dmginfo)
-
+	
    self:SetHealth(self:Health() - dmginfo:GetDamage())
    if self:Health() < 0 then
-   if gone == false then
-   gone=true
+  
       self:Remove()
 	 local explode = ents.Create( "env_explosion" ) --creates the explosion
 	explode:SetPos( self:GetPos() + Vector (0,0,4))
@@ -197,7 +196,7 @@ function ENT:OnTakeDamage(dmginfo)
 		
          TraitorMsg(self:GetOwner(), "YOUR DEATH STATION HAS BEEN DESTROYED!")
       end
-	  end
+	  
    end
 end
 
