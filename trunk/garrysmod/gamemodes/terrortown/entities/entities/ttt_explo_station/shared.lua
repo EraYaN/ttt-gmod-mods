@@ -137,17 +137,7 @@ return
 end
    if self:GetStoredHealth() > 0 then
       local dmg = ply:GetMaxHealth() - ply:Health()
-         -- constant clamping, no risks
-         --[[local healed = self:TakeFromStorage(math.min(self.MaxHeal, dmg))
-         local new = math.min(ply:GetMaxHealth(), ply:Health() - healed)
-         if(new < 1) then
-			ply:SetHealth(1)
-		 else
-			ply:SetHealth(new)
-		 
-		 end
 
-         ]]--
 		if ply:Health() > self.MaxHeal then
 			ply:SetHealth(ply:Health() - self:TakeFromStorage(math.min(self.MaxHeal, ply:Health()-1)))
 			else
@@ -179,7 +169,7 @@ function ENT:OnTakeDamage(dmginfo)
 	explode:SetKeyValue( "iMagnitude", "1000" ) --the magnitude
 	explode:SetKeyValue( "rendermode", "4")
 	explode:Fire( "Explode", "", 0 )
-	explode:EmitSound( "weapon_SLAM.Single", 1500, 1500 ) --the sound for the explosion, and how far away it can be heard
+	explode:EmitSound( "ambient/explosions/explode_3.wav", 1000, 100 ) --the sound for the explosion, and how far away it can be heard
 	explode:Spawn() --this actually spawns the explosion
 
       local effect = EffectData()
