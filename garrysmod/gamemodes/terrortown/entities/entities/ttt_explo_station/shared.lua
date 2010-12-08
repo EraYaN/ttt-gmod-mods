@@ -76,7 +76,9 @@ function ENT:Initialize()
 	self.Entity:SetColor(180, 180, 255, 255)
 
 	self:SetStoredHealth(200)
+	if CLIENT then
 	self:CheckTraitor()
+	end
 
 	self.fingerprints = {}
 end
@@ -84,7 +86,7 @@ end
 function ENT:CheckTraitor()
      Msg("\nDS Traitor Check\n\n")
 	 self.Entity:SetColor(180, 180, 255, 255)
-	if LocalPlayer():IsTraitor() and LocalPlayer():IsTraitor() ~= nil then
+	if LocalPlayer():IsActiveTraitor() and LocalPlayer():IsActiveTraitor() ~= nil then
 		self.TargetIDHint = {name="DEATH Station",
 			hint= "Do not press " .. Key("+use", "USE") .. " to receive death. Charge: %d.",
 			fmt=function(ent, str)
