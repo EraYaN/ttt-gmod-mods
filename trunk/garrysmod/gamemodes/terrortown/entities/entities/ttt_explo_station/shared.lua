@@ -71,7 +71,7 @@ function ENT:Initialize()
 			phys:SetMass(200)
 		end
 	end
-	self.Entity:SetHealth(200)
+	self.Entity:SetHealth(25)
 
 	self.Entity:SetColor(180, 180, 255, 255)
 
