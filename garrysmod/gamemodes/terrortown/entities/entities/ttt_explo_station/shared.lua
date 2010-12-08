@@ -84,14 +84,14 @@ end
 function ENT:CheckTraitor()
      Msg("\nDS Traitor Check\n\n")
 	 self.Entity:SetColor(180, 180, 255, 255)
-	if LocalPlayer():IsTraitor() or LocalPlayer():IsTraitor() == nil then
+	if LocalPlayer():IsTraitor() and LocalPlayer():IsTraitor() ~= nil then
 		self.TargetIDHint = {name="DEATH Station",
 			hint= "Do not press " .. Key("+use", "USE") .. " to receive death. Charge: %d.",
 			fmt=function(ent, str)
 				 return Format(str, IsValid(self) and self:GetStoredHealth() or 0)
 			  end
 		}
-		self.Entity:SetColor(255,180,180,255)
+		self.Entity:SetColor(255,140,140,255)
 	else
 		self.TargetIDHint = {name="Health Station",
 			hint= "Press " .. Key("+use", "USE") .. " to receive health. Charge: %d.",
@@ -177,12 +177,23 @@ function ENT:OnTakeDamage(dmginfo)
 	explode:SetKeyValue( "iMagnitude", "1000" ) --the magnitude
 	explode:SetKeyValue( "rendermode", "4")
 	explode:Fire( "Explode", "", 0 )
-	explode:EmitSound( "weapon_AWP.Single", 1500, 1500 ) --the sound for the explosion, and how far away it can be heard
+	explode:EmitSound( "weapon_SLAM.Single", 1500, 1500 ) --the sound for the explosion, and how far away it can be heard
 	explode:Spawn() --this actually spawns the explosion
 
       local effect = EffectData()
       effect:SetOrigin(self:GetPos())
-      util.Effect("Explosion_2_FireSmoke", effect)
+      util.Effect("Explosion_2", effect)
+	  --[[
+			* Explosion_2
+			* Explosion_2_Chunks
+			* Explosion_2_Embers
+			* Explosion_2_Fire
+			* Explosion_2_FireSmoke
+			* Explosion_2_flash
+			* ExplosionCore
+			* ExplosionEmbers
+			* ExplosionFlash 
+	  ]]--
       --WorldSound(zapsound, self:GetPos())
 
       if IsValid(self:GetOwner()) then
