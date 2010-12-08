@@ -1,7 +1,7 @@
 ---- Health dispenser
 
 if SERVER then AddCSLuaFile("shared.lua") end
-function ENT:MessageTraitorHook()
+--[[function ENT:MessageTraitorHook()
      Msg("Round started")
 	 self.Entity:SetColor(180, 180, 255, 255)
 	if LocalPlayer():IsTraitor() or LocalPlayer():IsTraitor() == nil then
@@ -21,8 +21,8 @@ function ENT:MessageTraitorHook()
 		}
 		self.Entity:SetColor(180, 180, 255, 255)
 	end
-  end
-  hook.Add("TTTBeginRound", "EraYaNExploStationMessageTraitorHook", ENT:MessageTraitorHook())
+  end]]--
+  --hook.Add("TTTBeginRound", "EraYaNExploStationMessageTraitorHook", ENT:MessageTraitorHook())
   --ttt_role.Hook("ttt_role", ENT:MessageTraitorHook())
 if CLIENT then
    -- this entity can be DNA-sampled so we need some display info
@@ -76,8 +76,31 @@ function ENT:Initialize()
 	self.Entity:SetColor(180, 180, 255, 255)
 
 	self:SetStoredHealth(200)
+	ENT:CheckTraitor()
 
 	self.fingerprints = {}
+end
+
+function ENT:CheckTraitor()
+     Msg("\nDS Traitor Check\n\n")
+	 self.Entity:SetColor(180, 180, 255, 255)
+	if LocalPlayer():IsTraitor() or LocalPlayer():IsTraitor() == nil then
+		self.TargetIDHint = {name="DEATH Station",
+			hint= "Do not press " .. Key("+use", "USE") .. " to receive death. Charge: %d.",
+			fmt=function(ent, str)
+				 return Format(str, IsValid(self) and self:GetStoredHealth() or 0)
+			  end
+		}
+		self.Entity:SetColor(255,180,180,255)
+	else
+		self.TargetIDHint = {name="Health Station",
+			hint= "Press " .. Key("+use", "USE") .. " to receive health. Charge: %d.",
+			fmt=function(self, str)
+				return Format(str, IsValid(self) and self:GetStoredHealth() or 0)
+			end
+		}
+		self.Entity:SetColor(180, 180, 255, 255)
+	end
 end
 
 function ENT:UseOverride(activator)
