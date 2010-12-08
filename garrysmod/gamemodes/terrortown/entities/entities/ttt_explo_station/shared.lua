@@ -139,18 +139,18 @@ function ENT:OnTakeDamage(dmginfo)
    if self:Health() < 0 then
       self:Remove()
 	 local explode = ents.Create( "env_explosion" ) --creates the explosion
-	explode:SetPos( self:GetPos() )
-	explode:SetOwner( self.Owner ) -- this sets you as the person who made the explosion
-	explode:Spawn() --this actually spawns the explosion
-	explode:SetKeyValue( "iMagnitude", "1500" ) --the magnitude
-	SetKeyValue("radius", r_outer)
-	explode:Fire( "Explode", 0, 0 )
+	explode:SetPos( self:GetPos() + Vector (0,0,4))
+	explode:SetOwner( self.Owner ) -- this sets you as the person who made the explosion	
+	explode:SetKeyValue( "iMagnitude", "1000" ) --the magnitude
+	explode:SetKeyValue( "rendermode", "5")
+	explode:Fire( "Explode", "", 0 )
 	explode:EmitSound( "weapon_AWP.Single", 1500, 1500 ) --the sound for the explosion, and how far away it can be heard
+	explode:Spawn() --this actually spawns the explosion
 
-      local effect = EffectData()
+      --[[local effect = EffectData()
       effect:SetOrigin(self:GetPos())
       util.Effect("cball_explode", effect)
-      WorldSound(zapsound, self:GetPos())
+      WorldSound(zapsound, self:GetPos())]]--
 
       if IsValid(self:GetOwner()) then
          TraitorMsg(self:GetOwner(), "YOUR HEALTH^^ STATION HAS BEEN DESTROYED!")
