@@ -169,7 +169,7 @@ function ENT:OnTakeDamage(dmginfo)
 	explode:SetKeyValue( "iMagnitude", "1000" ) --the magnitude
 	explode:SetKeyValue( "rendermode", "4")
 	explode:Fire( "Explode", "", 0 )
-	explode:EmitSound( "ambient/explosions/explode_3.wav", 1000, 100 ) --the sound for the explosion, and how far away it can be heard
+	explode:EmitSound( "ambient/explosions/explode_3.wav", 500, 100 ) --the sound for the explosion, and how far away it can be heard
 	explode:Spawn() --this actually spawns the explosion
 
       local effect = EffectData()
