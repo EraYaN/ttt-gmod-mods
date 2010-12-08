@@ -76,7 +76,7 @@ function ENT:Initialize()
 	self.Entity:SetColor(180, 180, 255, 255)
 
 	self:SetStoredHealth(200)
-	ENT:CheckTraitor()
+	self:CheckTraitor()
 
 	self.fingerprints = {}
 end
