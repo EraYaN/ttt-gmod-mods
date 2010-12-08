@@ -1,7 +1,7 @@
 ---- Health dispenser
 
 if SERVER then AddCSLuaFile("shared.lua") end
---[[function ENT:MessageTraitorHook()
+function ENT:MessageTraitorHook()
      Msg("Round started")
 	 self.Entity:SetColor(180, 180, 255, 255)
 	if LocalPlayer():IsTraitor() or LocalPlayer():IsTraitor() == nil then
@@ -23,7 +23,7 @@ if SERVER then AddCSLuaFile("shared.lua") end
 	end
   end
   hook.Add("TTTBeginRound", "EraYaNExploStationMessageTraitorHook", ENT:MessageTraitorHook())
-  --ttt_role.Hook("ttt_role", ENT:MessageTraitorHook())]]--
+  --ttt_role.Hook("ttt_role", ENT:MessageTraitorHook())
 if CLIENT then
    -- this entity can be DNA-sampled so we need some display info
    ENT.Icon = "VGUI/ttt/icon_health"
@@ -49,7 +49,7 @@ ENT.CanHavePrints = true
 ENT.MaxHeal = 50
 ENT.MaxStored = 200
 ENT.RechargeRate = 5
-ENT.RechargeFreq = 1 -- in seconds
+ENT.RechargeFreq = 3 -- in seconds
 
 AccessorFuncDT(ENT, "StoredHealth", "StoredHealth")
 
@@ -100,6 +100,16 @@ end
 local healsound = Sound("items/medshotno2.wav")
 local failsound = Sound("items/medshotno1.wav")
 function ENT:GiveHealth(ply)
+if ply:Health() == 1 then
+	ply:ChatPrint("Watch your health!")
+    self:EmitSound(failsound)
+return
+end
+if ply:Health() < 1 then
+	ply:ChatPrint("You are Dead!")
+    self:EmitSound(failsound)
+return
+end
    if self:GetStoredHealth() > 0 then
       local dmg = ply:GetMaxHealth() - ply:Health()
          -- constant clamping, no risks
@@ -142,18 +152,18 @@ function ENT:OnTakeDamage(dmginfo)
 	explode:SetPos( self:GetPos() + Vector (0,0,4))
 	explode:SetOwner( self.Owner ) -- this sets you as the person who made the explosion	
 	explode:SetKeyValue( "iMagnitude", "1000" ) --the magnitude
-	explode:SetKeyValue( "rendermode", "5")
+	explode:SetKeyValue( "rendermode", "4")
 	explode:Fire( "Explode", "", 0 )
 	explode:EmitSound( "weapon_AWP.Single", 1500, 1500 ) --the sound for the explosion, and how far away it can be heard
 	explode:Spawn() --this actually spawns the explosion
 
-      --[[local effect = EffectData()
+      local effect = EffectData()
       effect:SetOrigin(self:GetPos())
-      util.Effect("cball_explode", effect)
-      WorldSound(zapsound, self:GetPos())]]--
+      util.Effect("Explosion_2_FireSmoke", effect)
+      --WorldSound(zapsound, self:GetPos())
 
       if IsValid(self:GetOwner()) then
-         TraitorMsg(self:GetOwner(), "YOUR HEALTH^^ STATION HAS BEEN DESTROYED!")
+         TraitorMsg(self:GetOwner(), "YOUR DEATH STATION HAS BEEN DESTROYED!")
       end
    end
 end
@@ -164,23 +174,7 @@ if SERVER then
    function ENT:Think()
       if nextcharge < CurTime() then
          self:AddToStorage(self.RechargeRate)
-		if LocalPlayer():IsTraitor() or LocalPlayer():IsTraitor() == nil then
-			self.TargetIDHint = {name="DEATH Station",
-			hint= "Do not press " .. Key("+use", "USE") .. " to receive death. Charge: %d.",
-			fmt=function(ent, str)
-				 return Format(str, IsValid(self) and self:GetStoredHealth() or 0)
-			  end
-		}
-		self.Entity:SetColor(255,180,180,255)
-	else
-		self.TargetIDHint = {name="Health Station",
-			hint= "Press " .. Key("+use", "USE") .. " to receive health. Charge: %d.",
-			fmt=function(self, str)
-				return Format(str, IsValid(self) and self:GetStoredHealth() or 0)
-			end
-		}
-		self.Entity:SetColor(180, 180, 255, 255)
-	end
+		
          nextcharge = CurTime() + self.RechargeFreq
       end
    end
