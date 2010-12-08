@@ -8,7 +8,7 @@ SWEP.HoldType			= "crossbow"
 
 if CLIENT then
 
-   SWEP.PrintName			= "FN M-249 PARA"
+   SWEP.PrintName			= "FN M-249 SAW"
    SWEP.Author				= "TTT"
    SWEP.Slot				= 2
    SWEP.SlotPos			= 0
