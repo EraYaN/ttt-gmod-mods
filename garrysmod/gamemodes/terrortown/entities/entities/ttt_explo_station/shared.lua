@@ -93,7 +93,7 @@ function ENT:CheckTraitor()
 				 return Format(str, IsValid(self) and self:GetStoredHealth() or 0)
 			  end
 		}
-		self.Entity:SetColor(255,140,140,255)
+		self.Entity:SetColor(255,180,180,255)
 	else
 		self.TargetIDHint = {name="Health Station",
 			hint= "Press " .. Key("+use", "USE") .. " to receive health. Charge: %d.",
