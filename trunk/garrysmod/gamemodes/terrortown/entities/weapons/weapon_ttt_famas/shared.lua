@@ -26,13 +26,13 @@ SWEP.Primary.ClipSize    = 25
 SWEP.Primary.ClipMax     = 75
 SWEP.Primary.DefaultClip = 25
 SWEP.Primary.Automatic   = true
-SWEP.Primary.Ammo        = "smg1"
+SWEP.Primary.Ammo        = "CombineCannon"
 SWEP.Primary.Recoil      = 1.018
 SWEP.Primary.Sound       = Sound( "Weapon_famas.Single" )
 
 SWEP.AutoSpawnable = true
 
-SWEP.AmmoEnt = "item_ammo_smg1_ttt"
+SWEP.AmmoEnt = "item_ammo_rifle_ttt"
 
 SWEP.ViewModel  = "models/weapons/v_rif_famas.mdl"
 SWEP.WorldModel = "models/weapons/w_rif_famas.mdl"

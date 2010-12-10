@@ -28,14 +28,14 @@ SWEP.WeaponID = AMMO_M16
 SWEP.Primary.Delay			= 0.19
 SWEP.Primary.Recoil			= 1.6
 SWEP.Primary.Automatic = true
-SWEP.Primary.Ammo = "Pistol"
+SWEP.Primary.Ammo = "CombineCannon"
 SWEP.Primary.Damage = 23
 SWEP.Primary.Cone = 0.02
 SWEP.Primary.ClipSize = 20
 SWEP.Primary.ClipMax = 60
 SWEP.Primary.DefaultClip = 20
 SWEP.AutoSpawnable      = true
-SWEP.AmmoEnt = "item_ammo_pistol_ttt"
+SWEP.AmmoEnt = "item_ammo_rifle_ttt"
 SWEP.ViewModel			= "models/weapons/v_rif_m4a1.mdl"
 SWEP.WorldModel			= "models/weapons/w_rif_m4a1.mdl"
 
