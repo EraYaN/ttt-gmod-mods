@@ -1,0 +1,3 @@
+rearm all maps except:
+- cs_desperados
+- zm_roy_the_ship
