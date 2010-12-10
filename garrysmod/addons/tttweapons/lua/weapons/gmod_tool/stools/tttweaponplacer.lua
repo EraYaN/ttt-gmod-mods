@@ -31,10 +31,10 @@ local weps = {
    weapon_ttt_confgrenade = {name="Discombobulator", snd=nil},
    weapon_ttt_smokegrenade = {name="Smoke nade", snd=nil},
    weapon_ttt_m16 = {name="Colt M-4A1", snd="item_ammo_rifle_ttt"},
-   weapon_ttt_ak47 = {name="AK-47", snd="item_ammo_ak47_ttt"},
+   weapon_ttt_ak47 = {name="AK-47", snd="item_ammo_rifle_ttt"},
    weapon_ttt_famas = {name="FAMAS G1", snd="item_ammo_rifle_ttt"},
    weapon_ttt_tmp = {name="Steyr TMP", snd="item_ammo_smg1_ttt"},
-   weapon_ttt_sg550 = {name="SIG 550", snd="item_ammo_rifle_ttt"},
+   weapon_ttt_sg550 = {name="SIG 550", snd="item_ammo_357_ttt"},
    weapon_ttt_m3 = {name="Benelli M3", snd="item_box_buckshot_ttt"},   
    
 	weapon_ttt_knife = {name="weapon_ttt_knife", snd=nil},
@@ -75,7 +75,6 @@ local mdls = {
    item_ammo_revolver_ttt = "models/items/357ammo.mdl",
    item_ammo_357_ttt = "models/items/357ammo.mdl",
    item_box_buckshot_ttt = "models/items/boxbuckshot.mdl",
-   item_ammo_ak47_ttt = "models/items/boxsrounds.mdl",
    item_ammo_rifle_ttt = "models/items/boxsrounds.mdl",
 
    ttt_playerspawn = "models/player.mdl"
@@ -86,8 +85,7 @@ local colors = {
    ttt_random_weapon = Color(255, 255, 0),
    ttt_random_ammo = Color(0, 255, 0),
    item_ammo_revolver_ttt = Color(255, 100, 100),
-   item_ammo_ak47_ttt = Color(160, 82, 45),
-   item_ammo_rifle_ttt = Color(128, 128, 128),
+   item_ammo_rifle_ttt = Color(0, 70, 100),
    ttt_playerspawn = Color(0, 255, 0)
 };
 
