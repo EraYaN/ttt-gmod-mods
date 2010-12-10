@@ -8,11 +8,11 @@ SWEP.HoldType           = "ar2"
 if CLIENT then
    SWEP.PrintName          = "Artic Warfare Magnum"
 
-   SWEP.Slot               = 2
+   SWEP.Slot               = 7
 
    SWEP.Icon = "VGUI/ttt/icon_ninjah_awp"
    SWEP.EquipMenuData = {
-      type="Weapon",
+      type="Sniper Weapon",
       model="models/weapons/w_snip_awp.mdl",
       name="Artic Warfare Magnum",
       desc="The Artic Warfare Magnum (AWM) is a powerful sniper rifle. It will have a one shot kill, but it's extremely loud. Also known as Artic Warfare Police (AWP), that is incorrect."
@@ -51,8 +51,8 @@ SWEP.Primary.Sound = Sound("weapon_AWP.Single")
 
 SWEP.Secondary.Sound = Sound("Default.Zoom")
 
-SWEP.IronSightsPos 			= Vector (5.6111, -3, 2.092)
-SWEP.IronSightsAng 			= Vector (0, 0, 0)
+SWEP.IronSightsPos = Vector (5.5479, -21.9574, 1.5427)
+SWEP.IronSightsAng = Vector (-11.6507, 0.5963, 0)
 
 
 function SWEP:SetZoom(state)
