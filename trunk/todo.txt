@@ -1,4 +1,11 @@
 rearm all maps except:
 - cs_desperados
 - zm_roy_the_ship
-tweak AWM Weapon
+
+EraYaN:
+Fix FOV on trowaway/reload (AWM)
+Rearm Island
+
+NinjaTuna:
+Rearms?
+

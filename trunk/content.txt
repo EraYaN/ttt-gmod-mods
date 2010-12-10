@@ -4,9 +4,11 @@ Benelli M3 Pump action shotgun
 FAMAS G1 Automatic Rifle
 SIG 550 Autosniper
 Steyr TMP Micro SMG
+Artic Warfare Magnum (T)
+Others have their real name and are a little bit tweaked
 
 Ammo:
-Replaced ammo
+Replaced ammo system
 
 Entities/Extras:
 Death Station

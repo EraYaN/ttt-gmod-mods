@@ -1,9 +1,12 @@
-Steyr TMP	- NinjaTuna
-Benelli M3	- NinjaTuna
-SIG 550 	- NinjaTuna
-AK-47		- NinjaTuna
-FAMAS F1	- EraYaN
-Others (DS and the like)	- EraYaN
-Ammo		- NinjaTuna
+Steyr TMP		- NinjaTuna
+Benelli M3		- NinjaTuna
+SIG 550 		- NinjaTuna
+AK-47			- NinjaTuna
+FAMAS F1		- EraYaN
+Death Station	- EraYaN
+AWM 			- EraYaN
+Ammo			- NinjaTuna
+Rearms		- EraYaN & NinjaTune & Others
+Setup			- EraYaN
 
-Cooperation - NinjaTuna & EraYaN
+Cooperation 	- NinjaTuna & EraYaN
