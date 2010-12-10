@@ -55,29 +55,46 @@ SWEP.IronSightsPos = Vector (5.5479, -21.9574, 1.5427)
 SWEP.IronSightsAng = Vector (-11.6507, 0.5963, 0)
 
 
-function SWEP:SetZoom(state)
+function SWEP:SetZoom(state, reset = false)
     if CLIENT then 
        return
     else
-       if state then
-          self.Owner:SetFOV(10, 0.3)
-       else
-          self.Owner:SetFOV(0, 0.2)
-       end
+       if self.Owner:GetFOV() == 35 then 
+		self.Owner:SetFOV(10, 0.3)
+		return 10;
+		else
+		   if state then
+			  self.Owner:SetFOV(35, 0.3)
+			  return 35;
+		   else
+			  self.Owner:SetFOV(0, 0.2)
+			  return 0;
+		   end
+	   end
+	   if reset then
+		self.Owner:SetFOV(0, 0.2)
+			  return 0;
+	   end
     end
 end
 
 -- Add some zoom to ironsights for this gun
 function SWEP:SecondaryAttack()
+	local result = 0;
     if not self.IronSightsPos then return end
     if self.Weapon:GetNextSecondaryFire() > CurTime() then return end
     
     bIronsights = not self:GetIronsights()
     
-    self:SetIronsights( bIronsights )
+    
     
     if SERVER then
-        self:SetZoom(bIronsights)
+        result = self:SetZoom(bIronsights)
+		if result == 0 then
+			self:SetIronsights( false )
+		else
+			self:SetIronsights( true )
+		end
      else
         self:EmitSound(self.Secondary.Sound)
     end
@@ -86,7 +103,7 @@ function SWEP:SecondaryAttack()
 end
 
 function SWEP:PreDrop()
-    self:SetZoom(false)
+    self:SetZoom(false, true)
     self:SetIronsights(false)
     return self.BaseClass.PreDrop(self)
 end
@@ -94,7 +111,7 @@ end
 function SWEP:Reload()
     self.Weapon:DefaultReload( ACT_VM_RELOAD );
     self:SetIronsights( false )
-    self:SetZoom(false)
+    self:SetZoom(false, true)
 end
 
 
