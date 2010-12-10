@@ -1,4 +1,4 @@
--- rifle ammo override
+-- M4A1 + AK47 + FAMAS ammo override
 
 if SERVER then
    AddCSLuaFile( "shared.lua" )
