@@ -55,7 +55,7 @@ SWEP.IronSightsPos = Vector (5.5479, -21.9574, 1.5427)
 SWEP.IronSightsAng = Vector (-11.6507, 0.5963, 0)
 
 
-function SWEP:SetZoom(state, reset = false)
+function SWEP:SetZoom(state, reset)
     if CLIENT then 
        return
     else
