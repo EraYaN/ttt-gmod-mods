@@ -46,7 +46,7 @@ end
 
 function ENT:Initialize()
     -- Differentiate from pistol ammo
-    self:SetColor(0, 70, 100, 255)
+    self:SetColor(100, 70, 0, 255)
 
     self:RealInit()
 end
