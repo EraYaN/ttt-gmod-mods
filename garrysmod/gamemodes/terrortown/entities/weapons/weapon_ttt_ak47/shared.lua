@@ -26,7 +26,7 @@ SWEP.Primary.Recoil      = 1.9
 SWEP.Primary.Automatic   = true
 SWEP.Primary.Damage      = 20
 SWEP.Primary.Cone        = 0.025
-SWEP.Primary.Ammo        = "StriderMinigun"
+SWEP.Primary.Ammo        = "CombineCannon"
 SWEP.Primary.ClipSize    = 30
 SWEP.Primary.ClipMax     = 60
 SWEP.Primary.DefaultClip = 30
@@ -43,7 +43,7 @@ SWEP.Kind = WEAPON_HEAVY
 
 SWEP.AutoSpawnable = true
 
-SWEP.AmmoEnt = "item_ammo_ak47_ttt"
+SWEP.AmmoEnt = "item_ammo_rifle_ttt"
 
 
 SWEP.AllowDrop = true
