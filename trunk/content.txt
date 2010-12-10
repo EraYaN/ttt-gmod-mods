@@ -1,10 +1,17 @@
 Guns:
-	AK-47 Automatic Rifle (with custom ammo)
-	Benelli M3 Pump action shotgun
+AK-47 Automatic Rifle
+Benelli M3 Pump action shotgun
 FAMAS G1 Automatic Rifle
 SIG 550 Autosniper
 Steyr TMP Micro SMG
+
+Ammo:
+Replaced ammo
+
 Entities/Extras:
-And moar (by me[EraYaN])
+Death Station
+
 Maps:
 Rearms of some maps
+
+
