@@ -33,7 +33,7 @@ SWEP.Primary.DefaultClip = 20
 SWEP.HeadshotMultiplier = 5
 
 SWEP.AutoSpawnable      = true
-SWEP.AmmoEnt = "item_ammo_sg550_ttt"
+SWEP.AmmoEnt = "item_ammo_357_ttt"
 SWEP.ViewModel          = Model("models/weapons/v_snip_sg550.mdl")
 SWEP.WorldModel         = Model("models/weapons/w_snip_sg550.mdl")
 
