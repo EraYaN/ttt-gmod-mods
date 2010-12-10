@@ -59,13 +59,13 @@ function SWEP:SetZoom(state, reset)
     if CLIENT then 
        return
     else
-       if self.Owner:GetFOV() == 35 then 
+       if self.Owner:GetFOV() == 25 then 
 		self.Owner:SetFOV(10, 0.3)
 		return 10;
 		else
 		   if state then
-			  self.Owner:SetFOV(35, 0.3)
-			  return 35;
+			  self.Owner:SetFOV(25, 0.3)
+			  return 25;
 		   else
 			  self.Owner:SetFOV(0, 0.2)
 			  return 0;
