@@ -29,13 +29,13 @@ function ENT:Touch(ent)
 				self.taken = true
 			
 		 
-				 elseif class == "weapon_ttt_m16"  and (50 >= (ammo + math.ceil(25 * 0.25)) then
+				 elseif class == "weapon_ttt_m16"  and (50 >= (ammo + math.ceil(25 * 0.25))) then
 					ent:GiveAmmo( math.min(25, 50 - ammo), self.AmmoType)
 					self:Remove()
 					-- just in case remove does not happen soon enough
 					self.taken = true
 				
-					 elseif class == "weapon_ttt_famas" and (75 >= (ammo + math.ceil(25 * 0.25))then
+					 elseif class == "weapon_ttt_famas" and (75 >= (ammo + math.ceil(25 * 0.25))) then
 						ent:GiveAmmo( math.min(25, 75 - ammo), self.AmmoType)
 						self:Remove()
 						-- just in case remove does not happen soon enough
