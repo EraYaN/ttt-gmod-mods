@@ -6,7 +6,7 @@ end
 SWEP.HoldType           = "ar2"
 
 if CLIENT then
-   SWEP.PrintName          = "Artic Warfare Magnum"
+   SWEP.PrintName          = "AW Magnum Sniper"
 
    SWEP.Slot               = 7
 
