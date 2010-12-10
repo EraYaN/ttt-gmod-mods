@@ -11,6 +11,12 @@ if CLIENT then
    SWEP.Slot               = 2
 
    SWEP.Icon = "VGUI/ttt/icon_ninjah_awp"
+   SWEP.EquipMenuData = {
+      type="Weapon",
+      model="models/weapons/w_snip_awp.mdl",
+      name="Artic Warfare Magnum",
+      desc="The Artic Warfare Magnum (AWM) is a powerful sniper rifle. It will have a one shot kill, but it's extremely loud. Also known as Artic Warfare Police (AWP), that is incorrect."
+   };
 end
 
 
