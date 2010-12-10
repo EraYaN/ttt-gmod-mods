@@ -1,7 +1,7 @@
-TTT Modification of weapons and some rearm scripts.
+TTT Modification of weapons and rearm scripts.
 by EraYaN & NinjaTuna
 
-Made for NinjaGaming.co.uk TTT Server
+Made for NinjaGaming.co.uk TTT Server (<-- ???)
 
 Released under MIT and CC BY-SA Licences
 
