@@ -6,7 +6,7 @@ end
 SWEP.HoldType           = "ar2"
 
 if CLIENT then
-   SWEP.PrintName          = "AW Magnum S."
+   SWEP.PrintName          = "AW Magnum Snip."
 
    SWEP.Slot               = 7
 
@@ -60,19 +60,19 @@ function SWEP:SetZoom(state, reset)
        return
     else
        if self.Owner:GetFOV() == 25 then 
-		self.Owner:SetFOV(10, 0.3)
+		self.Owner:SetFOV(10, 0.1)
 		return 10;
 		else
 		   if state then
-			  self.Owner:SetFOV(25, 0.3)
+			  self.Owner:SetFOV(25, 0.2)
 			  return 25;
 		   else
-			  self.Owner:SetFOV(0, 0.2)
+			  self.Owner:SetFOV(0, 0.15)
 			  return 0;
 		   end
 	   end
 	   if reset then
-		self.Owner:SetFOV(0, 0.2)
+		self.Owner:SetFOV(0, 0.1)
 			  return 0;
 	   end
     end
@@ -84,7 +84,7 @@ function SWEP:SecondaryAttack()
     if not self.IronSightsPos then return end
     if self.Weapon:GetNextSecondaryFire() > CurTime() then return end
     
-    bIronsights = not self:GetIronsights()
+    --bIronsights = not self:GetIronsights()
     
     
     
@@ -99,7 +99,7 @@ function SWEP:SecondaryAttack()
         self:EmitSound(self.Secondary.Sound)
     end
     
-    self.Weapon:SetNextSecondaryFire( CurTime() + 0.3)
+    self.Weapon:SetNextSecondaryFire( CurTime() + 0.2)
 end
 
 function SWEP:PreDrop()
@@ -117,7 +117,7 @@ end
 
 function SWEP:Holster()
     self:SetIronsights(false)
-    self:SetZoom(false)
+    self:SetZoom(false, true)
     return true
 end
 
