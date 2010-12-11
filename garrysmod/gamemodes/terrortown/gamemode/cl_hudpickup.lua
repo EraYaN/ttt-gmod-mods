@@ -108,6 +108,8 @@ function GM:HUDAmmoPickedUp( itemname, amount )
       pickup.name = "SMG AMMO"
    elseif itemname == "Buckshot" then
       pickup.name = "SHOTGUN AMMO"
+   elseif itemname == "CombineCannon" then
+	  pickup.name = "RIFLE AMMO"
    elseif itemname == "357" then
       pickup.name = "SNIPER RIFLE AMMO"
    elseif itemname == "AlyxGun" then

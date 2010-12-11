@@ -4,10 +4,6 @@ if SERVER then
    AddCSLuaFile( "shared.lua" )
 end
 
-if CLIENT then
-   language.Add("CombineCannon_ammo", "RIFLE AMMO")
-end
-
 ENT.Type = "anim"
 ENT.Base = "base_ammo_ttt"
 ENT.AmmoType = "CombineCannon"
