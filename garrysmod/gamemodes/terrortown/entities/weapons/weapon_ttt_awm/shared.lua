@@ -29,7 +29,7 @@ SWEP.Kind = WEAPON_HEAVY
 SWEP.Primary.Delay          = 2
 SWEP.Primary.Recoil         = 5
 SWEP.Primary.Automatic = true
-SWEP.Primary.Ammo = "357";
+SWEP.Primary.Ammo = "None";
 SWEP.Primary.Damage = 125
 SWEP.Primary.Cone = 0.0001
 SWEP.Primary.ClipSize = 5
@@ -43,7 +43,7 @@ SWEP.LimitedStock = false -- only buyable once
 SWEP.HeadshotMultiplier = 4
 
 SWEP.AutoSpawnable      = false
-SWEP.AmmoEnt = "item_ammo_357_ttt"
+SWEP.AmmoEnt = "item_ammo_awm_ttt"
 SWEP.ViewModel          = Model("models/weapons/v_snip_awp.mdl")
 SWEP.WorldModel         = Model("models/weapons/w_snip_awp.mdl")
 
