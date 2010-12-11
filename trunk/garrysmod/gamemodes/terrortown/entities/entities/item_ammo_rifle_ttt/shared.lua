@@ -5,7 +5,7 @@ if SERVER then
 end
 
 if CLIENT then
-   language.Add("CombineCannon_ammo", "Rifle ammo")
+   language.Add("CombineCannon_ammo", "RIFLE AMMO")
 end
 
 ENT.Type = "anim"
