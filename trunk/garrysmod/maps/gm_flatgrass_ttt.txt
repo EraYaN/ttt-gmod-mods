@@ -1,7 +1,7 @@
 # Trouble in Terrorist Town weapon/ammo placement overrides
 # For map: gm_flatgrass
 # Exported by: NinjaTuna
-setting:	replacespawns 1
+setting:	replacespawns 0
 weapon_zm_pistol	959.7341 -619.1059 -0.6658	-0.566 34.492 90.453
 weapon_zm_pistol	957.2720 -623.1666 0.8438	-0.225 -32.057 -96.327
 weapon_zm_pistol	957.5882 -631.0280 0.5848	0.195 -46.648 -89.980
