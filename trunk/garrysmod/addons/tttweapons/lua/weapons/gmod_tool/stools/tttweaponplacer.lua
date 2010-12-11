@@ -37,7 +37,7 @@ local weps = {
    weapon_ttt_sg550 = {name="SIG 550", snd="item_ammo_357_ttt"},
    weapon_ttt_m3 = {name="Benelli M3", snd="item_box_buckshot_ttt"},   
    
-	weapon_ttt_knife = {name="weapon_ttt_knife", snd=nil},
+	weapon_ttt_knife = {name="Knife", snd=nil},
 
    ttt_random_weapon = {name="Random weapon", snd=nil},
    ttt_random_ammo = {name="Random ammo", snd=nil},
@@ -85,7 +85,7 @@ local colors = {
    ttt_random_weapon = Color(255, 255, 0),
    ttt_random_ammo = Color(0, 255, 0),
    item_ammo_revolver_ttt = Color(255, 100, 100),
-   item_ammo_rifle_ttt = Color(0, 70, 100),
+   item_ammo_rifle_ttt = Color(100, 70, 0),
    ttt_playerspawn = Color(0, 255, 0)
 };
 
