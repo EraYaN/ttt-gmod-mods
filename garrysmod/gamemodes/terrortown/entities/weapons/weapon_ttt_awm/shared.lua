@@ -60,19 +60,19 @@ function SWEP:SetZoom(state, reset)
        return
     else
        if self.Owner:GetFOV() == 25 then 
-		self.Owner:SetFOV(10, 0.1)
+		self.Owner:SetFOV(10, 0.2)
 		return 10;
 		else
 		   if state then
-			  self.Owner:SetFOV(25, 0.2)
+			  self.Owner:SetFOV(25, 0.3)
 			  return 25;
 		   else
-			  self.Owner:SetFOV(0, 0.15)
+			  self.Owner:SetFOV(0, 0.2)
 			  return 0;
 		   end
 	   end
 	   if reset then
-		self.Owner:SetFOV(0, 0.1)
+		self.Owner:SetFOV(0, 0.2)
 			  return 0;
 	   end
     end
@@ -99,7 +99,7 @@ function SWEP:SecondaryAttack()
         self:EmitSound(self.Secondary.Sound)
     end
     
-    self.Weapon:SetNextSecondaryFire( CurTime() + 0.2)
+    self.Weapon:SetNextSecondaryFire( CurTime() + 0.3)
 end
 
 function SWEP:PreDrop()
