@@ -103,21 +103,21 @@ function GM:HUDAmmoPickedUp( itemname, amount )
 
    -- Manually convert itemname to perferred ammo name
    if itemname == "Pistol" then
-      pickup.name = "Pistol ammo"
+      pickup.name = "PISTOL AMMO"
    elseif itemname == "SMG1" then
-      pickup.name = "SMG ammo"
+      pickup.name = "SMG AMMO"
    elseif itemname == "Buckshot" then
-      pickup.name = "Shotgun ammo"
+      pickup.name = "SHOTGUN AMMO"
    elseif itemname == "357" then
-      pickup.name = "Sniper rifle ammo"
+      pickup.name = "SNIPER RIFLE AMMO"
    elseif itemname == "AlyxGun" then
-      pickup.name = "Deagle ammo"
+      pickup.name = "DEAGLE AMMO"
    elseif itemname == "AR2AltFire" then
-      pickup.name = "Flare ammo"
+      pickup.name = "FLARE AMMO"
    elseif itemname == "Gravity" then
-      pickup.name = "Poltergeist ammo"
+      pickup.name = "POLTERGEIST AMMO"
    elseif itemname == "slam" then
-      pickup.name = "Beacons"
+      pickup.name = "BEACONS"
    end
 
    surface.SetFont( pickup.font )
