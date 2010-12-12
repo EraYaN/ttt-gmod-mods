@@ -1,5 +1,6 @@
 if SERVER then
    AddCSLuaFile( "shared.lua" )
+   resource.AddFile("materials/VGUI/ttt/icon_tuna_famas.vmt")
 end
 
 SWEP.HoldType = "ar2"
@@ -9,7 +10,7 @@ if CLIENT then
    SWEP.PrintName = "FAMAS G1"			
    SWEP.Slot = 2
 
-   SWEP.Icon = "VGUI/ttt/icon_ninjah_famas"
+   SWEP.Icon = "VGUI/ttt/icon_tuna_famas"
    SWEP.ViewModelFOV  = 72
    SWEP.ViewModelFlip = false
 end

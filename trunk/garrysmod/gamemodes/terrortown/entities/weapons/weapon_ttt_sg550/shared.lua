@@ -1,6 +1,7 @@
 
 if SERVER then
    AddCSLuaFile( "shared.lua" )
+   resource.AddFile("materials/VGUI/ttt/icon_tuna_sg550.vmt")
 end
 
 SWEP.HoldType           = "ar2"
@@ -10,7 +11,7 @@ if CLIENT then
 
    SWEP.Slot               = 2
 
-   SWEP.Icon = "VGUI/ttt/icon_ninjah_sg550"
+   SWEP.Icon = "VGUI/ttt/icon_tuna_sg550"
 end
 
 
@@ -138,9 +139,4 @@ if CLIENT then
          return self.BaseClass.DrawHUD(self)
       end
    end
-end
-
-if SERVER then
-
-   resource.AddFile("materials/VGUI/ttt/icon_ninjah_sg550.vmt")
 end

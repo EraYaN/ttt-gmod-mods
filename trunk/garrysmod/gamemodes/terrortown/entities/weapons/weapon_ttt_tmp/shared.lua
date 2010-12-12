@@ -1,5 +1,6 @@
 if SERVER then
    AddCSLuaFile( "shared.lua" )
+   resource.AddFile("materials/VGUI/ttt/icon_tuna_tmp.vmt")
 end
 
 SWEP.HoldType = "ar2"
@@ -9,7 +10,7 @@ if CLIENT then
    SWEP.PrintName = "Steyr TMP"			
    SWEP.Slot = 2
 
-   SWEP.Icon = "VGUI/ttt/icon_ninjah_tmp"
+   SWEP.Icon = "VGUI/ttt/icon_tuna_tmp"
 end
 
 
@@ -41,8 +42,3 @@ SWEP.IronSightsPos 		= Vector (3.963, -3.271, 1.7058)
 SWEP.IronSightsAng 		= Vector (1.5025, 0.6891, 0)
 
 SWEP.DeploySpeed = 3
-
-if SERVER then
-
-   resource.AddFile("materials/VGUI/ttt/icon_ninjah_tmp.vmt")
-end
