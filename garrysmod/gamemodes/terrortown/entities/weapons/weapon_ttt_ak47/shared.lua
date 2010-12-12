@@ -3,6 +3,7 @@
 -- First some standard GMod stuff
 if SERVER then
    AddCSLuaFile( "shared.lua" )
+   resource.AddFile("materials/VGUI/ttt/icon_tuna_ak47.vmt")
 end
 
 if CLIENT then
@@ -11,7 +12,7 @@ if CLIENT then
 
    SWEP.ViewModelFOV  = 72
    SWEP.ViewModelFlip = true
-   SWEP.Icon = "VGUI/ttt/icon_ninjah_ak47"
+   SWEP.Icon = "VGUI/ttt/icon_tuna_ak47"
 end
 
 -- Always derive from weapon_tttbase.
@@ -51,9 +52,3 @@ SWEP.AllowDrop = true
 SWEP.IsSilent = false
 
 SWEP.NoSights = false
-
-if SERVER then
-
-   resource.AddFile("materials/VGUI/ttt/icon_ninjah_ak47.vmt")
-end
-
