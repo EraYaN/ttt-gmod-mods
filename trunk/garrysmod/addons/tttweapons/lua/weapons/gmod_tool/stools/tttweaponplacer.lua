@@ -134,7 +134,7 @@ function TOOL:SpawnEntity(cls, trace)
 
    ent:PhysWake()
 
-   undo.Create("TTTWeapon")
+   undo.Create("TTT Weapon" .. ent:GetClass())
    undo.AddEntity(ent)
    undo.SetPlayer(self:GetOwner())
    undo.Finish()
@@ -338,7 +338,8 @@ if SERVER or CLIENT then
 
    local function SpawnDummyEnt(cls, pos, ang)
       if not cls or not pos or not ang then return false end
-
+	
+		Msg(cls.." <-- test cls\n"..mdl.." <-- test mdl\n")
       local mdl = mdls[cls]
       if not mdl then return end
 
@@ -397,7 +398,7 @@ if SERVER or CLIENT then
 
                   local angraw = string.Explode(" ", data[3])
                   ang = Angle(tonumber(angraw[1]), tonumber(angraw[2]), tonumber(angraw[3]))
-
+					Msg(cls.." <-- test cls\n".. pos.x .. ", " .. pos.y .. ", " .. pos.z .." <-- test pos\n")
                   fail = SpawnDummyEnt(cls, pos, ang)
                end
             end
