@@ -339,8 +339,9 @@ if SERVER or CLIENT then
    local function SpawnDummyEnt(cls, pos, ang)
       if not cls or not pos or not ang then return false end
 	
-		Msg(cls.." <-- test cls\n"..mdl.." <-- test mdl\n")
+		
       local mdl = mdls[cls]
+	  Msg("Inside F "..cls.." <-- test cls; "..mdl.." <-- test mdl\n")
       if not mdl then return end
 
       local ent = ents.Create(cls)
@@ -398,7 +399,7 @@ if SERVER or CLIENT then
 
                   local angraw = string.Explode(" ", data[3])
                   ang = Angle(tonumber(angraw[1]), tonumber(angraw[2]), tonumber(angraw[3]))
-					Msg(cls.." <-- test cls\n".. pos.x .. ", " .. pos.y .. ", " .. pos.z .." <-- test pos\n")
+					Msg("Outside F "..cls.." <-- test cls; ".. pos.x .. ", " .. pos.y .. ", " .. pos.z .." <-- test pos\n")
                   fail = SpawnDummyEnt(cls, pos, ang)
                end
             end
