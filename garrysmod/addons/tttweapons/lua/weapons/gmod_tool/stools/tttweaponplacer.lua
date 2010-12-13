@@ -336,7 +336,7 @@ if SERVER or CLIENT then
    end
    concommand.Add("tttweaponplacer_export", Export)
 
-   local function SpawnDummyEnt(cls, pos, ang)
+   function SpawnDummyEnt(cls, pos, ang)
       if not cls or not pos or not ang then return false end
 	
 		
@@ -355,9 +355,10 @@ if SERVER or CLIENT then
       
       ent:Spawn()
    end
-
-
-   local function Import(ply, cmd, args)
+   
+   
+   function Import(ply, cmd, args)
+   
       if not IsValid(ply) then return end
       local map = string.lower(game.GetMap())
       if not map then return end
@@ -413,6 +414,7 @@ if SERVER or CLIENT then
       end
 
       ply:ChatPrint("Spawned " .. num .. " dummy ents")
+	  
    end
    concommand.Add("tttweaponplacer_import", Import)
 
