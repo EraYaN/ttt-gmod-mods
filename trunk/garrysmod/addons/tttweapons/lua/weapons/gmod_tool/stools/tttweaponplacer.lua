@@ -43,7 +43,7 @@ local weps = {
    weapon_ttt_tmp = {name="Steyr TMP", snd="item_ammo_smg1_ttt"},
    weapon_ttt_sg550 = {name="SIG 550", snd="item_ammo_357_ttt"},
    weapon_ttt_m3 = {name="Benelli M3", snd="item_box_buckshot_ttt"},  
-}
+};
 
 local mdls = {
    weapon_zm_pistol = "models/weapons/w_pist_fiveseven.mdl",
