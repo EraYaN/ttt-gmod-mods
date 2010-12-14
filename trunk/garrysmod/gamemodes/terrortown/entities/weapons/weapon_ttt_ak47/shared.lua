@@ -22,7 +22,7 @@ SWEP.Base				= "weapon_tttbase"
 
 SWEP.HoldType			= "ar2"
 
-SWEP.Primary.Delay       = 0.085
+SWEP.Primary.Delay       = 1.0
 SWEP.Primary.Recoil      = 2.1
 SWEP.Primary.Automatic   = true
 SWEP.Primary.Damage      = 20
