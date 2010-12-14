@@ -35,14 +35,14 @@ local weps = {
    
    ttt_random_weapon = {name="Random weapon", snd=nil},
    ttt_random_ammo = {name="Random ammo", snd=nil},
-   ttt_playerspawn = {name="Player spawn", snd=nil}
+   ttt_playerspawn = {name="Player spawn", snd=nil},
    
    -- our custom stuff
    weapon_ttt_ak47 = {name="AK-47", snd="item_ammo_rifle_ttt"},
    weapon_ttt_famas = {name="FAMAS G1", snd="item_ammo_rifle_ttt"},
    weapon_ttt_tmp = {name="Steyr TMP", snd="item_ammo_smg1_ttt"},
    weapon_ttt_sg550 = {name="SIG 550", snd="item_ammo_357_ttt"},
-   weapon_ttt_m3 = {name="Benelli M3", snd="item_box_buckshot_ttt"},  
+   weapon_ttt_m3 = {name="Benelli M3", snd="item_box_buckshot_ttt"}  
 };
 
 local mdls = {
@@ -71,14 +71,14 @@ local mdls = {
    -- custom rifle ammo
    item_ammo_rifle_ttt = "models/items/boxsrounds.mdl",
 
-   ttt_playerspawn = "models/player.mdl"
+   ttt_playerspawn = "models/player.mdl",
    
    -- our custom stuff
    weapon_ttt_ak47 = "models/weapons/w_rif_ak47.mdl",
    weapon_ttt_m3 = "models/weapons/w_shot_m3super90.mdl",
    weapon_ttt_famas = "models/weapons/w_rif_famas.mdl",
    weapon_ttt_sg550 = "models/weapons/w_snip_sg550.mdl",
-   weapon_ttt_tmp = "models/weapons/w_smg_tmp.mdl",
+   weapon_ttt_tmp = "models/weapons/w_smg_tmp.mdl"
 };
 
 -- special colours for certain ents
@@ -252,7 +252,7 @@ local enttypes = {
    ["weapon_ttt_confgrenade"] = WEAPON_NADE,
    ["ttt_random_weapon"] = WEAPON_RANDOM,
 
-   ["ttt_playerspawn"] = PLAYERSPAWN
+   ["ttt_playerspawn"] = PLAYERSPAWN,
    
    ["weapon_ttt_knife"] = WEAPON_EQUIP1,
    
@@ -261,7 +261,7 @@ local enttypes = {
    ["weapon_ttt_m3"] = WEAPON_HEAVY,
    ["weapon_ttt_tmp"] = WEAPON_HEAVY,
    ["weapon_ttt_famas"] = WEAPON_HEAVY,
-   ["weapon_ttt_sg550"] = WEAPON_HEAVY,
+   ["weapon_ttt_sg550"] = WEAPON_HEAVY
 };
 
 local function PrintCount(ply)
