@@ -30,21 +30,19 @@ local weps = {
    
    weapon_ttt_confgrenade = {name="Discombobulator", snd=nil},
    weapon_ttt_smokegrenade = {name="Smoke nade", snd=nil},
-   weapon_ttt_m16 = {name="Colt M-4A1", snd="item_ammo_rifle_ttt"},
+   weapon_ttt_m16 = {name="M16", snd="item_ammo_pistol_ttt"},
+   weapon_ttt_glock = {name="Glock", snd="item_ammo_pistol_ttt"},
+   
+   ttt_random_weapon = {name="Random weapon", snd=nil},
+   ttt_random_ammo = {name="Random ammo", snd=nil},
+   ttt_playerspawn = {name="Player spawn", snd=nil}
+   
+   -- our custom stuff
    weapon_ttt_ak47 = {name="AK-47", snd="item_ammo_rifle_ttt"},
    weapon_ttt_famas = {name="FAMAS G1", snd="item_ammo_rifle_ttt"},
    weapon_ttt_tmp = {name="Steyr TMP", snd="item_ammo_smg1_ttt"},
    weapon_ttt_sg550 = {name="SIG 550", snd="item_ammo_357_ttt"},
-   weapon_ttt_m3 = {name="Benelli M3", snd="item_box_buckshot_ttt"},   
-   
-	weapon_ttt_knife = {name="Knife", snd=nil},
-
-   ttt_random_weapon = {name="Random weapon", snd=nil},
-   ttt_random_ammo = {name="Random ammo", snd=nil},
-   
-   
-
-   ttt_playerspawn = {name="Player spawn", snd=nil}
+   weapon_ttt_m3 = {name="Benelli M3", snd="item_box_buckshot_ttt"},  
 }
 
 local mdls = {
@@ -58,14 +56,9 @@ local mdls = {
    
    weapon_ttt_confgrenade = "models/weapons/w_eq_fraggrenade.mdl",
    weapon_ttt_smokegrenade = "models/weapons/w_eq_smokegrenade.mdl",
-   weapon_ttt_m16 = "models/weapons/w_rif_m4a1.mdl",
-   weapon_ttt_ak47 = "models/weapons/w_rif_ak47.mdl",
-   weapon_ttt_m3 = "models/weapons/w_shot_m3super90.mdl",
-   weapon_ttt_famas = "models/weapons/w_rif_famas.mdl",
-   weapon_ttt_sg550 = "models/weapons/w_snip_sg550.mdl",
-   weapon_ttt_tmp = "models/weapons/w_smg_tmp.mdl",
    
-   weapon_ttt_knife = "models/weapons/w_knife_t.mdl",
+   weapon_ttt_m16 = "models/weapons/w_rif_m4a1.mdl",
+   weapon_ttt_glock = "models/weapons/w_pist_glock18.mdl",
 
    ttt_random_weapon = "models/weapons/w_shotgun.mdl",
    ttt_random_ammo = "models/Items/battery.mdl",
@@ -75,9 +68,17 @@ local mdls = {
    item_ammo_revolver_ttt = "models/items/357ammo.mdl",
    item_ammo_357_ttt = "models/items/357ammo.mdl",
    item_box_buckshot_ttt = "models/items/boxbuckshot.mdl",
+   -- custom rifle ammo
    item_ammo_rifle_ttt = "models/items/boxsrounds.mdl",
 
    ttt_playerspawn = "models/player.mdl"
+   
+   -- our custom stuff
+   weapon_ttt_ak47 = "models/weapons/w_rif_ak47.mdl",
+   weapon_ttt_m3 = "models/weapons/w_shot_m3super90.mdl",
+   weapon_ttt_famas = "models/weapons/w_rif_famas.mdl",
+   weapon_ttt_sg550 = "models/weapons/w_snip_sg550.mdl",
+   weapon_ttt_tmp = "models/weapons/w_smg_tmp.mdl",
 };
 
 -- special colours for certain ents
@@ -85,6 +86,7 @@ local colors = {
    ttt_random_weapon = Color(255, 255, 0),
    ttt_random_ammo = Color(0, 255, 0),
    item_ammo_revolver_ttt = Color(255, 100, 100),
+   --color for custom rifle
    item_ammo_rifle_ttt = Color(100, 70, 0),
    ttt_playerspawn = Color(0, 255, 0)
 };
@@ -134,7 +136,7 @@ function TOOL:SpawnEntity(cls, trace)
 
    ent:PhysWake()
 
-   undo.Create("TTT Weapon" .. ent:GetClass())
+   undo.Create("TTTWeapon")
    undo.AddEntity(ent)
    undo.SetPlayer(self:GetOwner())
    undo.Finish()
@@ -244,21 +246,22 @@ local enttypes = {
    ["weapon_zm_rifle"] = WEAPON_HEAVY,
    ["weapon_zm_sledge"] = WEAPON_HEAVY,
    ["weapon_ttt_m16"] = WEAPON_HEAVY,
+
+   ["weapon_zm_molotov"] = WEAPON_NADE,
+   ["weapon_ttt_smokegrenade"] = WEAPON_NADE,
+   ["weapon_ttt_confgrenade"] = WEAPON_NADE,
+   ["ttt_random_weapon"] = WEAPON_RANDOM,
+
+   ["ttt_playerspawn"] = PLAYERSPAWN
+   
+   ["weapon_ttt_knife"] = WEAPON_EQUIP1,
+   
+   -- our custom stuff
    ["weapon_ttt_ak47"] = WEAPON_HEAVY,
    ["weapon_ttt_m3"] = WEAPON_HEAVY,
    ["weapon_ttt_tmp"] = WEAPON_HEAVY,
    ["weapon_ttt_famas"] = WEAPON_HEAVY,
    ["weapon_ttt_sg550"] = WEAPON_HEAVY,
-
-   ["weapon_zm_molotov"] = WEAPON_NADE,
-   ["weapon_ttt_smokegrenade"] = WEAPON_NADE,
-   ["weapon_ttt_confgrenade"] = WEAPON_NADE,
-   
-   ["weapon_ttt_knife"] = WEAPON_EQUIP1,
-
-   ["ttt_random_weapon"] = WEAPON_RANDOM,
-
-   ["ttt_playerspawn"] = PLAYERSPAWN
 };
 
 local function PrintCount(ply)
@@ -336,12 +339,10 @@ if SERVER or CLIENT then
    end
    concommand.Add("tttweaponplacer_export", Export)
 
-   function SpawnDummyEnt(cls, pos, ang)
+   local function SpawnDummyEnt(cls, pos, ang)
       if not cls or not pos or not ang then return false end
-	
-		
+
       local mdl = mdls[cls]
-	  Msg("Inside F "..cls.." <-- test cls; "..mdl.." <-- test mdl\n")
       if not mdl then return end
 
       local ent = ents.Create(cls)
@@ -354,11 +355,15 @@ if SERVER or CLIENT then
       ent:PhysicsInit(SOLID_VPHYSICS)
       
       ent:Spawn()
+
+      local phys = ent:GetPhysicsObject()
+      if IsValid(phys) then
+         phys:SetAngle(ang)
+      end
    end
-   
-   
-   function Import(ply, cmd, args)
-   
+
+
+   local function Import(ply, cmd, args)
       if not IsValid(ply) then return end
       local map = string.lower(game.GetMap())
       if not map then return end
@@ -400,7 +405,7 @@ if SERVER or CLIENT then
 
                   local angraw = string.Explode(" ", data[3])
                   ang = Angle(tonumber(angraw[1]), tonumber(angraw[2]), tonumber(angraw[3]))
-					Msg("Outside F "..cls.." <-- test cls; ".. pos.x .. ", " .. pos.y .. ", " .. pos.z .." <-- test pos\n")
+
                   fail = SpawnDummyEnt(cls, pos, ang)
                end
             end
@@ -414,7 +419,6 @@ if SERVER or CLIENT then
       end
 
       ply:ChatPrint("Spawned " .. num .. " dummy ents")
-	  
    end
    concommand.Add("tttweaponplacer_import", Import)
 
