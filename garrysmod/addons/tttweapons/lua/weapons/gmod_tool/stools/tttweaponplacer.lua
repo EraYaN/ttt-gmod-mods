@@ -30,7 +30,7 @@ local weps = {
    
    weapon_ttt_confgrenade = {name="Discombobulator", snd=nil},
    weapon_ttt_smokegrenade = {name="Smoke nade", snd=nil},
-   weapon_ttt_m16 = {name="M16", snd="item_ammo_pistol_ttt"},
+   weapon_ttt_m16 = {name="Colt M-4A1", snd="item_ammo_rifle_ttt"},
    weapon_ttt_glock = {name="Glock", snd="item_ammo_pistol_ttt"},
    
    ttt_random_weapon = {name="Random weapon", snd=nil},
