@@ -3,6 +3,7 @@ rearm all maps except:
 - zm_roy_the_ship
 - clue
 - dm_island17
+- de_westwood
 
 EraYaN:
 Fix FOV on trowaway/reload (AWM)

@@ -1,5 +1,6 @@
----- Basic override of the standard pickup history, because I want to override
----- the look of it
+
+local GetTranslation = LANG.GetTranslation
+local GetPTranslation = LANG.GetParamTranslation
 
 GM.PickupHistory = {}
 GM.PickupHistoryLast = 0
@@ -17,7 +18,7 @@ function GM:HUDWeaponPickedUp( wep )
    local client = LocalPlayer()
    if (not IsValid(client)) or (not client:Alive()) then return end
 
-   local name = wep.GetPrintName and wep:GetPrintName() or "MASSIVE PHASER ARRAY"
+   local name = LANG.TryTranslation(wep.GetPrintName and wep:GetPrintName() or "MASSIVE PHASER ARRAY")
 
    local pickup = {}
    pickup.time      = CurTime()
@@ -52,7 +53,9 @@ function GM:HUDItemPickedUp( itemname )
 
    local pickup = {}
    pickup.time      = CurTime()
-   pickup.name      = "#"..itemname;
+   -- as far as I'm aware TTT does not use any "items", so better leave this to
+   -- source's localisation
+   pickup.name      = "#"..itemname
    pickup.holdtime  = 5
    pickup.font      = "DefaultBold"
    pickup.fadein    = 0.04
@@ -78,9 +81,11 @@ end
 function GM:HUDAmmoPickedUp( itemname, amount )
    if (not IsValid(LocalPlayer())) or (not LocalPlayer():Alive()) then return end
 
+   local itemname_trans = GetTranslation(string.lower("ammo_" .. itemname))
+
    if self.PickupHistory then
 
-      local localized_name = string.upper(Localize("#"..itemname.."_ammo"))
+      local localized_name = string.upper(itemname_trans)
       for k, v in pairs( self.PickupHistory ) do
          if v.name == localized_name then
 
@@ -93,34 +98,13 @@ function GM:HUDAmmoPickedUp( itemname, amount )
 
    local pickup = {}
    pickup.time      = CurTime()
-   pickup.name      = "#"..itemname.."_ammo";
+   pickup.name      = string.upper(itemname_trans)
    pickup.holdtime  = 5
    pickup.font      = "DefaultBold"
    pickup.fadein    = 0.04
    pickup.fadeout   = 0.3
    pickup.color     = Color(205, 155, 0, 255)
    pickup.amount    = tostring(amount)
-
-   -- Manually convert itemname to perferred ammo name
-   if itemname == "Pistol" then
-      pickup.name = "PISTOL AMMO"
-   elseif itemname == "SMG1" then
-      pickup.name = "SMG AMMO"
-   elseif itemname == "Buckshot" then
-      pickup.name = "SHOTGUN AMMO"
-   elseif itemname == "CombineCannon" then
-	  pickup.name = "RIFLE AMMO"
-   elseif itemname == "357" then
-      pickup.name = "SNIPER RIFLE AMMO"
-   elseif itemname == "AlyxGun" then
-      pickup.name = "DEAGLE AMMO"
-   elseif itemname == "AR2AltFire" then
-      pickup.name = "FLARE AMMO"
-   elseif itemname == "Gravity" then
-      pickup.name = "POLTERGEIST AMMO"
-   elseif itemname == "slam" then
-      pickup.name = "BEACONS"
-   end
 
    surface.SetFont( pickup.font )
    local w, h = surface.GetTextSize( pickup.name )
