@@ -121,6 +121,11 @@ function SWEP:Holster()
     self:SetZoom(false, true)
     return true
 end
+function SWEP:OnRestore()
+   self.NextSecondaryAttack = 0
+   self:SetIronsights( false )
+   self:SetZoom(false, true)
+end
 
 if CLIENT then
    local scope = surface.GetTextureID("sprites/scope")
