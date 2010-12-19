@@ -1,7 +1,7 @@
-# Trouble in Terrorist Town weapon/ammo placement overrides
+﻿# Trouble in Terrorist Town weapon/ammo placement overrides
 # For map: dm_island17
 # Exported by: «[N-G]» EraYaN
-setting:	replacespawns 1
+setting:	replacespawns 0
 weapon_zm_pistol	-1796.8125 1011.0313 -239.6250	0.527 132.951 89.264
 weapon_zm_pistol	-2332.6875 1631.5000 -479.9375	-3.868 -41.358 -97.746
 weapon_zm_pistol	-2354.1182 -326.8854 -424.5862	-18.541 42.193 105.178
