@@ -53,7 +53,7 @@ SWEP.IsCharging = false
 SWEP.NextCharge = 0
 
 local CHARGE_AMOUNT = 0.02
-local CHARGE_DELAY = 0.025
+local CHARGE_DELAY = 0.01
 
 local math = math
 
