@@ -492,7 +492,7 @@ L.dna_killer      = "Collected a sample of the killer's DNA from the corpse!"
 L.dna_no_killer   = "The DNA could not be retrieved (killer disconnected?)."
 L.dna_armed       = "This bomb is live! Disarm it first!"
 L.dna_object      = "Collected {num} new DNA sample(s) from the object."
-L.dna_gone        = "DNA not detected in area. (Player disconnected?)"
+L.dna_gone        = "DNA not detected in area."
 
 L.dna_desc        = [[
 Collect DNA samples from things
@@ -1052,3 +1052,17 @@ L.aw_tod1_text  = "died only seconds before his team won the round."
 
 L.aw_tod2_title = "I Hate This Game"
 L.aw_tod2_text  = "died right after the start of the round."
+
+--- New and modified pieces of text are placed below this point, marked with the
+--- version in which they were added, to make updating translations easier.
+
+
+--- v23
+L.set_splash = "Disable splash screen shown after joining a server"
+
+L.set_avoid_det     = "Avoid being selected as Detective"
+L.set_avoid_det_tip = "Enable this to ask the server not to select you as Detective if possible. Does not mean you are Traitor more often."
+
+--- v24
+L.drop_no_ammo = "Insufficient ammo in your weapon's clip to drop as an ammo box."
+

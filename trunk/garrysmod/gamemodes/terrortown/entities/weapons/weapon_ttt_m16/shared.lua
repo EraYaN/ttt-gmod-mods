@@ -11,7 +11,7 @@ SWEP.HoldType			= "ar2"
 if CLIENT then
 
    SWEP.PrintName			= "Colt M-4A1"			
-   SWEP.Author				= "TTT"
+   SWEP.Author				= "EraYaN"
    SWEP.Slot				= 2
 
    SWEP.Icon = "VGUI/ttt/icon_m16"

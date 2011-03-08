@@ -26,7 +26,7 @@ SWEP.ViewModel          = "models/weapons/v_knife_t.mdl"
 SWEP.WorldModel         = "models/weapons/w_knife_t.mdl"
 
 SWEP.DrawCrosshair      = false
-SWEP.Primary.Damage         = 100
+SWEP.Primary.Damage         = 1337
 SWEP.Primary.ClipSize       = -1
 SWEP.Primary.DefaultClip    = -1
 SWEP.Primary.Automatic      = true
@@ -105,7 +105,7 @@ function SWEP:PrimaryAttack()
             dmg:SetDamage(self.Primary.Damage)
             dmg:SetAttacker(self.Owner)
             dmg:SetInflictor(self.Weapon or self)
-            dmg:SetDamageForce(self.Owner:GetAimVector() * 100)
+            dmg:SetDamageForce(self.Owner:GetAimVector() * 5)
             dmg:SetDamagePosition(self.Owner:GetPos())
             dmg:SetDamageType(DMG_SLASH)
 
@@ -121,10 +121,10 @@ function SWEP:StabKill(tr, spos, sdest)
    local target = tr.Entity
 
    local dmg = DamageInfo()
-   dmg:SetDamage(2000)
+   dmg:SetDamage(13337)
    dmg:SetAttacker(self.Owner)
    dmg:SetInflictor(self.Weapon or self)
-   dmg:SetDamageForce(self.Owner:GetAimVector() * 1500)
+   dmg:SetDamageForce(self.Owner:GetAimVector())
    dmg:SetDamagePosition(self.Owner:GetPos())
    dmg:SetDamageType(DMG_SLASH)
 
