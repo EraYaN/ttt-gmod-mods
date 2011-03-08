@@ -1,33 +1,12 @@
 ---- Health dispenser
 
 if SERVER then AddCSLuaFile("shared.lua") end
---[[function ENT:MessageTraitorHook()
-     Msg("Round started")
-	 self.Entity:SetColor(180, 180, 255, 255)
-	if LocalPlayer():IsTraitor() or LocalPlayer():IsTraitor() == nil then
-		self.TargetIDHint = {name="DEATH Station",
-			hint= "Do not press " .. Key("+use", "USE") .. " to receive death. Charge: %d.",
-			fmt=function(ent, str)
-				 return Format(str, IsValid(self) and self:GetStoredHealth() or 0)
-			  end
-		}
-		self.Entity:SetColor(255,180,180,255)
-	else
-		self.TargetIDHint = {name="Health Station",
-			hint= "Press " .. Key("+use", "USE") .. " to receive health. Charge: %d.",
-			fmt=function(self, str)
-				return Format(str, IsValid(self) and self:GetStoredHealth() or 0)
-			end
-		}
-		self.Entity:SetColor(180, 180, 255, 255)
-	end
-  end]]--
-  --hook.Add("TTTBeginRound", "EraYaNExploStationMessageTraitorHook", ENT:MessageTraitorHook())
-  --ttt_role.Hook("ttt_role", ENT:MessageTraitorHook())
+
 if CLIENT then
    -- this entity can be DNA-sampled so we need some display info
    ENT.Icon = "VGUI/ttt/icon_health"
    ENT.PrintName = "Death Station"
+   local GetPTranslation = LANG.GetParamTranslation
 ENT.TargetIDHint = {name="Health Station",
 			hint= "Press " .. Key("+use", "USE") .. " to receive health. Charge: %d.",
 			fmt=function(ent, str)
@@ -44,7 +23,7 @@ ENT.Type = "anim"
 ENT.Model = Model("models/props/cs_office/microwave.mdl")
 
 
-ENT.CanUseKey = true
+--ENT.CanUseKey = true
 ENT.CanHavePrints = true
 ENT.MaxHeal = 50
 ENT.MaxStored = 200
@@ -52,6 +31,8 @@ ENT.RechargeRate = 5
 ENT.RechargeFreq = 3 -- in seconds
 
 AccessorFuncDT(ENT, "StoredHealth", "StoredHealth")
+
+AccessorFunc(ENT, "Placer", "Placer")
 
 function ENT:SetupDataTables()
    self:DTVar("Int", 0, "StoredHealth")
@@ -71,14 +52,21 @@ function ENT:Initialize()
 			phys:SetMass(200)
 		end
 	end
-	self.Entity:SetHealth(50)
+	self:SetHealth(50)
 
 	self.Entity:SetColor(180, 180, 255, 255)
 
-	self:SetStoredHealth(200)
 	if CLIENT then
 	self:CheckTraitor()
-	end
+	end	   
+
+	self:SetColor(180, 180, 255, 255)
+
+	self:SetStoredHealth(200)
+
+	self:SetPlacer(nil)
+
+	self.NextHeal = 0
 
 	self.fingerprints = {}
 end
@@ -192,10 +180,11 @@ function ENT:OnTakeDamage(dmginfo)
 	  ]]--
       --WorldSound(zapsound, self:GetPos())
 
-      if IsValid(self:GetOwner()) then
-		
-         TraitorMsg(self:GetOwner(), "YOUR DEATH STATION HAS BEEN DESTROYED!")
-      end
+       util.EquipmentDestroyed(self:GetPos())
+
+      if IsValid(self:GetPlacer()) then
+         LANG.Msg(self:GetPlacer(), "YOUR DEATH STATION HAS BEEN DESTROYED!")
+      end	  
 	  
    end
 end

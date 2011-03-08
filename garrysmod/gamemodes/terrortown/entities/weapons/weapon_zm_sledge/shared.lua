@@ -9,7 +9,7 @@ SWEP.HoldType			= "crossbow"
 if CLIENT then
 
    SWEP.PrintName			= "FN M-249 SAW"
-   SWEP.Author				= "TTT"
+   SWEP.Author				= "EraYaN"
    SWEP.Slot				= 2
    SWEP.SlotPos			= 0
 
@@ -30,7 +30,7 @@ SWEP.WeaponID = AMMO_M249
 
 SWEP.Primary.Damage = 11
 SWEP.Primary.Delay = 0.055
-SWEP.Primary.Cone = 0.1 -- 0.067
+SWEP.Primary.Cone = 0.09
 SWEP.Primary.ClipSize = 150
 SWEP.Primary.ClipMax = 150
 SWEP.Primary.DefaultClip	= 150

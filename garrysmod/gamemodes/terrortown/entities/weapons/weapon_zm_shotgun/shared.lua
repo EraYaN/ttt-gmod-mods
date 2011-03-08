@@ -7,10 +7,9 @@ SWEP.HoldType			= "shotgun"
 
 if CLIENT then
    SWEP.PrintName			= "Benelli M4"			
-   SWEP.Author				= "TTT"
+   SWEP.Author				= "EraYaN"
    SWEP.Slot				= 2
-   SWEP.SlotPos			= 1
-
+ 
    SWEP.Icon = "VGUI/ttt/icon_shotgun"
 end
 
@@ -136,7 +135,7 @@ function SWEP:CanPrimaryAttack()
 end
 
 function SWEP:Think()
-   if self.dt.reloading then
+   if self.dt.reloading and IsFirstTimePredicted() then
       
       if self.Owner:KeyDown(IN_ATTACK) and self.Owner:GetAmmoCount(self.Primary.Ammo) > 0 then
          self:FinishReload()
@@ -174,7 +173,7 @@ function SWEP:GetHeadshotMultiplier(victim, dmginfo)
    local dist = victim:GetPos():Distance(att:GetPos())
    local d = math.max(0, dist - 140)
    
-   -- decay from 3.1 to 1 slowly as distance increases
-   return 1 + math.max(0, (2.1 - 0.002 * (d ^ 1.25)))
+   -- decay from 3.5 to 1 slowly as distance increases
+   return 1 + math.max(0, (2.5 - 0.002 * (d ^ 1.25)))
 end
 
