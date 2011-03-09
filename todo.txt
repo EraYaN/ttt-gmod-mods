@@ -3,7 +3,5 @@ REARM THESE MAPS:
 -	ttt_amsterville_final2
 -	ttt_c17ruins
 -	ttt_camel_v1
--	ttt_canyon_a4
--	ttt_cluedo_b5
 
 (rearming means adding glocks and our custom shiz to most of these)
