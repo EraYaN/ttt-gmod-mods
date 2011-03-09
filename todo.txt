@@ -1,14 +1,9 @@
-rearm all maps except:
-- cs_desperados
-- zm_roy_the_ship
-- clue
-- dm_island17
-- de_westwood
+REARM THESE MAPS:
 
-EraYaN:
-Fix FOV on trowaway/reload (AWM)
-Rearm Island
+-	ttt_amsterville_final2
+-	ttt_c17ruins
+-	ttt_camel_v1
+-	ttt_canyon_a4
+-	ttt_cluedo_b5
 
-NinjaTuna:
-Rearms?
-
+(rearming means adding glocks and our custom shiz to most of these)
