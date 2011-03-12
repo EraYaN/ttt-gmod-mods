@@ -33,9 +33,9 @@ SWEP.Primary.Automatic = true
 SWEP.Primary.Ammo = "None";
 SWEP.Primary.Damage = 125
 SWEP.Primary.Cone = 0.0001
-SWEP.Primary.ClipSize = 3
-SWEP.Primary.ClipMax = 3 -- keep mirrored to ammo
-SWEP.Primary.DefaultClip = 3
+SWEP.Primary.ClipSize = 1
+SWEP.Primary.ClipMax = 1 -- keep mirrored to ammo
+SWEP.Primary.DefaultClip = 1
 
 SWEP.Kind = WEAPON_EQUIP2
 SWEP.CanBuy = {ROLE_TRAITOR} -- only traitors can buy
