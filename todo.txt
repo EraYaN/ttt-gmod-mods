@@ -1,7 +1,33 @@
 REARM THESE MAPS:
 
 -	ttt_amsterville_final2
--	ttt_c17ruins
--	ttt_camel_v1
 
 (rearming means adding glocks and our custom shiz to most of these)
+
+WEAPONS:
+
+Rifles:
+AN-94 Akaban
+http://www.garrysmod.org/downloads/?a=view&id=102520
+F2000
+http://toybox.garrysmod.com/ingame/?view=12635&tab=content
+
+Sniper rifles:
+VSS Vintorez
+http://www.garrysmod.org/downloads/?a=view&id=70164
+Barrett .50 cal
+http://www.garrysmod.org/downloads/?a=view&id=65321
+
+Shotguns:
+SPAS-12
+http://toybox.garrysmod.com/ingame/?view=2686&tab=content
+Remington 870
+<Kermite>
+
+SMGs:
+UZI
+http://www.garrysmod.org/downloads/?a=view&id=80834
+XM-8 Compact
+<Kermite>
+
+Western weapons from mad cow?
