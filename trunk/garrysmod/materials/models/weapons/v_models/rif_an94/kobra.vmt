@@ -1,0 +1,11 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\weapons\v_models\rif_an94\kobra"
+	"$envmap" "env_cubemap"
+      	"$envmapmask" "models\weapons\v_models\rif_an94\kobra_ref"
+	"$bumpmap" "models\weapons\v_models\rif_an94\kobra_normal"
+	"$phong" "1"
+                "$phongexponent" "50"
+                "$phongboost"	"50"
+                "$phongfresnelranges"	"[.2 4 1]"
+}

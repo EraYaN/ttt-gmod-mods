@@ -7,7 +7,7 @@ REARM THESE MAPS:
 WEAPONS:
 
 Rifles:
-AN-94 Akaban
+AN-94 Abakan ###########DONE
 http://www.garrysmod.org/downloads/?a=view&id=102520
 F2000
 http://toybox.garrysmod.com/ingame/?view=12635&tab=content

@@ -1,3 +1,4 @@
+Ports to gmod/ttt and/or hexing:
 Steyr TMP		- NinjaTuna
 Benelli M3		- NinjaTuna
 SIG 550 		- NinjaTuna
@@ -6,7 +7,21 @@ FAMAS F1		- EraYaN
 Death Station	- EraYaN
 AWM 			- EraYaN
 Ammo			- NinjaTuna
-Rearms		- EraYaN & NinjaTune & Others
+Rearms		- EraYaN & NinjaTuna & Others
 Setup			- EraYaN
+AN-94			- NinjaTuna
 
 Cooperation 	- NinjaTuna & EraYaN
+
+##############################################
+AN-94
+Key Authors
+
+    * Junkie_Bastard[RuS] - Animations\Compile
+
+Original Authors
+
+    * twinke masta\TheLama\Malignant - Model
+    * Millenia\Pete\Rosa Jonas - Textures
+http://www.gamebanana.com/skins/99262
+##############################################
