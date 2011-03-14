@@ -60,7 +60,11 @@ function SWEP:SetZoom(state, reset)
     if CLIENT then 
        return
     else
-       if self.Owner:GetFOV() == 25 then 
+       if reset then
+		self.Owner:SetFOV(0, 0.2)
+			  return 0;
+	   end	   
+		if self.Owner:GetFOV() == 25 then 
 		self.Owner:SetFOV(10, 0.2)
 		return 10;
 		else
@@ -71,12 +75,7 @@ function SWEP:SetZoom(state, reset)
 			  self.Owner:SetFOV(0, 0.2)
 			  return 0;
 		   end
-	   end
-	   if reset then
-		self.Owner:SetFOV(0, 0.2)
-			  return 0;
-	   end
-    end
+	   end	   
 end
 
 -- Add some zoom to ironsights for this gun
@@ -121,6 +120,7 @@ function SWEP:Holster()
     self:SetZoom(false, true)
     return true
 end
+
 function SWEP:OnRestore()
    self.NextSecondaryAttack = 0
    self:SetIronsights( false )
