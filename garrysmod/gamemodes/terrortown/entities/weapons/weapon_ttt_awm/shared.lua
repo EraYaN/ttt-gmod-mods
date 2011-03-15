@@ -18,7 +18,7 @@ if CLIENT then
       name="Artic Warfare Magnum",
       desc="The Artic Warfare Magnum\n (AWM) is a powerful sniper rifle.\n One shot is almost deadly,\n but it's extremely loud. And you need a good aim. You get two chances tho."
    };
-end
+ end
 
 
 SWEP.Base               = "weapon_tttbase"
@@ -62,7 +62,7 @@ function SWEP:SetZoom(state, reset)
     else
        if reset then
 		self.Owner:SetFOV(0, 0.2)
-			  return 0;
+		return 0;
 	   end	   
 		if self.Owner:GetFOV() == 25 then 
 		self.Owner:SetFOV(10, 0.2)
