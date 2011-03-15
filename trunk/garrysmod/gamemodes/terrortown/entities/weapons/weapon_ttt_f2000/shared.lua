@@ -5,8 +5,10 @@ if SERVER then
    AddCSLuaFile( "shared.lua" )
    resource.AddFile("materials/VGUI/ttt/icon_tuna_f2000.vmt")
    resource.AddFile("materials/models/weapons/v_models/stalker_fn2000/wpn_fn2000.vmt")
+   resource.AddFile("materials/models/weapons/w_models/w_rif_f2000/wpn_fn2000.vmt")
    resource.AddFile("materials/sprites/scope_reddot.vmt")
    resource.AddFile("models/weapons/v_rif_f2k.mdl")
+   resource.AddFile("models/weapons/w_rif_f2000.mdl")
    resource.AddFile("sound/weapons/F2000/f2000_boltback.wav")
    resource.AddFile("sound/weapons/F2000/f2000_boltforward.wav")
    resource.AddFile("sound/weapons/F2000/f2000_fire.wav")
@@ -45,7 +47,7 @@ SWEP.IronSightsPos = Vector (3.5236, -15.1832, 1.6849)
 SWEP.IronSightsAng = Vector (0, 0, 0)
 
 SWEP.ViewModel  = "models/weapons/v_rif_f2k.mdl"
-SWEP.WorldModel = "models/weapons/w_rif_f2k.mdl"
+SWEP.WorldModel = "models/weapons/w_rif_f2000.mdl"
 
 
 SWEP.Kind = WEAPON_HEAVY
