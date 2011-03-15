@@ -16,6 +16,7 @@ if SERVER then
    resource.AddFile("sound/weapons/an94/an94_Clipin.wav")
    resource.AddFile("sound/weapons/an94/an94_Clipout.wav")
    resource.AddFile("sound/weapons/an94/an94-1.wav")
+
 end
 
 SWEP.HoldType			= "ar2"
@@ -49,7 +50,7 @@ SWEP.Primary.DefaultClip = 30
 SWEP.AutoSpawnable      = true
 SWEP.AmmoEnt = "item_ammo_rifle_ttt"
 SWEP.ViewModel			= "models/weapons/v_rif_an-94.mdl"
-SWEP.WorldModel			= "models/weapons/w_rif_an-94.mdl"
+SWEP.WorldModel			= "models/weapons/w_rif_an94.mdl"
 
 SWEP.Primary.Sound = Sound( "Weapon_galil.Single" )
 
