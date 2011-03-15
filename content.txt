@@ -1,6 +1,7 @@
 Guns:
 AK-47 Automatic Rifle
-An-94 Automatic Rifle
+AN-94 Automatic Rifle
+F2000 Automatic Rifle
 Benelli M3 Pump action shotgun
 FAMAS G1 Automatic Rifle
 SIG 550 Autosniper
