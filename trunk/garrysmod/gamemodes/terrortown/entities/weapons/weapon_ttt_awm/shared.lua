@@ -41,7 +41,7 @@ SWEP.Kind = WEAPON_EQUIP2
 SWEP.CanBuy = {ROLE_TRAITOR} -- only traitors can buy
 SWEP.LimitedStock = true -- only buyable once
 
-SWEP.HeadshotMultiplier = 4
+SWEP.HeadshotMultiplier = 6
 
 SWEP.AutoSpawnable      = false
 SWEP.AmmoEnt = "item_ammo_awm_ttt"
@@ -100,7 +100,7 @@ function SWEP:SecondaryAttack()
         self:EmitSound(self.Secondary.Sound)
     end
     
-    self.Weapon:SetNextSecondaryFire( CurTime() + 0.3)
+    self.Weapon:SetNextSecondaryFire( CurTime() + 0.15)
 end
 
 function SWEP:PreDrop()
