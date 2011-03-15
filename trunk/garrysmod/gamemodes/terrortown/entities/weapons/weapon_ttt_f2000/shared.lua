@@ -3,7 +3,9 @@
 -- First some standard GMod stuff
 if SERVER then
    AddCSLuaFile( "shared.lua" )
-   resource.AddFile("materials/VGUI/ttt/icon_tuna_f2000.vmt")
+   resource.AddFile("materials\VGUI\ttt\icon_tuna_f2000.vmt")
+   resource.AddFile("materials\models\weapons\v_models\stalker_fn2000\wpn_fn2000.vmt")
+   resource.AddFile("models\weapons\v_rif_f2k.mdl")
 end
 
 if CLIENT then

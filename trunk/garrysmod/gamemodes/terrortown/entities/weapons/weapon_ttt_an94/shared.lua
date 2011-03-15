@@ -1,9 +1,8 @@
 
 
 if SERVER then
-
    AddCSLuaFile( "shared.lua" )
-   resource.AddFile("materials/VGUI/ttt/icon_tuna_ak47.vmt")
+   resource.AddFile("materials\VGUI\ttt\icon_tuna_an94.vmt")
    resource.AddFile("materials\models\weapons\v_models\rif_an94\frame.vmt")
    resource.AddFile("materials\models\weapons\v_models\rif_an94\gp30.vmt")
    resource.AddFile("materials\models\weapons\v_models\rif_an94\kobra.vmt")
@@ -11,6 +10,8 @@ if SERVER then
    resource.AddFile("materials\models\weapons\v_models\rif_an94\mag.vmt")
    resource.AddFile("materials\models\weapons\v_models\rif_an94\mount.vmt")
    resource.AddFile("materials\models\weapons\v_models\rif_an94\vog25p.vmt")
+   resource.AddFile("models\weapons\v_rif_an-94.mdl")
+   resource.AddFile("models\weapons\w_rif_an-94.mdl")
 end
 
 SWEP.HoldType			= "ar2"
@@ -22,7 +23,7 @@ if CLIENT then
    SWEP.Author				= "NinjaTuna"
    SWEP.Slot				= 2
 
-   SWEP.Icon = "VGUI/ttt/icon_tuna_ak47"
+   SWEP.Icon = "VGUI/ttt/icon_tuna_an94"
 end
 
 
