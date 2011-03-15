@@ -16,7 +16,7 @@ if CLIENT then
       type="Sniper Weapon",
       model="models/weapons/w_snip_awp.mdl",
       name="Artic Warfare Magnum",
-      desc="The Artic Warfare Magnum\n (AWM) is a powerful sniper rifle.\n One shot is deadly,\n but it's extremely loud."
+      desc="The Artic Warfare Magnum\n (AWM) is a powerful sniper rifle.\n One shot is almost deadly,\n but it's extremely loud. And you need a good aim. You get two chances tho."
    };
 end
 
@@ -31,11 +31,11 @@ SWEP.Primary.Delay          = 2
 SWEP.Primary.Recoil         = 5
 SWEP.Primary.Automatic = true
 SWEP.Primary.Ammo = "None";
-SWEP.Primary.Damage = 125
+SWEP.Primary.Damage = 105
 SWEP.Primary.Cone = 0.0001
-SWEP.Primary.ClipSize = 1
-SWEP.Primary.ClipMax = 1 -- keep mirrored to ammo
-SWEP.Primary.DefaultClip = 1
+SWEP.Primary.ClipSize = 2
+SWEP.Primary.ClipMax = 2 -- keep mirrored to ammo
+SWEP.Primary.DefaultClip = 2
 
 SWEP.Kind = WEAPON_EQUIP2
 SWEP.CanBuy = {ROLE_TRAITOR} -- only traitors can buy
