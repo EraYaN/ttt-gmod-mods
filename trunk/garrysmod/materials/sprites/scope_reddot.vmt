@@ -1,12 +1,10 @@
 "UnlitGeneric"
 {
-	"$baseTexture" "scope\scope_reddot"
+	"$baseTexture" "sprites\scope_reddot"
 	"$translucent" 1
 	"$alpha" 1
 	"$vertexalpha" "1"
 	"$ignorez"     "1"
-	"$no_fullbright" "1"
-	
-	
+	"$no_fullbright" "1"	
 }
 
