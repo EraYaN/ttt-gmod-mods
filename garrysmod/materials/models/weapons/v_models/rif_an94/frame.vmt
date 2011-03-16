@@ -2,7 +2,7 @@
 {
 	"$baseTexture" "models\weapons\v_models\rif_an94\frame"
 	"$envmap" "env_cubemap"
-      	"$envmapmask" "models\weapons\v_models\rif_an94\frame_ref"
+      	"$normalmapalphaenvmapmask" "1"
 	"$bumpmap" "models\weapons\v_models\rif_an94\frame_normal"
 	"$phong" "1"
                 "$phongexponent" "50"
