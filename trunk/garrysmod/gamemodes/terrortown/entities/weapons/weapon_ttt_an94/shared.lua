@@ -3,21 +3,21 @@
 if SERVER then
    AddCSLuaFile( "shared.lua" )
    resource.AddFile("materials/VGUI/ttt/icon_tuna_an94.vmt")
-   resource.AddFile("materials/models/weapons/v_models/rif_an94/frame.vmt")
-   resource.AddFile("materials/models/weapons/v_models/rif_an94/gp30.vmt")
-   resource.AddFile("materials/models/weapons/v_models/rif_an94/kobra.vmt")
-   resource.AddFile("materials/models/weapons/v_models/rif_an94/lense.vmt")
-   resource.AddFile("materials/models/weapons/v_models/rif_an94/mag.vmt")
-   resource.AddFile("materials/models/weapons/v_models/rif_an94/mount.vmt")
-   resource.AddFile("materials/models/weapons/v_models/rif_an94/vog25p.vmt")
-   resource.AddFile("materials/models/weapons/w_models/rif_an94/frame.vmt")
-   resource.AddFile("materials/models/weapons/w_models/rif_an94/gp30.vmt")
-   resource.AddFile("materials/models/weapons/w_models/rif_an94/kobra.vmt")
-   resource.AddFile("materials/models/weapons/w_models/rif_an94/lense.vmt")
-   resource.AddFile("materials/models/weapons/w_models/rif_an94/mag.vmt")
-   resource.AddFile("materials/models/weapons/w_models/rif_an94/mount.vmt")
-   resource.AddFile("materials/models/weapons/w_models/rif_an94/vog25p.vmt")
-   resource.AddFile("models/weapons/v_rif_an-94.mdl")
+   resource.AddFile("materials/models/weapons/v_models/v_rif_an94/frame.vmt")
+   resource.AddFile("materials/models/weapons/v_models/v_rif_an94/gp30.vmt")
+   resource.AddFile("materials/models/weapons/v_models/v_rif_an94/kobra.vmt")
+   resource.AddFile("materials/models/weapons/v_models/v_rif_an94/lense.vmt")
+   resource.AddFile("materials/models/weapons/v_models/v_rif_an94/mag.vmt")
+   resource.AddFile("materials/models/weapons/v_models/v_rif_an94/mount.vmt")
+   resource.AddFile("materials/models/weapons/v_models/v_rif_an94/vog25p.vmt")
+   resource.AddFile("materials/models/weapons/w_models/w_rif_an94/frame.vmt")
+   resource.AddFile("materials/models/weapons/w_models/w_rif_an94/gp30.vmt")
+   resource.AddFile("materials/models/weapons/w_models/w_rif_an94/kobra.vmt")
+   resource.AddFile("materials/models/weapons/w_models/w_rif_an94/lense.vmt")
+   resource.AddFile("materials/models/weapons/w_models/w_rif_an94/mag.vmt")
+   resource.AddFile("materials/models/weapons/w_models/w_rif_an94/mount.vmt")
+   resource.AddFile("materials/models/weapons/w_models/w_rif_an94/vog25p.vmt")
+   resource.AddFile("models/weapons/v_rif_an94.mdl")
    resource.AddFile("models/weapons/w_rif_an94.mdl")
    resource.AddFile("sound/weapons/an94/an94_boltpull.wav")
    resource.AddFile("sound/weapons/an94/an94_Clipin.wav")
@@ -56,7 +56,7 @@ SWEP.Primary.ClipMax = 60
 SWEP.Primary.DefaultClip = 30
 SWEP.AutoSpawnable      = true
 SWEP.AmmoEnt = "item_ammo_rifle_ttt"
-SWEP.ViewModel			= "models/weapons/v_rif_an-94.mdl"
+SWEP.ViewModel			= "models/weapons/v_rif_an94.mdl"
 SWEP.WorldModel			= "models/weapons/w_rif_an94.mdl"
 
 SWEP.Primary.Sound = Sound( "Weapon_galil.Single" )
