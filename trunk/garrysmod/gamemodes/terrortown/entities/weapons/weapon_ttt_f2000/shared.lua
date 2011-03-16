@@ -42,6 +42,7 @@ SWEP.Primary.ClipSize    = 30
 SWEP.Primary.ClipMax     = 60
 SWEP.Primary.DefaultClip = 30
 SWEP.Primary.Sound       = Sound( "Weapon_AUG.Single" )
+SWEP.HeadshotMultiplier  = 4
 
 SWEP.IronSightsPos = Vector (3.5236, -15.1832, 1.6849)
 SWEP.IronSightsAng = Vector (0, 0, 0)
