@@ -5,7 +5,7 @@
 	"CompatibilityAttenuation"	"1.0"
 	"pitch"		"PITCH_NORM"
 
-	"wave"			"weapons\f2000\f2000_boltback.wav"
+	"wave"			"weapons/f2000/f2000_boltback.wav"
 }
 
 "Weapon_AUG.magout"
@@ -15,7 +15,7 @@
 	"CompatibilityAttenuation"	"1.0"
 	"pitch"		"PITCH_NORM"
 
-	"wave"			"weapons\f2000\f2000_magout.wav"
+	"wave"			"weapons/f2000/f2000_magout.wav"
 }
 
 "Weapon_AUG.magin"
@@ -25,7 +25,7 @@
 	"CompatibilityAttenuation"	"1.0"
 	"pitch"		"PITCH_NORM"
 
-	"wave"			"weapons\f2000\f2000_magin.wav"
+	"wave"			"weapons/f2000/f2000_magin.wav"
 }
 
 "Weapon_AUG.boltforward"
@@ -35,7 +35,7 @@
 	"CompatibilityAttenuation"	"1.0"
 	"pitch"		"PITCH_NORM"
 
-	"wave"			"weapons\f2000\f2000_boltforward.wav"
+	"wave"			"weapons/f2000/f2000_boltforward.wav"
 }
 
 "Weapon_AUG.Single"
@@ -45,6 +45,6 @@
 	"CompatibilityAttenuation"	"1.0"
 	"pitch"		"PITCH_NORM"
 
-	"wave"			"weapons\f2000\f2000-1.wav"
+	"wave"			"weapons/f2000/f2000-1.wav"
 }
 =

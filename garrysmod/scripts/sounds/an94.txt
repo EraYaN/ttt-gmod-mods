@@ -5,7 +5,7 @@
 	"CompatibilityAttenuation"	"1.0"
 	"pitch"		"PITCH_NORM"
 
-	"wave"			"weapons\an94\an94_boltpull.wav"
+	"wave"			"weapons/an94/an94_boltpull.wav"
 }
 
 "Weapon_galil.Clipout"
@@ -15,7 +15,7 @@
 	"CompatibilityAttenuation"	"1.0"
 	"pitch"		"PITCH_NORM"
 
-	"wave"			"weapons\an94\an94_Clipin.wav"
+	"wave"			"weapons/an94/an94_Clipin.wav"
 }
 
 "Weapon_galil.Clipin"
@@ -25,7 +25,7 @@
 	"CompatibilityAttenuation"	"1.0"
 	"pitch"		"PITCH_NORM"
 
-	"wave"			"weapons\an94\an94_Clipout.wav"
+	"wave"			"weapons/an94/an94_Clipout.wav"
 }
 
 "Weapon_galil.Single"
@@ -35,6 +35,6 @@
 	"CompatibilityAttenuation"	"1.0"
 	"pitch"		"PITCH_NORM"
 
-	"wave"			"weapons\an94\an94-1.wav"
+	"wave"			"weapons/an94/an94-1.wav"
 }
 =

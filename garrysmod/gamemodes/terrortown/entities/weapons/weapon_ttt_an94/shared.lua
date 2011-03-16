@@ -58,6 +58,7 @@ SWEP.AutoSpawnable      = true
 SWEP.AmmoEnt = "item_ammo_rifle_ttt"
 SWEP.ViewModel			= "models/weapons/v_rif_an94.mdl"
 SWEP.WorldModel			= "models/weapons/w_rif_an94.mdl"
+SWEP.HeadshotMultiplier = 3.5
 
 SWEP.Primary.Sound = Sound( "Weapon_galil.Single" )
 
