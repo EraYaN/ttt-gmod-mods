@@ -2,7 +2,7 @@
 {
 	"$baseTexture" "models\weapons\v_models\rif_an94\kobra"
 	"$envmap" "env_cubemap"
-      	"$envmapmask" "models\weapons\v_models\rif_an94\kobra_ref"
+      	"$normalmapalphaenvmapmask" "1"
 	"$bumpmap" "models\weapons\v_models\rif_an94\kobra_normal"
 	"$phong" "1"
                 "$phongexponent" "50"
