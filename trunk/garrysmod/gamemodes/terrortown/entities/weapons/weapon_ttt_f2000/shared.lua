@@ -46,7 +46,7 @@ SWEP.Primary.Sound       = Sound( "Weapon_AUG.Single" )
 SWEP.IronSightsPos = Vector (3.5236, -15.1832, 1.6849)
 SWEP.IronSightsAng = Vector (0, 0, 0)
 
-SWEP.ViewModel  = "models/weapons/v_rif_f2k.mdl"
+SWEP.ViewModel  = "models/weapons/v_rif_f2000.mdl"
 SWEP.WorldModel = "models/weapons/w_rif_f2000.mdl"
 
 
