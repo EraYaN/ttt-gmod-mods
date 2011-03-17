@@ -1,0 +1,53 @@
+"Weapon_m24_boltback"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"1.0"
+	"pitch"			"95,105"
+
+	"wave"			"weapons\m24\m24_boltback.wav"
+	
+}
+
+"Weapon_m24_boltforward"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"1.0"
+	"pitch"			"95,105"
+
+	"wave"			"weapons\m24\m24_boltforward.wav"
+	
+}
+
+"Weapon_m24.Clipout"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"1.0"
+	"pitch"			"95,105"
+
+	"wave"			"weapons\m24\m24_clipout.wav"
+	
+}
+
+"Weapon_m24.Clipin"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"1.0"
+	"pitch"			"95,105"
+
+	"wave"			"weapons\m24\m24_clipin.wav"
+	
+}
+"Weapon_m24.Cliptap"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"1.0"
+	"pitch"			"95,105"
+
+	"wave"			"weapons\m24\m24_cliptap.wav"
+	
+}
