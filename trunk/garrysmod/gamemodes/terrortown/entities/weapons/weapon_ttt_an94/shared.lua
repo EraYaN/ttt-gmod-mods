@@ -62,8 +62,8 @@ SWEP.HeadshotMultiplier = 3.5
 
 SWEP.Primary.Sound = Sound( "Weapon_galil.Single" )
 
-SWEP.IronSightsPos = Vector (4.532, -7.5, 4.055)
-SWEP.IronSightsAng = Vector (0, 0, 0)
+SWEP.IronSightsPos = Vector (4.5595, -10.2055, 2.0789)
+SWEP.IronSightsAng = Vector (-0.1223, 0.1062, 0)
 
 
 function SWEP:SetZoom(state)
