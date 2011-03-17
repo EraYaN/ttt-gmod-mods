@@ -9,7 +9,7 @@ WEAPONS:
 Rifles:
 AN-94 Abakan ###########DONE
 http://www.garrysmod.org/downloads/?a=view&id=102520
-F2000
+F2000 ### nearly done
 http://toybox.garrysmod.com/ingame/?view=12635&tab=content
 
 Sniper rifles:
