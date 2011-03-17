@@ -44,6 +44,7 @@ SWEP.Primary.Sound = Sound( "Weapon_M4A1.Single" )
 SWEP.IronSightsPos 		= Vector( 6, 0, 0.95 )
 SWEP.IronSightsAng 		= Vector( 2.6, 1.37, 3.5 )
 
+SWEP.HeadshotMultiplier = 3
 
 function SWEP:SetZoom(state)
    if CLIENT then return end
