@@ -3,14 +3,20 @@
 -- First some standard GMod stuff
 if SERVER then
    AddCSLuaFile( "shared.lua" )
-   resource.AddFile("materials/VGUI/ttt/icon_tuna_ak47.vmt")
+   resource.AddFile("materials/VGUI/ttt/icon_tuna_sg552.vmt")
 end
 
 if CLIENT then
    SWEP.PrintName = "SG 552 Commando"
-   SWEP.Slot      = 2 -- add 1 to get the slot number key
+   SWEP.Slot      = 7 -- add 1 to get the slot number key
    SWEP.Author	  = "EraYaN"
    SWEP.Icon = "VGUI/ttt/icon_tuna_sg552"
+   SWEP.EquipMenuData = {
+      type="Sniper Weapon",
+      model="models/weapons/w_rif_sg552.mdl",
+      name="SG 552 Commando",
+      desc="SG 552 Commando\n is a powerful assault rifle.\n Does good damage, has good accuracy,\n a good gun."
+   };
 end
 
 -- Always derive from weapon_tttbase.
@@ -31,6 +37,10 @@ SWEP.Primary.ClipMax     = 60
 SWEP.Primary.DefaultClip = 20
 SWEP.Primary.Sound       = Sound( "Weapon_SG552.Single" )
 SWEP.HeadshotMultiplier = 6
+
+SWEP.Kind = WEAPON_EQUIP2
+SWEP.CanBuy = {ROLE_TRAITOR} -- only traitors can buy
+SWEP.LimitedStock = true -- only buyable once
 
 SWEP.IronSightsPos = Vector( 6.05, -5, 2.4 )
 SWEP.IronSightsAng = Vector( 2.2, -0.1, 0 )
