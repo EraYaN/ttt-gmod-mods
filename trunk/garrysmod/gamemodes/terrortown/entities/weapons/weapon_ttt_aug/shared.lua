@@ -26,7 +26,7 @@ SWEP.HoldType			= "ar2"
 SWEP.Primary.Delay       = 0.12
 SWEP.Primary.Recoil      = 1.4
 SWEP.Primary.Automatic   = true
-SWEP.Primary.Damage      = 22
+SWEP.Primary.Damage      = 25
 SWEP.Primary.Cone        = 0.015
 SWEP.Primary.Ammo        = "CombineCannon"
 SWEP.Primary.ClipSize    = 25
@@ -47,7 +47,7 @@ SWEP.WorldModel = "models/weapons/w_rif_aug.mdl"
 
 SWEP.Kind = WEAPON_HEAVY
 
-SWEP.AutoSpawnable = true
+SWEP.AutoSpawnable = false
 
 SWEP.AmmoEnt = "item_ammo_rifle_ttt"
 
