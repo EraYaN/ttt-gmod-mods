@@ -29,7 +29,7 @@ SWEP.HoldType			= "ar2"
 SWEP.Primary.Delay       = 0.11
 SWEP.Primary.Recoil      = 1.5
 SWEP.Primary.Automatic   = true
-SWEP.Primary.Damage      = 18
+SWEP.Primary.Damage      = 21
 SWEP.Primary.Cone        = 0.015
 SWEP.Primary.Ammo        = "CombineCannon"
 SWEP.Primary.ClipSize    = 20
@@ -50,7 +50,7 @@ SWEP.WorldModel = "models/weapons/w_rif_sg552.mdl"
 
 SWEP.Kind = WEAPON_HEAVY
 
-SWEP.AutoSpawnable = true
+SWEP.AutoSpawnable = flase
 
 SWEP.AmmoEnt = "item_ammo_rifle_ttt"
 
