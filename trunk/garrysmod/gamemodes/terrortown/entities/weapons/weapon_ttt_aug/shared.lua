@@ -36,7 +36,7 @@ SWEP.Primary.Sound       = Sound( "Weapon_AUG.Single" )
 SWEP.HeadshotMultiplier = 4.5
 
 SWEP.Kind = WEAPON_EQUIP2
-SWEP.CanBuy = {ROLE_TRAITOR} -- only traitors can buy
+SWEP.CanBuy = {ROLE_DETECTIVE} -- only detectives can buy
 SWEP.LimitedStock = true -- only buyable once
 
 SWEP.IronSightsPos = Vector (2.7088, -1.4358, 1.9033)
