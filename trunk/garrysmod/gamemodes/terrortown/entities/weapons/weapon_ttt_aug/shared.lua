@@ -1,16 +1,19 @@
----- Example TTT custom weapon
-
--- First some standard GMod stuff
 if SERVER then
    AddCSLuaFile( "shared.lua" )
-   resource.AddFile("materials/VGUI/ttt/icon_tuna_ak47.vmt")
+   resource.AddFile("materials/VGUI/ttt/icon_tuna_aug.vmt")
 end
 
 if CLIENT then
    SWEP.PrintName = "Steyr AUG A1"
-   SWEP.Slot      = 2 -- add 1 to get the slot number key
+   SWEP.Slot      = 7 -- add 1 to get the slot number key
    SWEP.Author	  = "EraYaN"
    SWEP.Icon = "VGUI/ttt/icon_tuna_aug"
+   SWEP.EquipMenuData = {
+      type="Sniper Weapon",
+      model="models/weapons/w_rif_aug.mdl",
+      name="Steyr AUG A1",
+      desc="The Steyr AUG A1\n is a powerful assault rifle.\n Does good damage, has good accuracy,\n a good gun."
+   };
 end
 
 -- Always derive from weapon_tttbase.
@@ -31,6 +34,10 @@ SWEP.Primary.ClipMax     = 75
 SWEP.Primary.DefaultClip = 25
 SWEP.Primary.Sound       = Sound( "Weapon_AUG.Single" )
 SWEP.HeadshotMultiplier = 4.5
+
+SWEP.Kind = WEAPON_EQUIP2
+SWEP.CanBuy = {ROLE_TRAITOR} -- only traitors can buy
+SWEP.LimitedStock = true -- only buyable once
 
 SWEP.IronSightsPos = Vector (2.7088, -1.4358, 1.9033)
 SWEP.IronSightsAng = Vector (1.3976, 0.4462, 0)
