@@ -1,8 +1,8 @@
 "VertexLitGeneric"
 {
-	"$baseTexture" "models\weapons\v_models\lamaacidf2000\f1color"
+	"$baseTexture" "models\weapons\v_models\v_rif_f2000\f1color"
       "$envmap" 			"env_cubemap"
-      "$bumpmap" "models/weapons\v_models/lamaacidf2000\f1color_normal"
+      "$bumpmap" "models/weapons\v_models\v_rif_f2000\f1color_normal"
 	"$normalmapalphaenvmapmask" 1
 	
 }
