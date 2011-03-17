@@ -1,0 +1,7 @@
+"LightmappedGeneric"
+{
+	"$basetexture"		"vgui/entities/weapon_raging"
+	"$nolod" 1
+	"$vertexalpha" 1
+	"$vertexcolor" 1
+}
