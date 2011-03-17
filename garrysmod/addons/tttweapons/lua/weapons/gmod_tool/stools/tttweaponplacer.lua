@@ -42,7 +42,13 @@ local weps = {
    weapon_ttt_famas = {name="FAMAS G1", snd="item_ammo_rifle_ttt"},
    weapon_ttt_tmp = {name="Steyr TMP", snd="item_ammo_smg1_ttt"},
    weapon_ttt_sg550 = {name="SIG 550", snd="item_ammo_357_ttt"},
-   weapon_ttt_m3 = {name="Benelli M3", snd="item_box_buckshot_ttt"}  
+   weapon_ttt_m3 = {name="Benelli M3", snd="item_box_buckshot_ttt"},
+   weapon_ttt_sg552 = {name="SG 552 Commando", snd="item_ammo_rifle_ttt"},
+   weapon_ttt_aug = {name="Steyr AUG A1", snd="item_ammo_rifle_ttt"},
+   weapon_ttt_an94 = {name="AN-94 Abakan", snd="item_ammo_rifle_ttt"},
+   weapon_ttt_awm = {name="AW Magnum Sniper", snd=nil},
+   weapon_ttt_f2000 = {name="FN F2000", snd="item_ammo_rifle_ttt"},
+   weapon_ttt_rbull = {name="Taurus Raging Bull", snd="item_ammo_revolver_ttt"}
 };
 
 local mdls = {
@@ -78,7 +84,13 @@ local mdls = {
    weapon_ttt_m3 = "models/weapons/w_shot_m3super90.mdl",
    weapon_ttt_famas = "models/weapons/w_rif_famas.mdl",
    weapon_ttt_sg550 = "models/weapons/w_snip_sg550.mdl",
-   weapon_ttt_tmp = "models/weapons/w_smg_tmp.mdl"
+   weapon_ttt_tmp = "models/weapons/w_smg_tmp.mdl",
+   weapon_ttt_sg552 = "models/weapons/w_rif_sg552.mdl",
+   weapon_ttt_aug = "models/weapons/w_rif_aug.mdl",
+   weapon_ttt_an94 = "models/weapons/w_rif_an94.mdl",
+   weapon_ttt_awm = "models/weapons/w_snip_awm.mdl",
+   weapon_ttt_f2000 = "models/weapons/w_rif_f2000.mdl",
+   weapon_ttt_rbull = "models/weapons/w_revl_raging.mdl"
 };
 
 -- special colours for certain ents
@@ -261,7 +273,13 @@ local enttypes = {
    ["weapon_ttt_m3"] = WEAPON_HEAVY,
    ["weapon_ttt_tmp"] = WEAPON_HEAVY,
    ["weapon_ttt_famas"] = WEAPON_HEAVY,
-   ["weapon_ttt_sg550"] = WEAPON_HEAVY
+   ["weapon_ttt_sg550"] = WEAPON_HEAVY,
+   ["weapon_ttt_sg552"] = WEAPON_EQUIP2,
+   ["weapon_ttt_aug"] = WEAPON_EQUIP2,
+   ["weapon_ttt_an94"] = WEAPON_HEAVY,
+   ["weapon_ttt_awm"] = WEAPON_EQUIP2,
+   ["weapon_ttt_f2000"] = WEAPON_HEAVY,
+   ["weapon_ttt_rbull"] = WEAPON_PISTOL   
 };
 
 local function PrintCount(ply)
