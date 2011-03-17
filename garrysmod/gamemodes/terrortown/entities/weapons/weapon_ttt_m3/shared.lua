@@ -9,7 +9,7 @@ if CLIENT then
    SWEP.PrintName = "Benelli M3"
    SWEP.Slot      = 2 -- add 1 to get the slot number key
    SWEP.SlotPos	  = 1
-   SWEP.Author	  = "NinjaTuna"
+   SWEP.Author	  = "NinjaTuna & EraYaN"
 
    SWEP.ViewModelFOV  = 72
    SWEP.ViewModelFlip = true
@@ -186,6 +186,6 @@ function SWEP:GetHeadshotMultiplier(victim, dmginfo)
    local dist = victim:GetPos():Distance(att:GetPos())
    local d = math.max(0, dist - 140)
    
-   -- decay from 3.1 to 1 slowly as distance increases
-   return 1 + math.max(0, (2.1 - 0.002 * (d ^ 1.25)))
+   -- decay from 3.1 to 1 slowly as distance increases (Edited: 4 to 1 and slower decay)
+   return 1 + math.max(0, (3 - 0.0016 * (d ^ 1.25)))
 end

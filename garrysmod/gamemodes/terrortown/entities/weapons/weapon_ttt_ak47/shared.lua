@@ -9,7 +9,7 @@ end
 if CLIENT then
    SWEP.PrintName = "AK-47"
    SWEP.Slot      = 2 -- add 1 to get the slot number key
-
+   SWEP.Author	  = "EraYaN & BKU"
    SWEP.ViewModelFOV  = 72
    SWEP.ViewModelFlip = true
    SWEP.Icon = "VGUI/ttt/icon_tuna_ak47"
@@ -32,10 +32,10 @@ SWEP.Primary.ClipSize    = 30
 SWEP.Primary.ClipMax     = 60
 SWEP.Primary.DefaultClip = 30
 SWEP.Primary.Sound       = Sound( "Weapon_AK47.Single" )
-SWEP.HeadshotMultiplier = 4
+SWEP.HeadshotMultiplier = 5.2
 
-SWEP.IronSightsPos = Vector( 6.05, -5, 2.4 )
-SWEP.IronSightsAng = Vector( 2.2, -0.1, 0 )
+SWEP.IronSightsPos = Vector (3.0151, -3.3774, 1.5024)
+SWEP.IronSightsAng = Vector (0, 0, 0)
 
 SWEP.ViewModel  = "models/weapons/v_rif_ak47.mdl"
 SWEP.WorldModel = "models/weapons/w_rif_ak47.mdl"
