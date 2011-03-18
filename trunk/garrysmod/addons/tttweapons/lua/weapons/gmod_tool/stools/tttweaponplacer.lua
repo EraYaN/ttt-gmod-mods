@@ -45,7 +45,7 @@ local weps = {
    weapon_ttt_cse = {name="Visualizer (D)", snd=nil},
    weapon_ttt_flaregun = {name="Flare gun (T)", snd=nil},
    weapon_ttt_stungun = {name="UMP Stungun (D)", snd="item_ammo_smg1_ttt"},
-   weapon_ttt_sipistol = {name="Silenced Pistol (T)", snd=nil}`,
+   weapon_ttt_sipistol = {name="Silenced Pistol (T)", snd=nil},
    
    -- our custom stuff
    weapon_ttt_ak47 = {name="AK-47", snd="item_ammo_rifle_ttt"},
@@ -58,7 +58,8 @@ local weps = {
    weapon_ttt_an94 = {name="AN-94 Abakan", snd="item_ammo_rifle_ttt"},
    weapon_ttt_awm = {name="AW Magnum Sniper (T)", snd=nil},
    weapon_ttt_f2000 = {name="FN F2000", snd="item_ammo_rifle_ttt"},
-   weapon_ttt_rbull = {name="Taurus Raging Bull", snd="item_ammo_revolver_ttt"}
+   weapon_ttt_rbull = {name="Taurus Raging Bull", snd="item_ammo_revolver_ttt"},
+   weapon_ttt_m24 = {name="Remington M24", snd="item_ammo_357_ttt"},
 };
 
 local mdls = {
@@ -110,7 +111,8 @@ local mdls = {
    weapon_ttt_an94 = "models/weapons/w_rif_an94.mdl",
    weapon_ttt_awm = "models/weapons/w_snip_awp.mdl",
    weapon_ttt_f2000 = "models/weapons/w_rif_f2000.mdl",
-   weapon_ttt_rbull = "models/weapons/w_revl_raging.mdl"
+   weapon_ttt_rbull = "models/weapons/w_revl_raging.mdl",
+   weapon_ttt_m24 = "models/weapons/w_snip_m24.mdl",
 };
 
 -- special colours for certain ents
