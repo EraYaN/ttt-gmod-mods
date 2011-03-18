@@ -116,6 +116,10 @@ function SWEP:Holster()
 end
 
 function SWEP:PrimaryAttack(worldsnd)
+   if self:GetIronsights then
+      timer.Simple( self.Primary.Delay, self.SetZoom, self, true)
+      timer.Simple( self.Primary.Delay, self.SetIronsights, self, true)
+   end
 
    self.Weapon:SetNextSecondaryFire( CurTime() + self.Primary.Delay )
    self.Weapon:SetNextPrimaryFire( CurTime() + self.Primary.Delay )
@@ -124,9 +128,6 @@ function SWEP:PrimaryAttack(worldsnd)
       
    self:SetZoom(false)
    self:SetIronsights(false)
-
-   timer.Simple( self.Primary.Delay, self.SetZoom, self, true)
-   timer.Simple( self.Primary.Delay, self.SetIronsights, self, true)
 
    if not worldsnd then
       self.Weapon:EmitSound( self.Primary.Sound, self.Primary.SoundLevel )
