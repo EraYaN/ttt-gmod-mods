@@ -1,7 +1,7 @@
 "VertexLitGeneric"
 {
-?  "$baseTexture" "models\weapons\v_models\v_snip_m24\M241"
-?  "$envmap" "env_cubemap"
-?  "$envmapmask" "models\weapons\v_models\v_snip_m24\M241_ref"
-?  "$bumpmap"     "models\weapons\v_models\v_snip_m24\M241_normal"
+  "$baseTexture" "models\weapons\v_models\v_snip_m24\M241"
+  "$envmap" "env_cubemap"
+  "$envmapmask" "models\weapons\v_models\v_snip_m24\M241_ref"
+  "$bumpmap"     "models\weapons\v_models\v_snip_m24\M241_normal"
 }
