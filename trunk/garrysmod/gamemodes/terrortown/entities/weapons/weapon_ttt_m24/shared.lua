@@ -116,7 +116,7 @@ function SWEP:Holster()
 end
 
 function SWEP:PrimaryAttack(worldsnd)
-   if self:GetIronsights then
+   if self:GetIronsights() then
       timer.Simple( self.Primary.Delay, self.SetZoom, self, true)
       timer.Simple( self.Primary.Delay, self.SetIronsights, self, true)
    end
