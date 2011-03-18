@@ -88,7 +88,7 @@ local mdls = {
    weapon_ttt_sg552 = "models/weapons/w_rif_sg552.mdl",
    weapon_ttt_aug = "models/weapons/w_rif_aug.mdl",
    weapon_ttt_an94 = "models/weapons/w_rif_an94.mdl",
-   weapon_ttt_awm = "models/weapons/w_snip_awm.mdl",
+   weapon_ttt_awm = "models/weapons/w_snip_awp.mdl",
    weapon_ttt_f2000 = "models/weapons/w_rif_f2000.mdl",
    weapon_ttt_rbull = "models/weapons/w_revl_raging.mdl"
 };
