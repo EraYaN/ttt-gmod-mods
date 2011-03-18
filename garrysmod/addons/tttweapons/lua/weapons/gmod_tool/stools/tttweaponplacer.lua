@@ -45,7 +45,7 @@ local weps = {
    weapon_ttt_cse = {name="Visualizer (D)", snd=nil},
    weapon_ttt_flaregun = {name="Flare gun (T)", snd=nil},
    weapon_ttt_stungun = {name="UMP Stungun (D)", snd="item_ammo_smg1_ttt"},
-   weapon_ttt_sipistol = {name="Silenced Pistol (T)", snd=nil}
+   weapon_ttt_sipistol = {name="Silenced Pistol (T)", snd=nil}`,
    
    -- our custom stuff
    weapon_ttt_ak47 = {name="AK-47", snd="item_ammo_rifle_ttt"},
