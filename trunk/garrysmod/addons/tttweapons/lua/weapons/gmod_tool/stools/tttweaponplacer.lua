@@ -206,7 +206,7 @@ function TOOL.BuildCPanel(panel) -- note that this is not a method, REAL NICE
       opts[info.name] = {tttweaponplacer_weapon = w}
    end
 
-   panel:AddControl("ListBox", { Label = "Weapons", Height = "250", Options = opts } )
+   panel:AddControl("ListBox", { Label = "Weapons", Height = "600", Options = opts } )
 
    panel:AddControl("Button", {Label="Report counts", Command="tttweaponplacer_count", Text="Count"})
 
