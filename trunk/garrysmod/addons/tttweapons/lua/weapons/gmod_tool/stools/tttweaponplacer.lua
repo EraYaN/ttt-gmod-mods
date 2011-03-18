@@ -289,6 +289,15 @@ local enttypes = {
    ["ttt_playerspawn"] = PLAYERSPAWN,
    
    ["weapon_ttt_knife"] = WEAPON_EQUIP1,
+   ["weapon_ttt_push"] = WEAPON_EQUIP2,
+   ["weapon_ttt_wtester"] = WEAPON_ROLE,
+   ["weapon_ttt_phammer"] = WEAPON_EQUIP2,
+   ["weapon_ttt_c4"] = WEAPON_EQUIP1,
+   ["weapon_ttt_binoculars"] = WEAPON_EQUIP2,
+   ["weapon_ttt_cse"] = WEAPON_EQUIP,
+   ["weapon_ttt_flaregun"] = WEAPON_EQUIP1,
+   ["weapon_ttt_stungun"] = WEAPON_EQUIP1,
+   ["weapon_ttt_sipistol"] = WEAPON_EQUIP1,
    
    -- our custom stuff
    ["weapon_ttt_ak47"] = WEAPON_HEAVY,
@@ -301,7 +310,8 @@ local enttypes = {
    ["weapon_ttt_an94"] = WEAPON_HEAVY,
    ["weapon_ttt_awm"] = WEAPON_EQUIP2,
    ["weapon_ttt_f2000"] = WEAPON_HEAVY,
-   ["weapon_ttt_rbull"] = WEAPON_PISTOL   
+   ["weapon_ttt_rbull"] = WEAPON_PISTOL,
+   ["weapon_ttt_m24"] = WEAPON_HEAVY,   
 };
 
 local function PrintCount(ply)
