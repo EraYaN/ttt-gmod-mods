@@ -125,8 +125,8 @@ function SWEP:PrimaryAttack(worldsnd)
    self:SetZoom(false)
    self:SetIronsights(false)
 
-   timer.Simple( SWEP.Primary.Delay, self.SetZoom, self, true)
-   timer.Simple( SWEP.Primary.Delay, self.SetIronsights, self, true)
+   timer.Simple( self.Primary.Delay, self.SetZoom, self, true)
+   timer.Simple( self.Primary.Delay, self.SetIronsights, self, true)
 
    if not worldsnd then
       self.Weapon:EmitSound( self.Primary.Sound, self.Primary.SoundLevel )
