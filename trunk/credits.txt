@@ -1,4 +1,4 @@
-Ports to gmod/ttt and/or hexing:
+Ports to gmod/ttt and/or de/recompiling:
 Steyr TMP		- NinjaTuna
 Benelli M3		- NinjaTuna
 SIG 550 		- NinjaTuna
@@ -10,6 +10,7 @@ Ammo			- NinjaTuna
 Rearms		- EraYaN & NinjaTuna & Others
 Setup			- EraYaN
 AN-94			- NinjaTuna
+M24			- NinjaTuna
 
 Cooperation 	- NinjaTuna & EraYaN
 
@@ -24,4 +25,35 @@ Original Authors
     * twinke masta\TheLama\Malignant - Model
     * Millenia\Pete\Rosa Jonas - Textures
 http://www.gamebanana.com/skins/99262
+##############################################
+F2000
+Model: The_Lama
+Silencer: Will
+-------------------------
+Textures: Acid_Snake
+Silencer:Kimono
+--------------------------
+Sounds: Vunsunta & Unbreakable?
+--------------------------
+Animations: StrykerWolf
+--------------------------
+Front Lense: Ankalar
+Compile, Wees, Reflects and Skin Edits: Unbreakable?
+http://counterstrikehq.multiplayernetwork.net/file/1309
+##############################################
+M24
+    Key Authors
+
+        * Vunsunta - Sounds
+        * Iflip - Sounds
+        * Smith - VGUI
+        * TheStealthyOne - Normal Map
+        * SixShooter - Textures
+        * !NC!Furious - Textures
+        * Murdock - Textures & Model
+        * Chumpchange - Model
+        * Endorphin - Model
+        * Kais - Model
+        * Bullethead - Model
+        * IIopn - Animation & Compile
 ##############################################
