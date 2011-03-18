@@ -1,7 +1,7 @@
 # Trouble in Terrorist Town weapon/ammo placement overrides
 # For map: gm_construct
 # Exported by: [BB] EraYaN
-setting:	replacespawns 1
+setting:	replacespawns 0
 weapon_ttt_knife	800.1121 762.5957 -147.1216	2.643 -69.143 -90.698
 weapon_ttt_knife	812.3754 774.9241 -147.1158	2.666 -81.479 -90.703
 weapon_ttt_knife	820.2305 750.6794 -147.6756	-20.605 -63.380 -83.777
