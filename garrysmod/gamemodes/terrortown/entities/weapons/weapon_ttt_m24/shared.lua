@@ -115,6 +115,36 @@ function SWEP:Holster()
     return true
 end
 
+function SWEP:PrimaryAttack(worldsnd)
+
+   self.Weapon:SetNextSecondaryFire( CurTime() + self.Primary.Delay )
+   self.Weapon:SetNextPrimaryFire( CurTime() + self.Primary.Delay )
+
+   if not self:CanPrimaryAttack() then return end
+      
+   self:SetZoom(false)
+   self:SetIronsights(false)
+
+   timer.Simple( SWEP.Primary.Delay, self.SetZoom, self, true)
+   timer.Simple( SWEP.Primary.Delay, self.SetIronsights, self, true)
+
+   if not worldsnd then
+      self.Weapon:EmitSound( self.Primary.Sound, self.Primary.SoundLevel )
+   elseif SERVER then
+      WorldSound(self.Primary.Sound, self:GetPos(), self.Primary.SoundLevel)
+   end
+
+   self:ShootBullet( self.Primary.Damage, self.Primary.Recoil, self.Primary.NumShots, self:GetPrimaryCone() )
+   
+   self:TakePrimaryAmmo( 1 )
+
+   local owner = self.Owner   
+   if not ValidEntity(owner) or owner:IsNPC() or (not owner.ViewPunch) then return end
+   
+   owner:ViewPunch( Angle( math.Rand(-0.2,-0.1) * self.Primary.Recoil, math.Rand(-0.1,0.1) *self.Primary.Recoil, 0 ) )
+   
+end
+
 if CLIENT then
    local scope = surface.GetTextureID("sprites/scope")
    function SWEP:DrawHUD()
