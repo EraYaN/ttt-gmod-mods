@@ -36,6 +36,16 @@ local weps = {
    ttt_random_weapon = {name="Random weapon", snd=nil},
    ttt_random_ammo = {name="Random ammo", snd=nil},
    ttt_playerspawn = {name="Player spawn", snd=nil},
+   weapon_ttt_knife = {name="Knife (T)", snd=nil},
+   weapon_ttt_push = {name="Newton Launcher (T)", snd=nil},
+   weapon_ttt_wtester = {name="DNA Scanner (D)", snd=nil},
+   weapon_ttt_phammer = {name="Poltergeist (T)", snd=nil},
+   weapon_ttt_c4 = {name="C4 (T)", snd=nil},
+   weapon_ttt_binoculars = {name="Binoculars (D)", snd=nil},
+   weapon_ttt_cse = {name="Visualizer (D)", snd=nil},
+   weapon_ttt_flaregun = {name="Flare gun (T)", snd=nil},
+   weapon_ttt_stungun = {name="UMP Stungun (D)", snd="item_ammo_smg1_ttt"},
+   weapon_ttt_sipistol = {name="Silenced Pistol (T)", snd=nil}
    
    -- our custom stuff
    weapon_ttt_ak47 = {name="AK-47", snd="item_ammo_rifle_ttt"},
@@ -43,10 +53,10 @@ local weps = {
    weapon_ttt_tmp = {name="Steyr TMP", snd="item_ammo_smg1_ttt"},
    weapon_ttt_sg550 = {name="SIG 550", snd="item_ammo_357_ttt"},
    weapon_ttt_m3 = {name="Benelli M3", snd="item_box_buckshot_ttt"},
-   weapon_ttt_sg552 = {name="SG 552 Commando", snd="item_ammo_rifle_ttt"},
-   weapon_ttt_aug = {name="Steyr AUG A1", snd="item_ammo_rifle_ttt"},
+   weapon_ttt_sg552 = {name="SG 552 Commando (T)", snd="item_ammo_rifle_ttt"},
+   weapon_ttt_aug = {name="Steyr AUG A1 (D)", snd="item_ammo_rifle_ttt"},
    weapon_ttt_an94 = {name="AN-94 Abakan", snd="item_ammo_rifle_ttt"},
-   weapon_ttt_awm = {name="AW Magnum Sniper", snd=nil},
+   weapon_ttt_awm = {name="AW Magnum Sniper (T)", snd=nil},
    weapon_ttt_f2000 = {name="FN F2000", snd="item_ammo_rifle_ttt"},
    weapon_ttt_rbull = {name="Taurus Raging Bull", snd="item_ammo_revolver_ttt"}
 };
@@ -78,6 +88,16 @@ local mdls = {
    item_ammo_rifle_ttt = "models/items/boxsrounds.mdl",
 
    ttt_playerspawn = "models/player.mdl",
+   weapon_ttt_knife = "models/weapons/w_knife_t.mdl",
+   weapon_ttt_push = "models/weapons/w_physics.mdl",
+   weapon_ttt_wtester = "models/props_lab/huladoll.mdl",
+   weapon_ttt_phammer = "models/weapons/w_IRifle.mdl",
+   weapon_ttt_c4 = "models/weapons/w_c4.mdl",
+   weapon_ttt_binoculars = "models/props/cs_office/paper_towels.mdl",
+   weapon_ttt_cse = "models/Items/battery.mdl",
+   weapon_ttt_flaregun = "models/weapons/w_357.mdl",
+   weapon_ttt_stungun = "models/weapons/w_smg_ump45.mdl",
+   weapon_ttt_sipistol = "models/weapons/w_pist_usp.mdl",
    
    -- our custom stuff
    weapon_ttt_ak47 = "models/weapons/w_rif_ak47.mdl",
