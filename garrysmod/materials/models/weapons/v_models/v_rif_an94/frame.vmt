@@ -1,9 +1,9 @@
 "VertexLitGeneric"
 {
-	"$baseTexture" "models\weapons\v_models\rif_an94\frame"
+	"$baseTexture" "models\weapons\v_models\v_rif_an94\frame"
 	"$envmap" "env_cubemap"
       	"$normalmapalphaenvmapmask" "1"
-	"$bumpmap" "models\weapons\v_models\rif_an94\frame_normal"
+	"$bumpmap" "models\weapons\v_models\v_rif_an94\frame_normal"
 	"$phong" "1"
                 "$phongexponent" "50"
                 "$phongboost"	"50"

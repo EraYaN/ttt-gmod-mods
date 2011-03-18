@@ -1,6 +1,6 @@
 VertexLitGeneric
 {
-	"$baseTexture" "models\weapons\v_models\rif_an94\lense"
+	"$baseTexture" "models\weapons\v_models\v_rif_an94\lense"
 	"$transparent" 1
 	"$additive" 1
 }
