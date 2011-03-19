@@ -191,7 +191,7 @@ function SWEP:ShootBullets( damage, recoil, numbullets, aimcone, numtracer )
 		bullet.AmmoType 	= "AR2AltFire"
 		bullet.TracerName	= "Ar2Tracer"
 		else
-		bullet.AmmoType		= "pistol"
+		bullet.AmmoType		= "smg1"
 		bullet.TracerName	= "Tracer"
 		end
 		
