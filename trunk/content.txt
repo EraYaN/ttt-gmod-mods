@@ -15,6 +15,7 @@ Replaced ammo system
 
 Entities/Extras:
 Death Station
+Katana
 
 Maps:
 Rearms of some maps
