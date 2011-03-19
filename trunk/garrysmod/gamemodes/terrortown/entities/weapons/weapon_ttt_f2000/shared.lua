@@ -27,7 +27,7 @@ if CLIENT then
    SWEP.PrintName = "FN F2000"
    SWEP.Slot      = 2 -- add 1 to get the slot number key
 
-   SWEP.ViewModelFOV  = 72
+   SWEP.ViewModelFOV  = 90
    SWEP.ViewModelFlip = true
    SWEP.Icon = "VGUI/ttt/icon_tuna_f2000"
 end
