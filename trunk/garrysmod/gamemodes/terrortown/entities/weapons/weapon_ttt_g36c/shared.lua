@@ -96,8 +96,8 @@ SWEP.Primary.Recoil			= .8
 SWEP.Primary.Damage			= 15
 SWEP.Primary.NumShots		= 1
 SWEP.Primary.Cone			= 0.05
-SWEP.Primary.Rpm 			= 350
-SWEP.Primary.Delay			= 1/350
+SWEP.Primary.Rpm 			= 400
+SWEP.Primary.Delay			= 1/400
 
 SWEP.Primary.ClipSize		= 30
 SWEP.Primary.Automatic		= true
@@ -189,7 +189,7 @@ function SWEP:ShootBullets( damage, recoil, numbullets, aimcone, numtracer )
 	bullet.Tracer		= 1
 	bullet.Force		= 20							
 	bullet.Damage		= math.Round(damage)
-	bullet.AmmoType		= "pistol"
+	bullet.AmmoType		= "CombineCannon"
 	bullet.TracerName	= "Tracer"
 		
 bullet.Callback = function(att, tr, dmginfo)
