@@ -60,7 +60,7 @@ SWEP.ViewModel			= "models/weapons/v_rif_an94.mdl"
 SWEP.WorldModel			= "models/weapons/w_rif_an94.mdl"
 SWEP.HeadshotMultiplier = 3.5
 
-SWEP.Primary.Sound = Sound( "Weapon_galil.Single" )
+SWEP.Primary.Sound = Sound( "weapons/an94/an94-1.wav" )
 
 SWEP.IronSightsPos = Vector (4.5595, -10.2055, 2.0789)
 SWEP.IronSightsAng = Vector (-0.1223, 0.1062, 0)
