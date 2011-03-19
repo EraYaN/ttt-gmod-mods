@@ -1,6 +1,6 @@
 game_sounds_manifest
 {
-
+	"precache_file"		"scripts/sounds/ragingbull.txt"
 	"precache_file"		"scripts/sounds/phx.txt"
 	"precache_file"		"scripts/sounds/an94.txt"
 	"precache_file"		"scripts/sounds/f2000.txt"
