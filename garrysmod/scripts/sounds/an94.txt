@@ -1,4 +1,4 @@
-"Weapon_galil.boltpull"
+"Weapon_AN94.boltpull"
 {
 	"channel"		"CHAN_ITEM"
 	"volume"		"1.0"
@@ -8,7 +8,7 @@
 	"wave"			"weapons/an94/an94_boltpull.wav"
 }
 
-"Weapon_galil.Clipout"
+"Weapon_AN94.Clipout"
 {
 	"channel"		"CHAN_ITEM"
 	"volume"		"1.0"
@@ -18,7 +18,7 @@
 	"wave"			"weapons/an94/an94_Clipin.wav"
 }
 
-"Weapon_galil.Clipin"
+"Weapon_AN94.Clipin"
 {
 	"channel"		"CHAN_ITEM"
 	"volume"		"1.0"
@@ -27,14 +27,3 @@
 
 	"wave"			"weapons/an94/an94_Clipout.wav"
 }
-
-"Weapon_galil.Single"
-{
-	"channel"		"CHAN_ITEM"
-	"volume"		"1.0"
-	"CompatibilityAttenuation"	"1.0"
-	"pitch"		"PITCH_NORM"
-
-	"wave"			"weapons/an94/an94-1.wav"
-}
-=

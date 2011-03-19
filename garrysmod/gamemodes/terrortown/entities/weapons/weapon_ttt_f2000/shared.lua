@@ -48,7 +48,7 @@ SWEP.Primary.Ammo        = "CombineCannon"
 SWEP.Primary.ClipSize    = 30
 SWEP.Primary.ClipMax     = 60
 SWEP.Primary.DefaultClip = 30
-SWEP.Primary.Sound       = Sound( "Weapon_AUG.Single" )
+SWEP.Primary.Sound       = Sound( "weapons/f2000/f2000-1.wav" )
 SWEP.HeadshotMultiplier  = 4
 
 SWEP.IronSightsPos = Vector (3.5236, -15.1832, 1.6849)
