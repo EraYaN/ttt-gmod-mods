@@ -96,8 +96,8 @@ end
 
 function SWEP:PrimaryAttack(worldsnd)
    if self:GetIronsights() then
-      timer.Simple( self.Primary.Delay, self.SetZoom, self, true)
-      timer.Simple( self.Primary.Delay, self.SetIronsights, self, true)
+      timer.Simple( self.Primary.Delay - 0.2, self.SetZoom, self, true)
+      timer.Simple( self.Primary.Delay - 0.2, self.SetIronsights, self, true)
    end
 
    self.Weapon:SetNextSecondaryFire( CurTime() + self.Primary.Delay )
