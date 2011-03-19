@@ -42,8 +42,8 @@ SWEP.Kind = WEAPON_EQUIP2
 SWEP.CanBuy = {ROLE_TRAITOR} -- only traitors can buy
 SWEP.LimitedStock = true -- only buyable once
 
-SWEP.IronSightsPos = Vector( 6.05, -5, 2.4 )
-SWEP.IronSightsAng = Vector( 2.2, -0.1, 0 )
+SWEP.IronSightsPos = Vector (-0.5419, -3.3774, 1.5757)
+SWEP.IronSightsAng = Vector (0, 0, 0)
 
 SWEP.ViewModel  = "models/weapons/v_rif_sg552.mdl"
 SWEP.WorldModel = "models/weapons/w_rif_sg552.mdl"
