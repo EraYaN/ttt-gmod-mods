@@ -48,9 +48,9 @@ SWEP.IronSightsAng = Vector( 2.2, -0.1, 0 )
 SWEP.ViewModel  = "models/weapons/v_rif_sg552.mdl"
 SWEP.WorldModel = "models/weapons/w_rif_sg552.mdl"
 
-SWEP.Kind = WEAPON_HEAVY
+SWEP.Kind = WEAPON_EQUIP1
 
-SWEP.AutoSpawnable = flase
+SWEP.AutoSpawnable = false
 
 SWEP.AmmoEnt = "item_ammo_rifle_ttt"
 
@@ -63,7 +63,7 @@ SWEP.NoSights = false
 function SWEP:SetZoom(state)
    if CLIENT then return end
    if state then
-      self.Owner:SetFOV(30, 0.6)
+      self.Owner:SetFOV(35, 0.4)
    else
       self.Owner:SetFOV(0, 0.2)
    end
