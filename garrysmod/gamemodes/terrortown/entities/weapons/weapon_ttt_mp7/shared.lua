@@ -68,7 +68,7 @@ SWEP.SprintAng 			= Vector(-18.7139, -48.1596, 0)
 SWEP.ScopePos 			= Vector(3, -20, 1.5)
 SWEP.ScopeAng 			= Vector(0, 0, 0)
 
-SWEP.ZoomModes 			= { 0, 20 }
+SWEP.ZoomModes 			= { 0, 40 }
 SWEP.ZoomSpeeds 		= { 0.25, 0.40 }
 
 SWEP.Primary.Sound			= Sound("weapons/mp7/mp7_fire.wav")

@@ -88,7 +88,7 @@ SWEP.SprintAng 			= Vector(-18.7139, -48.1596, 0)
 SWEP.ScopePos 			= Vector(3, -20, 1.5)
 SWEP.ScopeAng 			= Vector(0, 0, 0)
 
-SWEP.ZoomModes 			= { 0, 30 }
+SWEP.ZoomModes 			= { 0, 45 }
 SWEP.ZoomSpeeds 		= { 0.25, 0.40 }
 
 SWEP.Primary.Sound			= Sound("weapons/g36c/g36c_fire.wav")
@@ -102,7 +102,7 @@ SWEP.Primary.Delay			= 1/400
 SWEP.Primary.ClipSize		= 30
 SWEP.Primary.Automatic		= true
 SWEP.Primary.DefaultClip	= 30
-SWEP.Primary.Ammo			= "smg1"
+SWEP.Primary.Ammo			= "CombineCannon"
 
 SWEP.Secondary.Sound        = Sound( "weapons/sniper/sniper_zoomout.wav" )
 SWEP.Secondary.Delay  		= 0.5
