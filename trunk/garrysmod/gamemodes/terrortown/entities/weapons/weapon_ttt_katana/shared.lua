@@ -224,7 +224,7 @@ function SWEP:Slash()
 					bullet.Spread = Vector(0, 0, 0)
 					bullet.Tracer = 0
 					bullet.Force  = 20
-					bullet.Damage = 40
+					bullet.Damage = 65
 				self.Owner:FireBullets(bullet) 
 		else
 			util.Decal("ManhackCut", tr.HitPos + tr.HitNormal, tr.HitPos - tr.HitNormal)
@@ -242,7 +242,7 @@ function SWEP:Slash()
 				end
 			if not tr.HitWorld and not string.find(tr.Entity:GetClass(),"prop_static") then
 				if SERVER then ph:ApplyForceCenter(self.Owner:GetAimVector()*5000) 
-				tr.Entity:TakeDamage(40, self.Owner, self)
+				tr.Entity:TakeDamage(65, self.Owner, self)
 				end
 			end
 		end
@@ -261,7 +261,7 @@ function SWEP:Bash()
 			self.Weapon:EmitSound( BFleshHit[math.random(1,#BFleshHit)] )
 			tr.Entity:SetVelocity((phtr.Entity:GetPos() - self.Owner:GetPos()) * 20)
 			if SERVER then
-			tr.Entity:TakeDamage(10, self.Owner, self)
+			tr.Entity:TakeDamage(25, self.Owner, self)
 			end
 		else
 			if (tr.MatType == MAT_METAL or tr.MatType == MAT_VENT or tr.MatType == MAT_COMPUTER) then
@@ -279,7 +279,7 @@ function SWEP:Bash()
 			end	
 			if not tr.HitWorld and not string.find(tr.Entity:GetClass(),"prop_static") then
 				if SERVER then ph:ApplyForceCenter(self.Owner:GetAimVector()*10000) 
-				tr.Entity:TakeDamage(10, self.Owner, self)
+				tr.Entity:TakeDamage(25, self.Owner, self)
 				end
 			end
 		end
