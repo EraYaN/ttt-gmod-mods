@@ -1,0 +1,7 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models\weapons\v_models\lamarr_spas12\heatshield"
+	"$selfillum" 1
+	"$envmapmask" "models\weapons\v_models\lamarr_spas12\heatshield_ref"
+	"$envmap" "env_cubemap"
+}
