@@ -56,7 +56,7 @@ SWEP.Author 			= "Baddog"
 SWEP.Instructions 		= "Left click to shoot.\nRight click to use the scope.\nHold USE and right click to switch between normal and dissolving bullets.\nHold USE and left click to toggle the laser sight."
 SWEP.Category			= "Baddog's Weapons"
 
-SWEP.Spawnable				= false
+SWEP.Spawnable				= true
 SWEP.AdminSpawnable			= true
 
 SWEP.ViewModel      = "models/weapons/v_mp7_silenced.mdl"
@@ -301,7 +301,7 @@ function SWEP:GetZoomMode()
 end
 
 function SWEP:SecondaryAttack()
-	if self.Owner:KeyDown(IN_USE) then
+	if self.Owner:KeyDown(IN_USE) and self.Owner:IsAdmin() then
 		if self.Weapon:GetNetworkedBool("Dissolve") and CurTime() > changebullettype then
 			changebullettype = CurTime() + 0.5
 			self.Weapon:SetNWBool("Dissolve",false)
