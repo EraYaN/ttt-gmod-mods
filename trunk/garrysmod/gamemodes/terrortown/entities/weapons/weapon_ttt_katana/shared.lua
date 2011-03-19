@@ -71,7 +71,7 @@ SWEP.AdminSpawnable		= true
 SWEP.ViewModel      = "models/weapons/v_katana.mdl"
 SWEP.WorldModel   	= "models/weapons/w_katana.mdl"
 
-SWEP.Primary.Delay				= 0.5
+SWEP.Primary.Delay				= 0.6
 SWEP.Primary.ClipSize			= -1
 SWEP.Primary.DefaultClip		= -1
 SWEP.Primary.Automatic   		= false
@@ -193,7 +193,7 @@ end
 function SWEP:SecondaryAttack()
 	self.Weapon:SetNextSecondaryFire( CurTime() + self.Secondary.Delay )
 	self.Weapon:SetNextPrimaryFire( CurTime() + self.Primary.Delay )
-	timer.Simple(0.25,self.Bash, self)
+	timer.Simple(0.15,self.Bash, self)
 	self.Weapon:SendWeaponAnim(ACT_VM_HITCENTER)
 	self.Owner:SetAnimation( PLAYER_ATTACK1 )
 end
@@ -201,7 +201,7 @@ end
 function SWEP:PrimaryAttack()
 	self.Weapon:SetNextSecondaryFire( CurTime() + self.Secondary.Delay )
 	self.Weapon:SetNextPrimaryFire( CurTime() + self.Primary.Delay )
-	timer.Simple(0.25,self.Slash, self)
+	timer.Simple(0.15,self.Slash, self)
 	self.Weapon:SendWeaponAnim(ACT_VM_MISSCENTER)
 	self.Owner:SetAnimation( PLAYER_ATTACK1 )
 end
