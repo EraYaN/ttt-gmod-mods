@@ -1,0 +1,8 @@
+VertexLitGeneric
+{
+	"$basetexture"	"models\weapons\v_models\TheLama.Thanez_G36c\Stock"
+	"$bumpmap" "models\weapons\v_models\TheLama.Thanez_G36c\Stock_Normal"
+ 	"$envmap" "env_cubemap"
+	"$normalmapalphaenvmapmask" 1
+	"$nocull" "1"
+}
