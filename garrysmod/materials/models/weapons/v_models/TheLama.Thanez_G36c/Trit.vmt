@@ -1,0 +1,7 @@
+VertexLitGeneric
+{
+	"$basetexture"	"models\weapons\v_models\TheLama.Thanez_G36c\Trit"
+	"$additive" "1"
+	"$nocull" "1"
+	"$translucent" "1"
+}

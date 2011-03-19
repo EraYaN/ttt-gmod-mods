@@ -45,7 +45,7 @@ if CLIENT then
 
    SWEP.EquipMenuData = {
       type="Weapon",
-      desc="Katana the famous japanese sword.\nDeadly"
+      desc="Katana, the famous japanese sword.\nDeadly."
    };
 
    SWEP.Icon = "VGUI/ttt/icon_katana"
@@ -54,10 +54,7 @@ end
 SWEP.Base               = "weapon_tttbase"
 
 SWEP.PrintName = "Katana"
-SWEP.Slot = 1
-SWEP.SlotPos = 3
 SWEP.DrawAmmo = false
-SWEP.DrawCrosshair = true
 SWEP.Author			= "Baddog"
 SWEP.Instructions	= "Left click to slash. Right click to bash."
 SWEP.Contact		= ""
