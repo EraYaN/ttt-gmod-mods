@@ -2,6 +2,6 @@ VertexLitGeneric
 {
 	"$basetexture"	"models\weapons\v_models\v_snip_m24\C3A1_2"
 	"$envmap" "env_cubemap"
-	"$basealphaenvmapmask" "1"
+	"$normalmapalphaenvmapmask" "1"
 	"$bumpmap"     "models\weapons\v_models\v_snip_m24\C3A1_2_normal"
 }
