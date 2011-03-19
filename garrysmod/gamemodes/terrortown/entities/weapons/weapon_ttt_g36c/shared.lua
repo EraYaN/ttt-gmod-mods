@@ -96,7 +96,8 @@ SWEP.Primary.Recoil			= .8
 SWEP.Primary.Damage			= 15
 SWEP.Primary.NumShots		= 1
 SWEP.Primary.Cone			= 0.05
-SWEP.Primary.Rpm 			= 750
+SWEP.Primary.Rpm 			= 350
+SWEP.Primary.Delay			= 1/350
 
 SWEP.Primary.ClipSize		= 30
 SWEP.Primary.Automatic		= true
