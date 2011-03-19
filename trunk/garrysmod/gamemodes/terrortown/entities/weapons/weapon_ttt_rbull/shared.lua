@@ -35,7 +35,7 @@ SWEP.HeadshotMultiplier = 4.5
 
 SWEP.AutoSpawnable      = true
 SWEP.AmmoEnt = "item_ammo_revolver_ttt"
-SWEP.Primary.Sound			= Sound( "Weapon_RagingBull.Single" )
+SWEP.Primary.Sound			= Sound( "weapons/ragingbull/revolver.wav" )
 SWEP.ViewModel			= "models/weapons/v_revl_raging.mdl"
 SWEP.WorldModel			= "models/weapons/w_revl_raging.mdl"
 

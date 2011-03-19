@@ -1,0 +1,19 @@
+"Weapon_RagingBull.Draw"
+{
+ "channel"  "CHAN_ITEM"
+ "volume"  "1.0"
+ "CompatibilityAttenuation" "1.0"
+ "pitch"  "PITCH_NORM"
+
+ "wave"   "weapons\ragingbull\bulldraw.wav" 
+}
+
+"Weapon_RagingBull.Reload"
+{
+ "channel"  "CHAN_ITEM"
+ "volume"  "1.0"
+ "CompatibilityAttenuation" "1.0"
+ "pitch"  "PITCH_NORM"
+
+ "wave"   "weapons\ragingbull\bullreload.wav" 
+}
