@@ -39,7 +39,7 @@ resource.AddFile( "sound/weapons/mp7/mp7_reload.wav" )
 resource.AddFile( "sound/weapons/mp7/mp7_fire.wav" )
 if (CLIENT) then
 	SWEP.DrawAmmo			= true
-	SWEP.DrawCrosshair		= false
+	SWEP.DrawCrosshair		= true
 	SWEP.CSMuzzleFlashes	= true
 	SWEP.ViewModelFOV		= 70
 	SWEP.ViewModelFlip		= true
