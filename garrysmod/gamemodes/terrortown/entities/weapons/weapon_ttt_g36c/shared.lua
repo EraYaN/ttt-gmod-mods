@@ -56,7 +56,7 @@ resource.AddFile( "sound/weapons/g36c/g36c_fire.wav" )
 resource.AddFile( "sound/weapons/g36c/g36c_reload.wav" )
 if (CLIENT) then
 	SWEP.DrawAmmo			= true
-	SWEP.DrawCrosshair		= false
+	SWEP.DrawCrosshair		= true
 	SWEP.CSMuzzleFlashes	= true
 	SWEP.ViewModelFOV		= 70
 	SWEP.ViewModelFlip		= true
