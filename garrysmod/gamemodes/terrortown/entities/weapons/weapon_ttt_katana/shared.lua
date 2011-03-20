@@ -48,7 +48,7 @@ if CLIENT then
       desc="Katana, the famous japanese sword.\nDeadly."
    };
 
-   SWEP.Icon = "VGUI/ttt/icon_katana"
+   SWEP.Icon = "VGUI/ttt/icon_bb_katana"
 end
 
 SWEP.Base               = "weapon_tttbase"
