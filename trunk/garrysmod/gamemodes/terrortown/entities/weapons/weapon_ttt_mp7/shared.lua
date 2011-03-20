@@ -44,11 +44,11 @@ SWEP.WorldModel   	= "models/weapons/w_mp7_silenced.mdl"
 SWEP.HoldType 		= "ar2"
 
 SWEP.Primary.Sound			= Sound("weapons/mp7/mp7_fire.wav")
-SWEP.Primary.Recoil			= 0.4
-SWEP.Primary.Damage			= 12
+SWEP.Primary.Recoil			= 0.8
+SWEP.Primary.Damage			= 9
 SWEP.Primary.NumShots		= 1
 SWEP.Primary.Cone			= 0.025
-SWEP.Primary.Delay			= 0.002
+SWEP.Primary.Delay			= 0.06
 
 SWEP.Primary.ClipSize		= 40
 SWEP.Primary.Automatic		= true
