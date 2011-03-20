@@ -1,0 +1,46 @@
+"Weapon_PP2000.Clipout"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"1.0"
+	"pitch"			"95,105"
+
+	"wave"			"weapons\pp2000\pp2000_clipout.wav"
+	
+}
+
+"Weapon_PP2000.Clipin"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"1.0"
+	"pitch"			"95,105"
+
+	"wave"			"weapons\pp2000\pp2000_clipin.wav"
+	
+}
+
+"Weapon_PP2000.Boltpull"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"1.0"
+	"pitch"			"95,105"
+
+	"wave"			"weapons\pp2000\pp2000_bolt.wav"
+	
+}
+
+"Weapon_PP2000.Deploy"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"1.0"
+	"pitch"			"95,105"
+
+	"wave"			"weapons\pp2000\pp2000_deploy.wav"
+	
+}
+
+
+

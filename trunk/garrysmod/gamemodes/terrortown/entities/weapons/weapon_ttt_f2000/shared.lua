@@ -51,7 +51,7 @@ SWEP.Primary.DefaultClip = 30
 SWEP.Primary.Sound       = Sound( "weapons/f2000/f2000-1.wav" )
 SWEP.HeadshotMultiplier  = 4
 
-SWEP.IronSightsPos = Vector (3.5236, -15.1832, 1.6849)
+SWEP.IronSightsPos = Vector (3.5236, -15.1832, 0)
 SWEP.IronSightsAng = Vector (0, 0, 0)
 
 SWEP.ViewModel  = "models/weapons/v_rif_f2000.mdl"
