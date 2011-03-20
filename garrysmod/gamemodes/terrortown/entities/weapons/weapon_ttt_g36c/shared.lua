@@ -50,7 +50,7 @@ SWEP.HoldType 		= "ar2"
 SWEP.HeadshotMultiplier = 2.5
 
 SWEP.Primary.Sound			= Sound("weapons/g36c/g36c_fire.wav")
-SWEP.Primary.Recoil			= 0.8
+SWEP.Primary.Recoil			= 1
 SWEP.Primary.Damage			= 15
 SWEP.Primary.NumShots		= 1
 SWEP.Primary.Cone			= 0.05
