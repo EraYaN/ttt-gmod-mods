@@ -1,5 +1,6 @@
 if SERVER then
    AddCSLuaFile( "shared.lua" )
+   resource.AddFile("materials/VGUI/ttt/icon_bb_rbull.vmt")
 end
    
 SWEP.HoldType			= "pistol"
@@ -11,7 +12,7 @@ if CLIENT then
    SWEP.Slot				= 1
    SWEP.SlotPos			= 1
 
-   SWEP.Icon = "VGUI/ttt/icon_tuna_rbull"
+   SWEP.Icon = "VGUI/ttt/icon_bb_rbull"
 end
 
 SWEP.Base				= "weapon_tttbase"

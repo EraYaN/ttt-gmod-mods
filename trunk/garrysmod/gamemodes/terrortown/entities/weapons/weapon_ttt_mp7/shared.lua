@@ -1,6 +1,7 @@
 if (SERVER) then
 	AddCSLuaFile("shared.lua")
 	SWEP.Weight = 5
+	resource.AddFile("materials/VGUI/ttt/icon_bb_mp7.vmt")
 	resource.AddFile( "models/weapons/v_mp7_silenced.mdl" )
 	resource.AddFile( "models/weapons/w_mp7_silenced.mdl" )
 	resource.AddFile( "materials/models/weapons/v_models/schmung_mp7/aim0py.vmt" )
@@ -17,10 +18,6 @@ if (SERVER) then
 	resource.AddFile( "materials/models/weapons/w_models/schmung_mp7/map2.vmt" )
 	resource.AddFile( "materials/models/weapons/w_models/schmung_mp7/sights_down.vmt" )
 	resource.AddFile( "materials/models/weapons/w_models/schmung_mp7/sila.vmt" )
-	resource.AddFile( "materials/VGUI/entities/weapon_bd_mp7.vmt" )
-	resource.AddFile( "materials/VGUI/entities/weapon_bd_mp7.vtf" )
-	resource.AddFile( "materials/weapons/weapon_bd_mp7.vmt" )
-	resource.AddFile( "materials/weapons/weapon_bd_mp7.vtf" )
 	resource.AddFile( "sound/weapons/mp7/mp7_reload.wav" )
 	resource.AddFile( "sound/weapons/mp7/mp7_fire.wav" )
 end
