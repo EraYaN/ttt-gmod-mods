@@ -1,6 +1,6 @@
 if( SERVER ) then
 AddCSLuaFile( "shared.lua" )
-end
+resource.AddFile("materials/VGUI/ttt/icon_bb_katana.vmt")
 resource.AddFile("models/weapons/w_katana.mdl")
 resource.AddFile("models/weapons/v_katana.mdl")
 resource.AddFile("materials/models/weapons/v_katana/katana_normal.vtf")
@@ -29,7 +29,7 @@ resource.AddFile("sound/katana/metal_hit_5.wav")
 resource.AddFile("sound/katana/metal_hit_6.wav")
 resource.AddFile("sound/katana/metal_hit_7.wav")
 resource.AddFile("sound/katana/draw.wav")
-
+end
 if( CLIENT ) then
 SWEP.BounceWeaponIcon = false
 SWEP.WepSelectIcon	= surface.GetTextureID("weapons/weapon_katana")
