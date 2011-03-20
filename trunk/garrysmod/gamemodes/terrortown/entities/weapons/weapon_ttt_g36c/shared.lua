@@ -37,23 +37,23 @@ if (CLIENT) then
 	
     SWEP.ViewModelFOV  = 90	
 	SWEP.ViewModelFlip		= true
-	SWEP.Icon = "VGUI/ttt/icon_tuna_g36c"
+	SWEP.Icon = "VGUI/ttt/icon_bb_g36c"
 end
 
 -- Always derive from weapon_tttbase.
 SWEP.Base				= "weapon_tttbase"
-SWEP.Author 			= "EraYaN"	
+SWEP.Author 			= "EraYaN & Ninjatuna"	
 
 SWEP.ViewModel      = "models/weapons/v_g36c.mdl"
 SWEP.WorldModel   	= "models/weapons/w_g36c.mdl"
 SWEP.HoldType 		= "ar2"
+SWEP.HeadshotMultiplier = 2.5
 
 SWEP.Primary.Sound			= Sound("weapons/g36c/g36c_fire.wav")
-SWEP.Primary.Recoil			= .8
+SWEP.Primary.Recoil			= 0.8
 SWEP.Primary.Damage			= 15
 SWEP.Primary.NumShots		= 1
 SWEP.Primary.Cone			= 0.05
-SWEP.Primary.Rpm 			= 400
 SWEP.Primary.Delay			= 0.15
 SWEP.Primary.ClipSize		= 30
 SWEP.Primary.Automatic		= true

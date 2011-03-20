@@ -26,23 +26,15 @@ if (SERVER) then
 end
 
 if (CLIENT) then
-	SWEP.DrawAmmo			= true
-	SWEP.DrawCrosshair		= true
-	SWEP.CSMuzzleFlashes	= true
 	SWEP.ViewModelFOV		= 70
 	SWEP.ViewModelFlip		= true
-	SWEP.PrintName			= "MP-7"
+	SWEP.PrintName			= "H&K MP7"
 	SWEP.Slot 				= 2
-	SWEP.BounceWeaponIcon   = false	
-	SWEP.WepSelectIcon		= surface.GetTextureID("weapons/weapon_bd_mp7")
-	SWEP.Icon = "VGUI/ttt/icon_tuna_mp7"
-	killicon.Add("weapon_bd_mp7","weapons/weapon_bd_mp7",Color(255,255,255))	
+	SWEP.Icon = "VGUI/ttt/icon_bb_mp7"	
 end
 SWEP.Base = "weapon_tttbase"
 SWEP.Kind = WEAPON_HEAVY
-SWEP.Author 			= "Baddog"	
-SWEP.Instructions 		= "Left click to shoot.\nRight click to use the scope.\nHold USE and right click to switch between normal and dissolving bullets.\nHold USE and left click to toggle the laser sight."
-SWEP.Category			= "Baddog's Weapons"
+SWEP.Author 			= "EraYaN & Ninjatuna"	
 
 SWEP.Spawnable				= true
 SWEP.AdminSpawnable			= true
@@ -51,20 +43,11 @@ SWEP.ViewModel      = "models/weapons/v_mp7_silenced.mdl"
 SWEP.WorldModel   	= "models/weapons/w_mp7_silenced.mdl"
 SWEP.HoldType 		= "ar2"
 
-SWEP.SprintPos 			= Vector(-3.1731, -5.3573, 1.4608)
-SWEP.SprintAng 			= Vector(-18.7139, -48.1596, 0)
-SWEP.ScopePos 			= Vector(3, -20, 1.5)
-SWEP.ScopeAng 			= Vector(0, 0, 0)
-
-SWEP.ZoomModes 			= { 0, 40 }
-SWEP.ZoomSpeeds 		= { 0.25, 0.40 }
-
 SWEP.Primary.Sound			= Sound("weapons/mp7/mp7_fire.wav")
-SWEP.Primary.Recoil			= .4
+SWEP.Primary.Recoil			= 0.4
 SWEP.Primary.Damage			= 12
 SWEP.Primary.NumShots		= 1
 SWEP.Primary.Cone			= 0.025
-SWEP.Primary.Rpm 			= 500
 SWEP.Primary.Delay			= 0.002
 
 SWEP.Primary.ClipSize		= 40
@@ -77,129 +60,83 @@ SWEP.AutoSpawnable = true
 
 SWEP.AmmoEnt = "item_ammo_smg1_ttt"
 
-SWEP.HeadshotMultiplier = 2
+SWEP.HeadshotMultiplier = 2.25
+
+SWEP.IronSightsPos = Vector (3.5236, -15.1832, 0)
+SWEP.IronSightsAng = Vector (0, 0, 0)
+
+function SWEP:SetZoom(state)
+    if CLIENT then 
+       return
+    else
+       if state then
+          self.Owner:SetFOV(33, 0.4)
+       else
+          self.Owner:SetFOV(0, 0.2)
+       end
+    end
+end
+
+-- Add some zoom to ironsights for this gun
+function SWEP:SecondaryAttack()
+    if not self.IronSightsPos then return end
+    if self.Weapon:GetNextSecondaryFire() > CurTime() then return end
+    
+    bIronsights = not self:GetIronsights()
+    
+    self:SetIronsights( bIronsights )
+    
+    if SERVER then
+        self:SetZoom(bIronsights)
+    end
+    
+    self.Weapon:SetNextSecondaryFire( CurTime() + 0.25)
+end
+
+function SWEP:PreDrop()
+    self:SetZoom(false)
+    self:SetIronsights(false)
+    return self.BaseClass.PreDrop(self)
+end
+
+function SWEP:Reload()
+    self.Weapon:DefaultReload( ACT_VM_RELOAD );
+    self:SetIronsights( false )
+    self:SetZoom(false)
+end
 
 function SWEP:Holster()
-	return true
+    self:SetIronsights(false)
+    self:SetZoom(false)
+    return true
 end
 
-function SWEP:AdjustMouseSensitivity()
-	local num = self.Weapon:GetNWInt("Mode",1)
-	local scale = self.ZoomModes[num] / 100
-	if scale == 0 then
-		return nil
-	end
-	return scale
+if CLIENT then
+   local scope = surface.GetTextureID("sprites/scope_reddot")
+   function SWEP:DrawHUD()
+      if self:GetIronsights() then
+         surface.SetDrawColor( 0, 0, 0, 255 )
+         
+         local x = ScrW() / 2.0
+         local y = ScrH() / 2.0
+         local scope_size = ScrH()
+
+         -- cover edges
+         local sh = scope_size / 2
+         local w = (x - sh) + 2
+         surface.DrawRect(0, 0, w, scope_size)
+         surface.DrawRect(x + sh - 2, 0, w, scope_size)
+
+
+         -- scope
+         surface.SetTexture(scope)
+         surface.SetDrawColor(255, 255, 255, 255)
+
+         surface.DrawTexturedRectRotated(x, y, scope_size, scope_size, 0)
+
+      else
+         return self.BaseClass.DrawHUD(self)
+      end
+   end
 end
-
-function SWEP:CanSecondaryAttack()
-	if self.Owner:KeyDown(IN_SPEED) or self.LastRunFrame > CurTime() then return false end
-	if self.Owner:KeyDown(IN_FORWARD) or self.Owner:KeyDown(IN_BACK) or self.Owner:KeyDown(IN_LEFT) or self.Owner:KeyDown(IN_RIGHT) or self.Weapon:Clip1() <= 0 then
-		if self.Weapon:GetZoomMode() != 1 and SERVER then
-			self.Weapon:SetZoomMode(1)
-			self.Weapon:SetNWBool("ReverseAnim",true)
-			self.Weapon:SetViewModelPosition(self.ScopePos,self.ScopeAng,0.3)
-		end
-		return false
-	end
-	return true
-end
-
-function SWEP:CanPrimaryAttack()
-	if self.Owner:KeyDown(IN_SPEED) or self.LastRunFrame > CurTime() then return false end
-	if self.Weapon:Clip1() <= 0 then
-		self.Weapon:SetNextPrimaryFire( CurTime() + 0.5 )		
-		if self.Weapon:GetZoomMode() != 1 and SERVER then
-			self.Weapon:SetZoomMode(1)
-			self.Weapon:SetNWBool("ReverseAnim",true)
-			self.Weapon:SetViewModelPosition(self.ScopePos,self.ScopeAng,0.3)
-		end	
-		return false
-	end
-	return true
-end
-
-function SWEP:IdleViewModelPos( movetime, duration, mul )
-	mul = 1
-	if ( CurTime() - movetime < duration ) then
-		mul = math.Clamp( (CurTime() - duration) / movetime, 0, 1 )
-	end
-	if self.Weapon:GetNWBool("ReverseAnim",false) then
-		return 1 - mul
-	end
-	return mul
-end
-
-function SWEP:AngApproach( newang, ang, mul )
-	ang:RotateAroundAxis( ang:Right(), 		newang.x * mul )
-	ang:RotateAroundAxis( ang:Up(), 		newang.y * mul )
-	ang:RotateAroundAxis( ang:Forward(), 	newang.z * mul )
-	return ang
-end
-
-function SWEP:PosApproach( newpos, pos, ang, mul ) 
-	local right 	= ang:Right()
-	local up 		= ang:Up()
-	local forward 	= ang:Forward()
-	pos = pos + newpos.x * right * mul
-	pos = pos + newpos.y * forward * mul
-	pos = pos + newpos.z * up * mul
-	return pos
-end
-
-function SWEP:MoveViewModelTo( newpos, newang, pos, ang, mul )
-	ang = self:AngApproach( newang, ang, mul )
-	pos = self:PosApproach( newpos, pos, ang, mul )
-	return pos, ang
-end
-
-
-local ActIndex = {
-	[ "pistol" ] 		= ACT_HL2MP_IDLE_PISTOL,
-	[ "smg" ] 			= ACT_HL2MP_IDLE_SMG1,
-	[ "grenade" ] 		= ACT_HL2MP_IDLE_GRENADE,
-	[ "ar2" ] 			= ACT_HL2MP_IDLE_AR2,
-	[ "shotgun" ] 		= ACT_HL2MP_IDLE_SHOTGUN,
-	[ "rpg" ]	 		= ACT_HL2MP_IDLE_RPG,
-	[ "physgun" ] 		= ACT_HL2MP_IDLE_PHYSGUN,
-	[ "crossbow" ] 		= ACT_HL2MP_IDLE_CROSSBOW,
-	[ "melee" ] 		= ACT_HL2MP_IDLE_MELEE,
-	[ "slam" ] 			= ACT_HL2MP_IDLE_SLAM,
-	[ "normal" ]		= ACT_HL2MP_IDLE,
-	[ "fist" ]			= ACT_HL2MP_IDLE_FIST,
-	[ "melee2" ]		= ACT_HL2MP_IDLE_MELEE2,
-	[ "passive" ]		= ACT_HL2MP_IDLE_PASSIVE,
-	[ "knife" ]			= ACT_HL2MP_IDLE_KNIFE
-}
-
-function SWEP:SetWeaponHoldType( t )
-	local index = ActIndex[ t ]
-	if (index == nil) then
-		Msg( "SWEP:SetWeaponHoldType - ActIndex[ \""..t.."\" ] isn't set! (defaulting to normal)\n" )
-		t = "normal"
-	end
-	self.ActivityTranslate = {}
-	self.ActivityTranslate [ ACT_MP_STAND_IDLE ] 				= index
-	self.ActivityTranslate [ ACT_MP_WALK ] 						= index+1
-	self.ActivityTranslate [ ACT_MP_RUN ] 						= index+2
-	self.ActivityTranslate [ ACT_MP_CROUCH_IDLE ] 				= index+3
-	self.ActivityTranslate [ ACT_MP_CROUCHWALK ] 				= index+4
-	self.ActivityTranslate [ ACT_MP_ATTACK_STAND_PRIMARYFIRE ] 	= index+5
-	self.ActivityTranslate [ ACT_MP_ATTACK_CROUCH_PRIMARYFIRE ] = index+5
-	self.ActivityTranslate [ ACT_MP_RELOAD_STAND ]		 		= index+6
-	self.ActivityTranslate [ ACT_MP_RELOAD_CROUCH ]		 		= index+6
-	self.ActivityTranslate [ ACT_MP_JUMP ] 						= index+7
-	self.ActivityTranslate [ ACT_RANGE_ATTACK1 ] 				= index+8
-	if t == "normal" then
-		self.ActivityTranslate [ ACT_MP_JUMP ] = ACT_HL2MP_JUMP_SLAM
-	end
-	if t == "passive" then
-		self.ActivityTranslate [ ACT_MP_CROUCH_IDLE ] = ACT_HL2MP_CROUCH_IDLE
-	end
-	if t == "knife" || t == "melee2" then
-		self.ActivityTranslate [ ACT_MP_CROUCH_IDLE ] = nil
-	end
-	self:SetupWeaponHoldTypeForAI( t )
-	self._InternalHoldType = t
-endw
 
