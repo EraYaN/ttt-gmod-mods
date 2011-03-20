@@ -1,15 +1,15 @@
 if SERVER then
    AddCSLuaFile( "shared.lua" )
-   resource.AddFile("materials/VGUI/ttt/icon_tuna_aug.vmt")
+   resource.AddFile("materials/VGUI/ttt/icon_bb_aug.vmt")
 end
 
 if CLIENT then
    SWEP.PrintName = "Steyr AUG A1"
    SWEP.Slot      = 7 -- add 1 to get the slot number key
    SWEP.Author	  = "EraYaN"
-   SWEP.Icon = "VGUI/ttt/icon_tuna_aug"
+   SWEP.Icon = "VGUI/ttt/icon_bb_aug"
    SWEP.EquipMenuData = {
-      type="Sniper Weapon",
+      type="Weapon",
       model="models/weapons/w_rif_aug.mdl",
       name="Steyr AUG A1",
       desc="The Steyr AUG A1\n is a powerful assault rifle.\n Does good damage, has good accuracy,\n a good gun."
