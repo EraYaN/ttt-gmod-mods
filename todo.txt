@@ -7,7 +7,7 @@ REARM THESE MAPS:
 WEAPONS:
 
 Rifles:
-F2000 ### nearly done
+F2000 ### done
 http://toybox.garrysmod.com/ingame/?view=12635&tab=content
 
 Sniper rifles:
