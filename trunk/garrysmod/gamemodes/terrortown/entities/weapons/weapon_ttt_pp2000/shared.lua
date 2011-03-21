@@ -1,6 +1,6 @@
 if SERVER then
    AddCSLuaFile( "shared.lua" )
-   resource.AddFile("materials/VGUI/ttt/icon_tuna_pp2000.vmt")
+   resource.AddFile("materials/VGUI/ttt/icon_bb_pp2000.vmt")
    resource.AddFile("models/weapons/v_smg_pp2000.mdl")
    resource.AddFile("models/weapons/w_smg_pp2000.mdl")
    resource.AddFile("materials/models/weapons/v_models/v_smg_pp2000/pbs1soundsupressorjpeg.vmt")
@@ -20,7 +20,7 @@ if CLIENT then
    SWEP.PrintName = "KBP PP-2000"			
    SWEP.Slot = 2
 
-   SWEP.Icon = "VGUI/ttt/icon_tuna_pp2000"
+   SWEP.Icon = "VGUI/ttt/icon_bb_pp2000"
 end
 
 

@@ -2,7 +2,7 @@
 
 if SERVER then
    AddCSLuaFile( "shared.lua" )
-   resource.AddFile("materials/VGUI/ttt/icon_tuna_an94.vmt")
+   resource.AddFile("materials/VGUI/ttt/icon_bb_an94.vmt")
    resource.AddFile("materials/models/weapons/v_models/v_rif_an94/frame.vmt")
    resource.AddFile("materials/models/weapons/v_models/v_rif_an94/gp30.vmt")
    resource.AddFile("materials/models/weapons/v_models/v_rif_an94/kobra.vmt")
@@ -35,7 +35,7 @@ if CLIENT then
    SWEP.Author				= "NinjaTuna"
    SWEP.Slot				= 2
 
-   SWEP.Icon = "VGUI/ttt/icon_tuna_an94"
+   SWEP.Icon = "VGUI/ttt/icon_bb_an94"
 end
 
 
