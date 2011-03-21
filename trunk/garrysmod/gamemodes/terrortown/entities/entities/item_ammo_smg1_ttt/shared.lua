@@ -28,7 +28,6 @@ function ENT:Touch(ent)
 					self:Remove()
 					-- just in case remove does not happen soon enough
 					self.taken = true
-					end
 						
 						elseif ent:GetWeapon("weapon_ttt_pp2000"):IsValid() and (60 >= (ammo + math.ceil(20 * 0.25))) then
 							ent:GiveAmmo( math.min(20, 60 - ammo), self.AmmoType)
