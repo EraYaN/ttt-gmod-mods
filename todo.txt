@@ -7,23 +7,14 @@ REARM THESE MAPS:
 WEAPONS:
 
 Rifles:
-F2000 ### done
-http://toybox.garrysmod.com/ingame/?view=12635&tab=content
+
 
 Sniper rifles:
 VSS Vintorez
 http://www.garrysmod.org/downloads/?a=view&id=70164
 
 Shotguns:
-SPAS-12
-http://toybox.garrysmod.com/ingame/?view=2686&tab=content
 Remington 870
-<Kermite>
-
-SMGs:
-UZI
-http://www.garrysmod.org/downloads/?a=view&id=80834
-XM-8 Compact
 <Kermite>
 
 Western weapons from mad cow?
