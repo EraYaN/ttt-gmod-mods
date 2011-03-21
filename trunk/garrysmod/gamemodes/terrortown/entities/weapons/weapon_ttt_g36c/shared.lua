@@ -1,33 +1,37 @@
 if (SERVER) then
 	AddCSLuaFile("shared.lua")
-	resource.AddFile( "models/weapons/v_g36c.mdl" )
-	resource.AddFile( "models/weapons/w_g36c.mdl" )
+	resource.AddFile( "models/weapons/v_rif_g36c.mdl" )
+	resource.AddFile( "models/weapons/w_rif_g36c.mdl" )
 	resource.AddFile("materials/VGUI/ttt/icon_bb_g36c.vmt")
-	resource.AddFile( "materials/models/weapons/v_models/TheLama.Thanez_G36c/ACOG.vmt" )
-	resource.AddFile( "materials/models/weapons/v_models/TheLama.Thanez_G36c/C_grip.vmt" )
-	resource.AddFile( "materials/models/weapons/v_models/TheLama.Thanez_G36c/C_Grip_NO_Rails.vmt" )
-	resource.AddFile( "materials/models/weapons/v_models/TheLama.Thanez_G36c/C_rail.vmt" )
-	resource.AddFile( "materials/models/weapons/v_models/TheLama.Thanez_G36c/C_Rail_NO_ACOG.vmt" )
-	resource.AddFile( "materials/models/weapons/v_models/TheLama.Thanez_G36c/cmag.vmt" )
-	resource.AddFile( "materials/models/weapons/v_models/TheLama.Thanez_G36c/frame.vmt" )
-	resource.AddFile( "materials/models/weapons/v_models/TheLama.Thanez_G36c/Frame_inverted.vmt" )
-	resource.AddFile( "materials/models/weapons/v_models/TheLama.Thanez_G36c/Mag.vmt" )
-	resource.AddFile( "materials/models/weapons/v_models/TheLama.Thanez_G36c/Silencer.vmt" )
-	resource.AddFile( "materials/models/weapons/v_models/TheLama.Thanez_G36c/Stock.vmt" )
-	resource.AddFile( "materials/models/weapons/v_models/TheLama.Thanez_G36c/Stock_inverted.vmt" )
-	resource.AddFile( "materials/models/weapons/v_models/TheLama.Thanez_G36c/Trit.vmt" )
-	resource.AddFile( "materials/models/weapons/w_models/TheLama.Thanez_G36c/ACOG.vmt" )
-	resource.AddFile( "materials/models/weapons/w_models/TheLama.Thanez_G36c/C_grip.vmt" )
-	resource.AddFile( "materials/models/weapons/w_models/TheLama.Thanez_G36c/C_Grip_NO_Rails.vmt" )
-	resource.AddFile( "materials/models/weapons/w_models/TheLama.Thanez_G36c/C_rail.vmt" )
-	resource.AddFile( "materials/models/weapons/w_models/TheLama.Thanez_G36c/C_Rail_NO_ACOG.vmt" )
-	resource.AddFile( "materials/models/weapons/w_models/TheLama.Thanez_G36c/cmag.vmt" )
-	resource.AddFile( "materials/models/weapons/w_models/TheLama.Thanez_G36c/frame.vmt" )
-	resource.AddFile( "materials/models/weapons/w_models/TheLama.Thanez_G36c/Mag.vmt" )
-	resource.AddFile( "materials/models/weapons/w_models/TheLama.Thanez_G36c/Stock.vmt" )
-	resource.AddFile( "sound/weapons/g36c/g36c_draw.wav" )
-	resource.AddFile( "sound/weapons/g36c/g36c_fire.wav" )
-	resource.AddFile( "sound/weapons/g36c/g36c_reload.wav" )
+	resource.AddFile( "materials/models/weapons/v_models/v_rif_g36c/ACOG.vmt" )
+	resource.AddFile( "materials/models/weapons/v_models/v_rif_g36c/C_grip.vmt" )
+	resource.AddFile( "materials/models/weapons/v_models/v_rif_g36c/C_Grip_NO_Rails.vmt" )
+	resource.AddFile( "materials/models/weapons/v_models/v_rif_g36c/C_rail.vmt" )
+	resource.AddFile( "materials/models/weapons/v_models/v_rif_g36c/C_Rail_NO_ACOG.vmt" )
+	resource.AddFile( "materials/models/weapons/v_models/v_rif_g36c/cmag.vmt" )
+	resource.AddFile( "materials/models/weapons/v_models/v_rif_g36c/frame.vmt" )
+	resource.AddFile( "materials/models/weapons/v_models/v_rif_g36c/Frame_inverted.vmt" )
+	resource.AddFile( "materials/models/weapons/v_models/v_rif_g36c/Mag.vmt" )
+	resource.AddFile( "materials/models/weapons/v_models/v_rif_g36c/Silencer.vmt" )
+	resource.AddFile( "materials/models/weapons/v_models/v_rif_g36c/Stock.vmt" )
+	resource.AddFile( "materials/models/weapons/v_models/v_rif_g36c/Stock_inverted.vmt" )
+	resource.AddFile( "materials/models/weapons/v_models/v_rif_g36c/Trit.vmt" )
+	resource.AddFile( "materials/models/weapons/w_models/v_rif_g36c/ACOG.vmt" )
+	resource.AddFile( "materials/models/weapons/w_models/v_rif_g36c/C_grip.vmt" )
+	resource.AddFile( "materials/models/weapons/w_models/v_rif_g36c/C_Grip_NO_Rails.vmt" )
+	resource.AddFile( "materials/models/weapons/w_models/v_rif_g36c/C_rail.vmt" )
+	resource.AddFile( "materials/models/weapons/w_models/v_rif_g36c/C_Rail_NO_ACOG.vmt" )
+	resource.AddFile( "materials/models/weapons/w_models/v_rif_g36c/cmag.vmt" )
+	resource.AddFile( "materials/models/weapons/w_models/v_rif_g36c/frame.vmt" )
+	resource.AddFile( "materials/models/weapons/w_models/v_rif_g36c/Mag.vmt" )
+	resource.AddFile( "materials/models/weapons/w_models/v_rif_g36c/Stock.vmt" )
+	resource.AddFile( "sound/weapons/g36c/g36c_clothshit.wav" )
+	resource.AddFile( "sound/weapons/g36c/g36c-1.wav" )
+	resource.AddFile( "sound/weapons/g36c/g36c_magin.wav" )
+	resource.AddFile( "sound/weapons/g36c/g36c_magout.wav" )
+	resource.AddFile( "sound/weapons/g36c/g36c_magfiddle.wav" )
+	resource.AddFile( "sound/weapons/g36c/g36c_boltback.wav" )
+	resource.AddFile( "sound/weapons/g36c/g36c_boltforward.wav" )
 end
 
 if (CLIENT) then
@@ -43,12 +47,12 @@ end
 SWEP.Base				= "weapon_tttbase"
 SWEP.Author 			= "EraYaN & Ninjatuna"	
 
-SWEP.ViewModel      = "models/weapons/v_g36c.mdl"
-SWEP.WorldModel   	= "models/weapons/w_g36c.mdl"
+SWEP.ViewModel      = "models/weapons/v_rif_g36c.mdl"
+SWEP.WorldModel   	= "models/weapons/w_rif_g36c.mdl"
 SWEP.HoldType 		= "ar2"
 SWEP.HeadshotMultiplier = 2.5
 
-SWEP.Primary.Sound			= Sound("weapons/g36c/g36c_fire.wav")
+SWEP.Primary.Sound			= Sound("weapons/g36c/g36c-1.wav")
 SWEP.Primary.Recoil			= 1
 SWEP.Primary.Damage			= 15
 SWEP.Primary.NumShots		= 1

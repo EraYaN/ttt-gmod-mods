@@ -1,0 +1,63 @@
+"Weapon_G36c_boltback"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"1.0"
+	"pitch"			"95,105"
+
+	"wave"			"weapons\g36c\g36c_boltback.wav"
+	
+}
+
+"Weapon_G36c_boltforward"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"1.0"
+	"pitch"			"95,105"
+
+	"wave"			"weapons\g36c\g36c_boltforward.wav"
+	
+}
+
+"Weapon_G36c.magout"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"1.0"
+	"pitch"			"95,105"
+
+	"wave"			"weapons\g36c\g36c_magout.wav"
+	
+}
+
+"Weapon_G36c.magin"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"1.0"
+	"pitch"			"95,105"
+
+	"wave"			"weapons\g36c\g36c_magin.wav"
+	
+}
+"Weapon_G36c.magfiddle"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"1.0"
+	"pitch"			"95,105"
+
+	"wave"			"weapons\g36c\g36c_magfiddle.wav"
+	
+}
+"Weapon_G36c.clothshit"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"1.0"
+	"pitch"			"95,105"
+
+	"wave"			"weapons\g36c\g36c_clothshit.wav"
+	
+}
