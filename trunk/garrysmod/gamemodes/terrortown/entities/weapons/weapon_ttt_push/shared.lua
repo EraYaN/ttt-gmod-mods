@@ -25,7 +25,7 @@ SWEP.Primary.Ammo   = "none"
 SWEP.Primary.ClipSize		= -1
 SWEP.Primary.DefaultClip	= -1
 SWEP.Primary.Automatic		= true
-SWEP.Primary.Delay = 1
+SWEP.Primary.Delay = 0.3
 SWEP.Primary.Ammo  = "none"
 SWEP.Primary.Cone  = 0.005
 SWEP.Secondary.ClipSize		= -1
@@ -94,7 +94,7 @@ function SWEP:FirePulse(force_fwd, force_up)
    self.Weapon:SendWeaponAnim(ACT_VM_IDLE)
 
    local cone = self.Primary.Cone or 0.1
-   local num = 6
+   local num = 5
 
    local bullet = {}
    bullet.Num    = num
