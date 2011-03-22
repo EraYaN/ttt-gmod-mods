@@ -9,6 +9,7 @@ game_sounds_manifest
 	"precache_file"		"scripts/sounds/m24.txt"
 	"precache_file"		"scripts/sounds/g36c.txt"
 	"precache_file"		"scripts/sounds/mp7.txt"
+	"precache_file"		"scripts/sounds/spas12.txt"
 	"precache_file"		"scripts/content_accum/snds_hl2_1.txt"
 	"precache_file"		"scripts/content_accum/snds_hl2_2.txt"
 	"precache_file"		"scripts/content_accum/snds_hl2_3.txt"
