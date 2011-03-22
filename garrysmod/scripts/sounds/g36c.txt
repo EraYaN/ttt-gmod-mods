@@ -1,4 +1,4 @@
-"Weapon_G36c_boltback"
+"Weapon_G36c.boltback"
 {
 	"channel"		"CHAN_ITEM"
 	"volume"		"1.0"
@@ -9,7 +9,7 @@
 	
 }
 
-"Weapon_G36c_boltforward"
+"Weapon_G36c.boltforward"
 {
 	"channel"		"CHAN_ITEM"
 	"volume"		"1.0"
