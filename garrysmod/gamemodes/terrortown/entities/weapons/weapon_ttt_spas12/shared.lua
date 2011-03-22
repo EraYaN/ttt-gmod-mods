@@ -21,7 +21,7 @@ if SERVER then
    resource.AddFile("models/weapons/v_shot_spas12.mdl")
    resource.AddFile("models/weapons/w_shot_spas12.mdl")
    resource.AddFile("sound/weapons/spas12/spas12_cock.wav")
-   resource.AddFile("sound/weapons/spas12/spas12_insert.wav")
+   resource.AddFile("sound/weapons/spas12/spas12_insertshell.wav")
    resource.AddFile("sound/weapons/spas12/spas12-1.wav")
 end
 
@@ -134,7 +134,6 @@ function SWEP:PerformReload()
    self.Weapon:SetClip1( self.Weapon:Clip1() + 1 )
 
    wep:SendWeaponAnim(ACT_VM_RELOAD)
-   self.Weapon:EmitSound("weapons/spas12/spas12_insert.wav")
 
    self.reloadtimer = CurTime() + wep:SequenceDuration()
 end
@@ -142,7 +141,6 @@ end
 function SWEP:FinishReload()
    self.dt.reloading = false
    self.Weapon:SendWeaponAnim(ACT_SHOTGUN_RELOAD_FINISH)
-   self.Weapon:EmitSound("weapons/spas12/spas12_cock.wav")
    
    self.reloadtimer = CurTime() + self.Weapon:SequenceDuration()
 end
