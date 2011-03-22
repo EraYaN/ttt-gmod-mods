@@ -1,4 +1,4 @@
-"Weapon_mp7.magout"
+"Weapon_MP7.magout"
 {
 	"channel"		"CHAN_ITEM"
 	"volume"		"1.0"
@@ -8,7 +8,7 @@
 	"wave"			"weapons\mp7\mp7_magout.wav"
 	
 }
-"Weapon_mp7.magin"
+"Weapon_MP7.magin"
 {
 	"channel"		"CHAN_ITEM"
 	"volume"		"1.0"
@@ -18,7 +18,7 @@
 	"wave"			"weapons\mp7\mp7_magin.wav"
 	
 }
-"Weapon_mp7.charger"
+"Weapon_MP7.charger"
 {
 	"channel"		"CHAN_ITEM"
 	"volume"		"1.0"
