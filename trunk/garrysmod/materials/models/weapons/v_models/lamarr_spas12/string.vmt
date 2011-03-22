@@ -1,7 +1,0 @@
-"VertexlitGeneric"
-{
-	"$basetexture" "models\weapons\v_models\lamarr_spas12\string"
-      	"$bumpmap" "models\weapons\v_models\lamarr_spas12\string_normal"
-	"$envmap" "env_cubemap"
-	"$normalmapalphaenvmapmask" "1"
-}
