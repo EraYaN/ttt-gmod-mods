@@ -1,0 +1,6 @@
+VertexLitGeneric
+{
+	"$baseTexture" "models\weapons\v_models\v_smg_mp7\aim0py"
+	"$envmap" "env_cubemap"
+	"$envmapmask" "models\weapons\v_models\v_smg_mp7\aim0py_ref"
+}
