@@ -1,23 +1,23 @@
 -- SPAS-12
 if SERVER then
    AddCSLuaFile( "shared.lua" )
-   resource.AddFile("materials/VGUI/ttt/icon_tuna_spas12.vmt")
-   resource.AddFile("materials/models/weapons/v_models/lamarr_spas12/barrels.vmt")
-   resource.AddFile("materials/models/weapons/v_models/lamarr_spas12/base.vmt")
-   resource.AddFile("materials/models/weapons/v_models/lamarr_spas12/extra_shells.vmt")
-   resource.AddFile("materials/models/weapons/v_models/lamarr_spas12/foregrip.vmt")
-   resource.AddFile("materials/models/weapons/v_models/lamarr_spas12/handle.vmt")
-   resource.AddFile("materials/models/weapons/v_models/lamarr_spas12/heatshield.vmt")
-   resource.AddFile("materials/models/weapons/v_models/lamarr_spas12/stock_flap.vmt")
-   resource.AddFile("materials/models/weapons/v_models/lamarr_spas12/sting.vmt")
-   resource.AddFile("materials/models/weapons/w_models/lamarr_spas12/barrels.vmt")
-   resource.AddFile("materials/models/weapons/w_models/lamarr_spas12/base.vmt")
-   resource.AddFile("materials/models/weapons/w_models/lamarr_spas12/extra_shells.vmt")
-   resource.AddFile("materials/models/weapons/w_models/lamarr_spas12/foregrip.vmt")
-   resource.AddFile("materials/models/weapons/w_models/lamarr_spas12/handle.vmt")
-   resource.AddFile("materials/models/weapons/w_models/lamarr_spas12/heatshield.vmt")
-   resource.AddFile("materials/models/weapons/w_models/lamarr_spas12/stock_flap.vmt")
-   resource.AddFile("materials/models/weapons/w_models/lamarr_spas12/sting.vmt")
+   resource.AddFile("materials/VGUI/ttt/icon_bb_spas12.vmt")
+   resource.AddFile("materials/models/weapons/v_models/v_shot_spas12/barrels.vmt")
+   resource.AddFile("materials/models/weapons/v_models/v_shot_spas12/base.vmt")
+   resource.AddFile("materials/models/weapons/v_models/v_shot_spas12/extra_shells.vmt")
+   resource.AddFile("materials/models/weapons/v_models/v_shot_spas12/foregrip.vmt")
+   resource.AddFile("materials/models/weapons/v_models/v_shot_spas12/handle.vmt")
+   resource.AddFile("materials/models/weapons/v_models/v_shot_spas12/heatshield.vmt")
+   resource.AddFile("materials/models/weapons/v_models/v_shot_spas12/stock_flap.vmt")
+   resource.AddFile("materials/models/weapons/v_models/v_shot_spas12/sting.vmt")
+   resource.AddFile("materials/models/weapons/w_models/w_shot_spas12/barrels.vmt")
+   resource.AddFile("materials/models/weapons/w_models/w_shot_spas12/base.vmt")
+   resource.AddFile("materials/models/weapons/w_models/w_shot_spas12/extra_shells.vmt")
+   resource.AddFile("materials/models/weapons/w_models/w_shot_spas12/foregrip.vmt")
+   resource.AddFile("materials/models/weapons/w_models/w_shot_spas12/handle.vmt")
+   resource.AddFile("materials/models/weapons/w_models/w_shot_spas12/heatshield.vmt")
+   resource.AddFile("materials/models/weapons/w_models/w_shot_spas12/stock_flap.vmt")
+   resource.AddFile("materials/models/weapons/w_models/w_shot_spas12/sting.vmt")
    resource.AddFile("models/weapons/v_shot_spas12.mdl")
    resource.AddFile("models/weapons/w_shot_spas12.mdl")
    resource.AddFile("sound/weapons/spas12/spas12_cock.wav")
@@ -32,7 +32,7 @@ if CLIENT then
    SWEP.Author				= "NinjaTuna"
    SWEP.Slot				= 2
  
-   SWEP.Icon = "VGUI/ttt/icon_tuna_spas12"
+   SWEP.Icon = "VGUI/ttt/icon_bb_spas12"
 end
 
 
