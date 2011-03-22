@@ -1,6 +1,14 @@
 if SERVER then
-   AddCSLuaFile( "shared.lua" )
-   resource.AddFile("materials/VGUI/ttt/icon_bb_rbull.vmt")
+	AddCSLuaFile( "shared.lua" )
+	resource.AddFile("materials/VGUI/ttt/icon_bb_rbull.vmt")
+	resource.AddFile("models/weapons/v_revl_raging.mdl")
+	resource.AddFile("models/weapons/w_revl_raging.mdl")
+	resource.AddFile("materials\models\weapons\v_models\v_revl_raging\barrel.vmt")
+	resource.AddFile("materials\models\weapons\v_models\v_revl_raging\body.vmt")  
+	resource.AddFile("materials\models\weapons\v_models\v_revl_raging\bullet.vmt")
+	resource.AddFile("sound\weapons\ragingbull\bulldraw.wav")
+	resource.AddFile("sound\weapons\ragingbull\bullreload.wav")
+	resource.AddFile("sound\weapons\ragingbull\revolver.wav")	
 end
    
 SWEP.HoldType			= "pistol"
