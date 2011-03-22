@@ -1,1 +1,0 @@
-Your RapidSVN settings registry files will go here
