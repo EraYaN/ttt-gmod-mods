@@ -1,0 +1,7 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/weapons\v_models\v_smg_mp7\bolt"
+	"$envmap" "env_cubemap"
+	"$envmapmask" "models\weapons\v_models\v_smg_mp7\bolt_ref"
+}
+
