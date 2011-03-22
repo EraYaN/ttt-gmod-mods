@@ -1,8 +1,8 @@
 "VertexlitGeneric"
 {
-	"$basetexture" "models\weapons\v_models/lamarr_spas12/barrels"
+	"$basetexture" "models\weapons\v_models/v_shot_spas12/barrels"
 	"$selfillum" 1
-    	"$bumpmap" "models\weapons\v_models/lamarr_spas12/barrels_normal"
+    	"$bumpmap" "models\weapons\v_models/v_shot_spas12/barrels_normal"
 	"$envmap" "env_cubemap"
 	"$normalmapalphaenvmapmask" "1"
 //	"$envmaptint" "[.50 .50 .50]"

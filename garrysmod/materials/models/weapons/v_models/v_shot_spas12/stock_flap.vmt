@@ -1,0 +1,6 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models\weapons\v_models/v_shot_spas12/stock_flap"
+	"$envmapmask" "models\weapons\v_models/v_shot_spas12/stock_flap_ref"
+	"$envmap" "env_cubemap"
+}

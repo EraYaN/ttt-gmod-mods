@@ -1,0 +1,8 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models\weapons\v_models/v_shot_spas12/handle"
+    	"$bumpmap" "models\weapons\v_models/v_shot_spas12/handle_normal"
+	"$envmap" "env_cubemap"
+	"$normalmapalphaenvmapmask" "1"
+	"$envmaptint" "[.50 .50 .50]"
+}
