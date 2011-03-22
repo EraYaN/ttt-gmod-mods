@@ -3,7 +3,7 @@ if SERVER then
    resource.AddFile("materials/VGUI/ttt/icon_bb_pp2000.vmt")
    resource.AddFile("models/weapons/v_smg_pp2000.mdl")
    resource.AddFile("models/weapons/w_smg_pp2000.mdl")
-   resource.AddFile("materials/models/weapons/v_models/v_smg_pp2000/pbs1soundsupressorjpeg.vmt")
+   resource.AddFile("materials/models/weapons/v_models/v_smg_pp2000/pbs1soundsuppresorjpeg.vmt")
    resource.AddFile("materials/models/weapons/v_models/v_smg_pp2000/PP2000_1.vmt")
    resource.AddFile("materials/models/weapons/v_models/v_smg_pp2000/PP2000_2.vmt")
    resource.AddFile("sound/weapons/pp2000/pp2000_bolt.wav")

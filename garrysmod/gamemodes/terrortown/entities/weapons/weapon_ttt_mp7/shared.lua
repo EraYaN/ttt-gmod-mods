@@ -35,7 +35,7 @@ SWEP.ViewModel      = "models/weapons/v_smg_mp7.mdl"
 SWEP.WorldModel   	= "models/weapons/w_smg_mp7.mdl"
 SWEP.HoldType 		= "ar2"
 
-SWEP.Primary.Sound			= Sound("weapons/mp7/mp7_fire.wav")
+SWEP.Primary.Sound			= Sound("weapons/mp7/mp7-1.wav")
 SWEP.Primary.Recoil			= 0.8
 SWEP.Primary.Damage			= 9
 SWEP.Primary.NumShots		= 1
