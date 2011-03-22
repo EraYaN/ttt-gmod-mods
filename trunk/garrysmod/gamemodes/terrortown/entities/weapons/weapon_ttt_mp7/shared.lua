@@ -2,24 +2,19 @@ if (SERVER) then
 	AddCSLuaFile("shared.lua")
 	SWEP.Weight = 5
 	resource.AddFile("materials/VGUI/ttt/icon_bb_mp7.vmt")
-	resource.AddFile( "models/weapons/v_mp7_silenced.mdl" )
-	resource.AddFile( "models/weapons/w_mp7_silenced.mdl" )
-	resource.AddFile( "materials/models/weapons/v_models/schmung_mp7/aim0py.vmt" )
-	resource.AddFile( "materials/models/weapons/v_models/schmung_mp7/bolt.vmt" )
-	resource.AddFile( "materials/models/weapons/v_models/schmung_mp7/flashhideb.vmt" )
-	resource.AddFile( "materials/models/weapons/v_models/schmung_mp7/main.vmt" )
-	resource.AddFile( "materials/models/weapons/v_models/schmung_mp7/map2.vmt" )
-	resource.AddFile( "materials/models/weapons/v_models/schmung_mp7/sights_down.vmt" )
-	resource.AddFile( "materials/models/weapons/v_models/schmung_mp7/sila.vmt" )
-	resource.AddFile( "materials/models/weapons/w_models/schmung_mp7/aim0py.vmt" )
-	resource.AddFile( "materials/models/weapons/w_models/schmung_mp7/bolt.vmt" )
-	resource.AddFile( "materials/models/weapons/w_models/schmung_mp7/flashhideb.vmt" )
-	resource.AddFile( "materials/models/weapons/w_models/schmung_mp7/main.vmt" )
-	resource.AddFile( "materials/models/weapons/w_models/schmung_mp7/map2.vmt" )
-	resource.AddFile( "materials/models/weapons/w_models/schmung_mp7/sights_down.vmt" )
-	resource.AddFile( "materials/models/weapons/w_models/schmung_mp7/sila.vmt" )
-	resource.AddFile( "sound/weapons/mp7/mp7_reload.wav" )
-	resource.AddFile( "sound/weapons/mp7/mp7_fire.wav" )
+	resource.AddFile( "models/weapons/v_smg_mp7.mdl" )
+	resource.AddFile( "models/weapons/w_smg_mp7.mdl" )
+	resource.AddFile( "materials/models/weapons/v_models/v_smg_mp7/aim0py.vmt" )
+	resource.AddFile( "materials/models/weapons/v_models/v_smg_mp7/bolt.vmt" )
+	resource.AddFile( "materials/models/weapons/v_models/v_smg_mp7/flashhideb.vmt" )
+	resource.AddFile( "materials/models/weapons/v_models/v_smg_mp7/main.vmt" )
+	resource.AddFile( "materials/models/weapons/v_models/v_smg_mp7/map2.vmt" )
+	resource.AddFile( "materials/models/weapons/v_models/v_smg_mp7/sights_down.vmt" )
+	resource.AddFile( "materials/models/weapons/v_models/v_smg_mp7/sila.vmt" )
+	resource.AddFile( "sound/weapons/mp7/mp7-1.wav" )
+	resource.AddFile( "sound/weapons/mp7/mp7_magin.wav" )
+	resource.AddFile( "sound/weapons/mp7/mp7_magout.wav" )
+	resource.AddFile( "sound/weapons/mp7/mp7_charger.wav" )
 end
 
 if (CLIENT) then
@@ -36,8 +31,8 @@ SWEP.Author 			= "EraYaN & Ninjatuna"
 SWEP.Spawnable				= true
 SWEP.AdminSpawnable			= true
 
-SWEP.ViewModel      = "models/weapons/v_mp7_silenced.mdl"
-SWEP.WorldModel   	= "models/weapons/w_mp7_silenced.mdl"
+SWEP.ViewModel      = "models/weapons/v_smg_mp7.mdl"
+SWEP.WorldModel   	= "models/weapons/w_smg_mp7.mdl"
 SWEP.HoldType 		= "ar2"
 
 SWEP.Primary.Sound			= Sound("weapons/mp7/mp7_fire.wav")
