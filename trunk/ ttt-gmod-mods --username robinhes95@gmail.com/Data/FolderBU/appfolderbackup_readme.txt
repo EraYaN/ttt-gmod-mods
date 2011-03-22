@@ -1,1 +1,0 @@
-Your RapidSVN application data settings folders will go here for backup and portable uses.
