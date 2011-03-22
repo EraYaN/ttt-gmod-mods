@@ -10,7 +10,14 @@ Ammo			- NinjaTuna
 Rearms		- EraYaN & NinjaTuna & Others
 Setup			- EraYaN
 AN-94			- NinjaTuna
-M24			- NinjaTuna
+M24			 - NinjaTuna
+PP-2000      - NinjaTuna
+SPAS-12      - NinjaTuna
+Katana       - EraYaN
+Raging Bull  - EraYaN
+Soundscripts - NinjaTuna
+Recompiling  - EraYaN & NinjaTuna
+
 
 Cooperation 	- NinjaTuna & EraYaN
 
@@ -27,19 +34,15 @@ Original Authors
 http://www.gamebanana.com/skins/99262
 ##############################################
 F2000
-Model: The_Lama
-Silencer: Will
--------------------------
-Textures: Acid_Snake
-Silencer:Kimono
---------------------------
-Sounds: Vunsunta & Unbreakable?
---------------------------
-Animations: StrykerWolf
---------------------------
-Front Lense: Ankalar
-Compile, Wees, Reflects and Skin Edits: Unbreakable?
-http://counterstrikehq.multiplayernetwork.net/file/1309
+    Key Authors
+    
+      * The_Lama
+      * Acid_Snake
+      * Vunsunta
+      * Unbreakble
+      * StrykerWolf
+      * Ankalar
+
 ##############################################
 M24
     Key Authors
