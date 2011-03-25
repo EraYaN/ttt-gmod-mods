@@ -1,0 +1,12 @@
+#summary BlackBox Community
+#labels Featured
+= Introduction =
+
+The main community servers running this mod. 
+
+[http://blackbox.erayan.eu/ BlackBox]
+
+
+= Details =
+
+We try to provide a nice playing experience.
