@@ -17,7 +17,7 @@ function ENT:Touch(ent)
 
          local ammo = ent:GetAmmoCount(self.AmmoType)
 				
-			 if ent:GetWeapon("weapon_ttt_mp7"):IsValid() and (80 >= (ammo + math.ceil(40 * 0.25))) then
+			 if ent:GetWeapon("weapon_ttt_mp7"):IsValid() and (40 >= (ammo + math.ceil(40 * 0.25))) then
 				ent:GiveAmmo( math.min(40, 40 - ammo), self.AmmoType)
 				self:Remove()
 				-- just in case remove does not happen soon enough
