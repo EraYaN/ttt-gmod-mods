@@ -11,7 +11,7 @@ if (SERVER) then
 	resource.AddFile( "materials/models/weapons/v_models/v_rif_g36c/cmag.vmt" )
 	resource.AddFile( "materials/models/weapons/v_models/v_rif_g36c/cmag.vtf" )
 	resource.AddFile( "materials/models/weapons/v_models/v_rif_g36c/cmag_Normal.vtf" )
-	resource.AddFile( "materials/models/weapons/v_models/v_rif_g36c/C_Grip.vmt" )
+	resource.AddFile( "materials/models/weapons/v_models/v_rif_g36c/C_grip.vmt" )
 	resource.AddFile( "materials/models/weapons/v_models/v_rif_g36c/C_Grip.vtf" )
 	resource.AddFile( "materials/models/weapons/v_models/v_rif_g36c/C_Grip_Normal.vtf" )
 	resource.AddFile( "materials/models/weapons/v_models/v_rif_g36c/C_Rail.vmt" )
