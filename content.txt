@@ -5,9 +5,16 @@ F2000 Automatic Rifle
 Benelli M3 Pump action shotgun
 FAMAS G1 Automatic Rifle
 SIG 550 Autosniper
-Remington M24
+Remington M24 Sniper
 Steyr TMP Micro SMG
 Artic Warfare Magnum (T)
+SIG 552 Automatic Rifle
+PP-2000 Micro SMG
+Steyr AUG (T)
+Franchi SPAS-12 Shotgun
+H&K MP7
+H&K G36c
+
 Others have their real name and are a little bit tweaked
 
 Ammo:

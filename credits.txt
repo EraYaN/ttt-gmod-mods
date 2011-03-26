@@ -60,3 +60,26 @@ M24
         * Bullethead - Model
         * IIopn - Animation & Compile
 ##############################################
+SPAS-12
+   Key Authors
+
+        Model by Lamarr
+    	Skin by Diwako
+    	Animations by Jennifer!! and Valve
+    	Sounds by Unknown
+    	Compiles and Buy Menu Pics by modderfreak
+#############################################
+PP-2000
+Key Authors
+
+    DeadPixel - model
+    Kimono - PBS-1 Silencer(Model)
+    Jason9Jason - PBS-1 Silencer(Texture)
+    Rionname - PP-2000 texture
+    Strelok - Sounds
+    Junkie_Bastard[RuS] - previous compile
+    SpiceMustFlow - kung-fu
+    Blind5 - animations
+    Max(R) - video/render
+#############################################
+
