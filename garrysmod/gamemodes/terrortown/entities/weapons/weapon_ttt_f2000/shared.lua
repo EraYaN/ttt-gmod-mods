@@ -40,7 +40,7 @@ if CLIENT then
 
    SWEP.ViewModelFOV  = 90
    SWEP.ViewModelFlip = true
-   SWEP.Icon = "vgui/ttt/icon_tuna_f2000"
+   SWEP.Icon = "vgui/ttt/icon_bb_f2000"
 end
 
 -- Always derive from weapon_tttbase.
