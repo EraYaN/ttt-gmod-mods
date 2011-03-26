@@ -39,7 +39,8 @@ if SERVER then
 	resource.AddFile("sound/weapons/an94/an94_Clipin.wav")
 	resource.AddFile("sound/weapons/an94/an94_Clipout.wav")
 	resource.AddFile("sound/weapons/an94/an94-1.wav")
-	resource.AddFile("scripts/sounds/an94.txt")	
+	resource.AddFile("scripts/sounds/an94.txt")
+	resource.AddFile("scripts/game_sounds_manifest.txt")
 end
 
 SWEP.HoldType			= "ar2"
