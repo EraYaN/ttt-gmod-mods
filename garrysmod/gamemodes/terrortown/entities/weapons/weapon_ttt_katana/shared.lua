@@ -1,7 +1,12 @@
 if( SERVER ) then
 AddCSLuaFile( "shared.lua" )
 resource.AddFile("materials/VGUI/ttt/icon_bb_katana.vmt")
-resource.AddFile("models/weapons/w_katana.mdl")
+resource.AddFile( "models/weapons/W_katana.dx80.vtx" )
+resource.AddFile( "models/weapons/W_katana.dx90.vtx" )
+resource.AddFile( "models/weapons/w_katana.mdl" )
+resource.AddFile( "models/weapons/W_katana.phy" )
+resource.AddFile( "models/weapons/W_katana.sw.vtx" )
+resource.AddFile( "models/weapons/w_katana.vvd" )
 resource.AddFile("models/weapons/v_katana.mdl")
 resource.AddFile("materials/models/weapons/v_katana/katana_normal.vtf")
 resource.AddFile("materials/models/weapons/v_katana/katana.vtf")
