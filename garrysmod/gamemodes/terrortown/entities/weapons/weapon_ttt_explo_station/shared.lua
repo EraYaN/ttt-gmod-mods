@@ -42,7 +42,7 @@ SWEP.Secondary.Delay = 1.0
 -- This is special equipment
 
 
-SWEP.Kind = WEAPON_EQUIP
+SWEP.Kind = WEAPON_EQUIP1
 SWEP.CanBuy = {ROLE_TRAITOR} -- only traitors can buy
 SWEP.LimitedStock = true -- only buyable once
 

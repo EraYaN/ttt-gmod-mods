@@ -83,7 +83,7 @@ SWEP.Secondary.DefaultClip		= -1
 SWEP.Secondary.Automatic  	 	= false
 SWEP.Secondary.Ammo         	= "none"
 
-SWEP.Kind = WEAPON_EQUIP
+SWEP.Kind = WEAPON_EQUIP1
 SWEP.CanBuy = {ROLE_TRAITOR} -- only traitors can buy
 SWEP.LimitedStock = true -- only buyable once
 SWEP.WeaponID = AMMO_KNIFE
