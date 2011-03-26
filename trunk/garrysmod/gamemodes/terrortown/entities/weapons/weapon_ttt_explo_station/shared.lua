@@ -15,7 +15,7 @@ if CLIENT then
    SWEP.EquipMenuData = {
       type="Weapon",
       model="models/props/cs_office/microwave.mdl",
-      desc="Allows people to die when placed.\n\nFaster recharge. Anyone can use it, and\nit can be damaged plus an nasty suprise against vandalism. Can be checked for\nDNA samples of its users."
+      desc="Allows people to die when placed.\n\nFaster recharge. Anyone can use it, and\nit can be damaged plus it has a nasty suprise against vandalism. Can be checked for\nDNA samples of its users."
    };
 
    SWEP.Icon = "VGUI/ttt/icon_health"
