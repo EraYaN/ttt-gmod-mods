@@ -10,7 +10,7 @@ if CLIENT then
    SWEP.PrintName = "FN Five-seveN"
    SWEP.Slot = 1
 
-   SWEP.Icon = "VGUI/ttt/icon_pistol"
+   SWEP.Icon = "vgui/ttt/icon_pistol"
 end
 
 SWEP.Kind = WEAPON_PISTOL

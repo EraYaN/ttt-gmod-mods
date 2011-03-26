@@ -1,6 +1,6 @@
 if SERVER then
    AddCSLuaFile( "shared.lua" )
-   resource.AddFile("materials/VGUI/ttt/icon_bb_m3.vmt")
+   resource.AddFile("materials/vgui/ttt/icon_bb_m3.vmt")
 end
 
 SWEP.HoldType			= "shotgun"
@@ -14,7 +14,7 @@ if CLIENT then
    SWEP.ViewModelFOV  = 72
    SWEP.ViewModelFlip = true
    
-   SWEP.Icon = "VGUI/ttt/icon_bb_m3"
+   SWEP.Icon = "vgui/ttt/icon_bb_m3"
 end
 
 --- Standard GMod values
@@ -52,7 +52,7 @@ if SERVER then
    -- file differences, it only looks at the name. This means that if you have
    -- an icon_ak47, and another server also has one, then players might see the
    -- other server's dumb icon. Avoid this by using a unique name.
-   resource.AddFile("materials/VGUI/ttt/icon_ninjah_m3.vmt")
+   resource.AddFile("materials/vgui/ttt/icon_ninjah_m3.vmt")
 end
 
 

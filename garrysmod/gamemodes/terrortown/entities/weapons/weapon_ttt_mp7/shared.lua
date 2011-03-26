@@ -3,7 +3,7 @@
 if (SERVER) then
 	AddCSLuaFile("shared.lua")
 	SWEP.Weight = 5
-	resource.AddFile("materials/VGUI/ttt/icon_bb_mp7.vmt")
+	resource.AddFile("materials/vgui/ttt/icon_bb_mp7.vmt")
 	resource.AddFile( "models/weapons/v_smg_mp7.mdl" )
 	resource.AddFile( "models/weapons/w_smg_mp7.mdl" )
 	resource.AddFile( "materials/models/weapons/v_models/v_smg_mp7/aim0py.vmt" )
@@ -39,7 +39,7 @@ if (CLIENT) then
 	SWEP.ViewModelFlip		= true
 	SWEP.PrintName			= "H&K MP7"
 	SWEP.Slot 				= 2
-	SWEP.Icon = "VGUI/ttt/icon_bb_mp7"	
+	SWEP.Icon = "vgui/ttt/icon_bb_mp7"	
 end
 SWEP.Base = "weapon_tttbase"
 SWEP.Kind = WEAPON_HEAVY

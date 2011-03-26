@@ -3,14 +3,14 @@
 -- First some standard GMod stuff
 if SERVER then
    AddCSLuaFile( "shared.lua" )
-   resource.AddFile("materials/VGUI/ttt/icon_bb_sg552.vmt")
+   resource.AddFile("materials/vgui/ttt/icon_bb_sg552.vmt")
 end
 
 if CLIENT then
    SWEP.PrintName = "SG 552 Commando"
    SWEP.Slot      = 7 -- add 1 to get the slot number key
    SWEP.Author	  = "EraYaN"
-   SWEP.Icon = "VGUI/ttt/icon_bb_sg552"
+   SWEP.Icon = "vgui/ttt/icon_bb_sg552"
    SWEP.EquipMenuData = {
       type="Weapon",
       model="models/weapons/w_rif_sg552.mdl",

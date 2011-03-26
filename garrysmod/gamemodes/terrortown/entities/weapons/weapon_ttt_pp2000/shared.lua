@@ -27,7 +27,7 @@ if CLIENT then
 	SWEP.PrintName = "KBP PP-2000"			
 	SWEP.Slot = 2
 
-	SWEP.Icon = "VGUI/ttt/icon_bb_pp2000"
+	SWEP.Icon = "vgui/ttt/icon_bb_pp2000"
 end
 
 
