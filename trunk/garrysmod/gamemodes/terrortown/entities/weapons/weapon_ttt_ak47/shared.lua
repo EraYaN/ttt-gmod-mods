@@ -12,7 +12,7 @@ if CLIENT then
    SWEP.Author	  = "EraYaN & BKU"
    SWEP.ViewModelFOV  = 72
    SWEP.ViewModelFlip = true
-   SWEP.Icon = "VGUI/ttt/icon_b_ak47"
+   SWEP.Icon = "VGUI/ttt/icon_bb_ak47"
 end
 
 -- Always derive from weapon_tttbase.
