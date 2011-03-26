@@ -2,7 +2,7 @@
 
 if SERVER then
 	AddCSLuaFile( "shared.lua" )
-	resource.AddFile("materials/VGUI/ttt/icon_bb_rbull.vmt")
+	resource.AddFile("materials/vgui/ttt/icon_bb_rbull.vmt")
 	resource.AddFile("models/weapons/v_revl_raging.mdl")
 	resource.AddFile("models/weapons/w_revl_raging.mdl")
 	resource.AddFile( "materials/models/weapons/v_models/v_revl_raging/barrel.vmt" )
@@ -26,7 +26,7 @@ if CLIENT then
 	SWEP.Slot				= 1
 	SWEP.SlotPos			= 1
 
-	SWEP.Icon = "VGUI/ttt/icon_bb_rbull"
+	SWEP.Icon = "vgui/ttt/icon_bb_rbull"
 end
 
 SWEP.Base				= "weapon_tttbase"

@@ -1,13 +1,13 @@
 if SERVER then
    AddCSLuaFile( "shared.lua" )
-   resource.AddFile("materials/VGUI/ttt/icon_bb_aug.vmt")
+   resource.AddFile("materials/vgui/ttt/icon_bb_aug.vmt")
 end
 
 if CLIENT then
    SWEP.PrintName = "Steyr AUG A1"
    SWEP.Slot      = 7 -- add 1 to get the slot number key
    SWEP.Author	  = "EraYaN"
-   SWEP.Icon = "VGUI/ttt/icon_bb_aug"
+   SWEP.Icon = "vgui/ttt/icon_bb_aug"
    SWEP.EquipMenuData = {
       type="Weapon",
       model="models/weapons/w_rif_aug.mdl",

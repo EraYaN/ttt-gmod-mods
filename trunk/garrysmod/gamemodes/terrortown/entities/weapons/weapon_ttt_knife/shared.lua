@@ -17,7 +17,7 @@ if CLIENT then
       desc="Kills wounded targets instantly and\nsilently, but only has a single use.\n\nCan be thrown using alternate fire.\n"
    };
 
-   SWEP.Icon = "VGUI/ttt/icon_knife"
+   SWEP.Icon = "vgui/ttt/icon_knife"
 end
 
 SWEP.Base               = "weapon_tttbase"

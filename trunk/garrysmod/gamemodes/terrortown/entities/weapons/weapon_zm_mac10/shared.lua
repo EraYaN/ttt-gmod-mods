@@ -9,7 +9,7 @@ if CLIENT then
    SWEP.PrintName = "Ingram MAC-10"			
    SWEP.Slot = 2
 
-   SWEP.Icon = "VGUI/ttt/icon_mac"
+   SWEP.Icon = "vgui/ttt/icon_mac"
 end
 
 

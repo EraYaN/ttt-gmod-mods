@@ -1,7 +1,7 @@
 -- Franchi SPAS-12
 if SERVER then
 	AddCSLuaFile( "shared.lua" )
-	resource.AddFile("materials/VGUI/ttt/icon_bb_spas12.vmt")
+	resource.AddFile("materials/vgui/ttt/icon_bb_spas12.vmt")
 	resource.AddFile( "materials/models/weapons/v_models/v_shot_spas12/barrels.vmt" )
 	resource.AddFile( "materials/models/weapons/v_models/v_shot_spas12/barrels.vtf" )
 	resource.AddFile( "materials/models/weapons/v_models/v_shot_spas12/barrels_normal.vtf" )
@@ -47,7 +47,7 @@ if CLIENT then
 	SWEP.Author				= "NinjaTuna"
 	SWEP.Slot				= 2
  
-	SWEP.Icon = "VGUI/ttt/icon_bb_spas12"
+	SWEP.Icon = "vgui/ttt/icon_bb_spas12"
 end
 
 

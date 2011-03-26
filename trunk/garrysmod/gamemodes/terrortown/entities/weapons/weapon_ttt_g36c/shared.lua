@@ -4,7 +4,7 @@ if (SERVER) then
 	AddCSLuaFile("shared.lua")
 	resource.AddFile( "models/weapons/v_rif_g36c.mdl" )
 	resource.AddFile( "models/weapons/w_rif_g36c.mdl" )
-	resource.AddFile( "materials/VGUI/ttt/icon_bb_g36c.vmt" )
+	resource.AddFile( "materials/vgui/ttt/icon_bb_g36c.vmt" )
 	resource.AddFile( "materials/models/weapons/v_models/v_rif_g36c/ACOG.vmt" )
 	resource.AddFile( "materials/models/weapons/v_models/v_rif_g36c/ACOG.vtf" )
 	resource.AddFile( "materials/models/weapons/v_models/v_rif_g36c/ACOG_Normal.vtf" )
@@ -47,7 +47,7 @@ if (CLIENT) then
 	
     SWEP.ViewModelFOV  = 90	
 	SWEP.ViewModelFlip		= true
-	SWEP.Icon = "VGUI/ttt/icon_bb_g36c"
+	SWEP.Icon = "vgui/ttt/icon_bb_g36c"
 end
 
 -- Always derive from weapon_tttbase.

@@ -1,6 +1,6 @@
 if( SERVER ) then
 AddCSLuaFile( "shared.lua" )
-resource.AddFile("materials/VGUI/ttt/icon_bb_katana.vmt")
+resource.AddFile("materials/vgui/ttt/icon_bb_katana.vmt")
 resource.AddFile( "models/weapons/W_katana.dx80.vtx" )
 resource.AddFile( "models/weapons/W_katana.dx90.vtx" )
 resource.AddFile( "models/weapons/w_katana.mdl" )
@@ -11,8 +11,6 @@ resource.AddFile("models/weapons/v_katana.mdl")
 resource.AddFile("materials/models/weapons/v_katana/katana_normal.vtf")
 resource.AddFile("materials/models/weapons/v_katana/katana.vtf")
 resource.AddFile("materials/models/weapons/v_katana/katana.vmt")
-resource.AddFile("materials/weapons/weapon_katana.vmt")
-resource.AddFile("materials/weapons/weapon_katana.vtf")
 resource.AddFile("materials/vgui/entities/weapon_katana.vmt")
 resource.AddFile("materials/vgui/entities/weapon_katana.vtf")
 resource.AddFile("sound/katana/glass_hit_1.wav")
@@ -35,11 +33,6 @@ resource.AddFile("sound/katana/metal_hit_6.wav")
 resource.AddFile("sound/katana/metal_hit_7.wav")
 resource.AddFile("sound/katana/draw.wav")
 end
-if( CLIENT ) then
-SWEP.BounceWeaponIcon = false
-SWEP.WepSelectIcon	= surface.GetTextureID("weapons/weapon_katana")
-killicon.Add("weapon_katana","weapons/weapon_katana",Color(255,255,255))
-end
 
 if CLIENT then
 
@@ -53,7 +46,7 @@ if CLIENT then
       desc="Katana, the famous japanese sword.\nDeadly."
    };
 
-   SWEP.Icon = "VGUI/ttt/icon_bb_katana"
+   SWEP.Icon = "vgui/ttt/icon_bb_katana"
 end
 
 SWEP.Base               = "weapon_tttbase"
@@ -91,7 +84,6 @@ SWEP.Secondary.Ammo         	= "none"
 SWEP.Kind = WEAPON_EQUIP1
 SWEP.CanBuy = {ROLE_TRAITOR} -- only traitors can buy
 SWEP.LimitedStock = true -- only buyable once
-SWEP.WeaponID = AMMO_KNIFE
 
 function SWEP:Initialize()
 self:SetWeaponHoldType("sword")
@@ -261,7 +253,7 @@ function SWEP:Bash()
 	if (self.Owner:GetPos() - tr.HitPos):Length() < 100 then
 		if tr.Entity:IsPlayer() or string.find(tr.Entity:GetClass(),"npc") or string.find(tr.Entity:GetClass(),"prop_ragdoll") or tr.MatType == MAT_FLESH then
 			self.Weapon:EmitSound( BFleshHit[math.random(1,#BFleshHit)] )
-			tr.Entity:SetVelocity((phtr.Entity:GetPos() - self.Owner:GetPos()) * 20)
+			tr.Entity:SetVelocity((phtr.Entity:GetPos() - self.Owner:GetPos()) * 35)
 			if SERVER then
 			tr.Entity:TakeDamage(25, self.Owner, self)
 			end
@@ -280,7 +272,7 @@ function SWEP:Bash()
 			self.Weapon:EmitSound(BGroundHit[math.random(1,#BGroundHit)])
 			end	
 			if not tr.HitWorld and not string.find(tr.Entity:GetClass(),"prop_static") then
-				if SERVER then ph:ApplyForceCenter(self.Owner:GetAimVector()*10000) 
+				if SERVER then ph:ApplyForceCenter(self.Owner:GetAimVector()*20000) 
 				tr.Entity:TakeDamage(25, self.Owner, self)
 				end
 			end

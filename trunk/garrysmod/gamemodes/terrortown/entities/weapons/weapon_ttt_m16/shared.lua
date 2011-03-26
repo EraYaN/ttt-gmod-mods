@@ -14,7 +14,7 @@ if CLIENT then
    SWEP.Author				= "EraYaN"
    SWEP.Slot				= 2
 
-   SWEP.Icon = "VGUI/ttt/icon_m16"
+   SWEP.Icon = "vgui/ttt/icon_m16"
 end
 
 

@@ -1,6 +1,6 @@
 if SERVER then
    AddCSLuaFile( "shared.lua" )
-   resource.AddFile("materials/VGUI/ttt/icon_bb_tmp.vmt")
+   resource.AddFile("materials/vgui/ttt/icon_bb_tmp.vmt")
 end
 
 SWEP.HoldType = "ar2"
@@ -10,7 +10,7 @@ if CLIENT then
    SWEP.PrintName = "Steyr TMP"			
    SWEP.Slot = 2
 
-   SWEP.Icon = "VGUI/ttt/icon_bb_tmp"
+   SWEP.Icon = "vgui/ttt/icon_bb_tmp"
 end
 
 

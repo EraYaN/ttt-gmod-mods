@@ -3,7 +3,7 @@
 -- First some standard GMod stuff
 if SERVER then
    AddCSLuaFile( "shared.lua" )
-	resource.AddFile("materials/VGUI/ttt/icon_tuna_f2000.vmt")
+	resource.AddFile( "materials/vgui/ttt/icon_tuna_f2000.vmt" )
 	resource.AddFile( "materials/models/weapons/v_models/v_rif_f2000/f1color.vmt" )
 	resource.AddFile( "materials/models/weapons/v_models/v_rif_f2000/f1color.vtf" )
 	resource.AddFile( "materials/models/weapons/v_models/v_rif_f2000/f1color_normal.vtf" )
@@ -40,7 +40,7 @@ if CLIENT then
 
    SWEP.ViewModelFOV  = 90
    SWEP.ViewModelFlip = true
-   SWEP.Icon = "VGUI/ttt/icon_tuna_f2000"
+   SWEP.Icon = "vgui/ttt/icon_tuna_f2000"
 end
 
 -- Always derive from weapon_tttbase.

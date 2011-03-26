@@ -1,7 +1,7 @@
 
 if SERVER then
    AddCSLuaFile( "shared.lua" )
-   resource.AddFile("materials/VGUI/ttt/icon_bb_awm.vmt")
+   resource.AddFile("materials/vgui/ttt/icon_bb_awm.vmt")
 end
 
 SWEP.HoldType           = "ar2"
@@ -11,7 +11,7 @@ if CLIENT then
 
    SWEP.Slot               = 7
 
-   SWEP.Icon = "VGUI/ttt/icon_bb_awm"
+   SWEP.Icon = "vgui/ttt/icon_bb_awm"
    SWEP.EquipMenuData = {
       type="Sniper Weapon",
       model="models/weapons/w_snip_awp.mdl",

@@ -10,7 +10,7 @@ if CLIENT then
 
    SWEP.Slot               = 2
 
-   SWEP.Icon = "VGUI/ttt/icon_scout"
+   SWEP.Icon = "vgui/ttt/icon_scout"
 end
 
 

@@ -18,7 +18,7 @@ if CLIENT then
       desc="Allows people to die when placed.\n\nFaster recharge. Anyone can use it, and\nit can be damaged plus it has a nasty suprise against vandalism. Can be checked for\nDNA samples of its users."
    };
 
-   SWEP.Icon = "VGUI/ttt/icon_health"
+   SWEP.Icon = "vgui/ttt/icon_health"
 end
 
 SWEP.Base = "weapon_tttbase"

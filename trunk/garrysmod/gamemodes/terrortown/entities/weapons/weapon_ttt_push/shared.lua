@@ -13,7 +13,7 @@ if CLIENT then
       desc = "newton_desc"
    };
 
-   SWEP.Icon = "VGUI/ttt/icon_launch"
+   SWEP.Icon = "vgui/ttt/icon_launch"
 
    SWEP.ViewModelFlip = false
    SWEP.ViewModelFOV = 54

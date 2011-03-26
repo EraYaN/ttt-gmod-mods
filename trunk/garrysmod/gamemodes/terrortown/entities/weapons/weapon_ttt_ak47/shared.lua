@@ -3,7 +3,7 @@
 -- First some standard GMod stuff
 if SERVER then
    AddCSLuaFile( "shared.lua" )
-   resource.AddFile("materials/VGUI/ttt/icon_bb_ak47.vmt")
+   resource.AddFile("materials/vgui/ttt/icon_bb_ak47.vmt")
 end
 
 if CLIENT then
@@ -12,7 +12,7 @@ if CLIENT then
    SWEP.Author	  = "EraYaN & BKU"
    SWEP.ViewModelFOV  = 72
    SWEP.ViewModelFlip = true
-   SWEP.Icon = "VGUI/ttt/icon_bb_ak47"
+   SWEP.Icon = "vgui/ttt/icon_bb_ak47"
 end
 
 -- Always derive from weapon_tttbase.
