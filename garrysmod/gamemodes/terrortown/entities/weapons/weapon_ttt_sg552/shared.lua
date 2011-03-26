@@ -32,9 +32,9 @@ SWEP.Primary.Automatic   = true
 SWEP.Primary.Damage      = 21
 SWEP.Primary.Cone        = 0.015
 SWEP.Primary.Ammo        = "CombineCannon"
-SWEP.Primary.ClipSize    = 20
+SWEP.Primary.ClipSize    = 30
 SWEP.Primary.ClipMax     = 60
-SWEP.Primary.DefaultClip = 20
+SWEP.Primary.DefaultClip = 30
 SWEP.Primary.Sound       = Sound( "Weapon_SG552.Single" )
 SWEP.HeadshotMultiplier = 6
 
