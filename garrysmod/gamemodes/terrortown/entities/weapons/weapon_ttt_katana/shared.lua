@@ -190,7 +190,7 @@ end
 function SWEP:SecondaryAttack()
 	self.Weapon:SetNextSecondaryFire( CurTime() + self.Secondary.Delay )
 	self.Weapon:SetNextPrimaryFire( CurTime() + self.Primary.Delay )
-	timer.Simple(0.15,self.Bash, self)
+	timer.Simple(0.10,self.Bash, self)
 	self.Weapon:SendWeaponAnim(ACT_VM_HITCENTER)
 	self.Owner:SetAnimation( PLAYER_ATTACK1 )
 end
@@ -204,8 +204,7 @@ function SWEP:PrimaryAttack()
 end
 
 function SWEP:Slash()
- 	self.Owner:LagCompensation( true )
-	local phtr = self.Owner:GetEyeTrace()
+ 	local phtr = self.Owner:GetEyeTrace()
 	local trace = util.GetPlayerTrace(self.Owner)
  	local tr = util.TraceLine(trace)
 	local ph = phtr.Entity:GetPhysicsObject()
@@ -221,7 +220,9 @@ function SWEP:Slash()
 					bullet.Tracer = 0
 					bullet.Force  = 20
 					bullet.Damage = 65
+				self.Owner:LagCompensation( true )
 				self.Owner:FireBullets(bullet) 
+				self.Owner:LagCompensation( false )
 			
 		else
 			util.Decal("ManhackCut", tr.HitPos + tr.HitNormal, tr.HitPos - tr.HitNormal)
@@ -245,9 +246,7 @@ function SWEP:Slash()
 		end
 	else
 		self.Weapon:EmitSound("Weapon_Knife.Slash")
-	end
-	self.Owner:LagCompensation( false )
-	
+	end		
 end
 
 function SWEP:Bash()
