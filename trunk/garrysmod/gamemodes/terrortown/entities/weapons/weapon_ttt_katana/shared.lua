@@ -204,15 +204,14 @@ function SWEP:PrimaryAttack()
 end
 
 function SWEP:Slash()
- 	local phtr = self.Owner:GetEyeTrace()
+ 	self.Owner:LagCompensation( true )
+	local phtr = self.Owner:GetEyeTrace()
 	local trace = util.GetPlayerTrace(self.Owner)
  	local tr = util.TraceLine(trace)
 	local ph = phtr.Entity:GetPhysicsObject()
 	if (self.Owner:GetPos() - tr.HitPos):Length() < 100 then
 		if tr.Entity:IsPlayer() or string.find(tr.Entity:GetClass(),"npc") or string.find(tr.Entity:GetClass(),"prop_ragdoll") or tr.MatType == MAT_FLESH or tr.MatType == MAT_ALIENFLESH or tr.MatType == MAT_ANTLION then
-			if SERVER then
-				self.Owner:LagCompensation( true )
-			end
+			
 			self.Weapon:EmitSound( SFleshHit[math.random(1,#SFleshHit)] )
 					bullet = {}
 					bullet.Num    = 1
@@ -223,9 +222,7 @@ function SWEP:Slash()
 					bullet.Force  = 20
 					bullet.Damage = 65
 				self.Owner:FireBullets(bullet) 
-			if SERVER then
-				self.Owner:LagCompensation( false )
-			end
+			
 		else
 			util.Decal("ManhackCut", tr.HitPos + tr.HitNormal, tr.HitPos - tr.HitNormal)
 				
@@ -249,6 +246,8 @@ function SWEP:Slash()
 	else
 		self.Weapon:EmitSound("Weapon_Knife.Slash")
 	end
+	self.Owner:LagCompensation( false )
+	
 end
 
 function SWEP:Bash()
