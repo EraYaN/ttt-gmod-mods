@@ -219,11 +219,8 @@ function SWEP:Slash()
 					bullet.Spread = Vector(0, 0, 0)
 					bullet.Tracer = 0
 					bullet.Force  = 20
-					bullet.Damage = 65
-				self.Owner:LagCompensation( true )
-				self.Owner:FireBullets(bullet) 
-				self.Owner:LagCompensation( false )
-			
+					bullet.Damage = 65				
+				self.Owner:FireBullets(bullet) 							
 		else
 			util.Decal("ManhackCut", tr.HitPos + tr.HitNormal, tr.HitPos - tr.HitNormal)
 				
