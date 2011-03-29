@@ -45,8 +45,6 @@ SWEP.IronSightsAng = Vector (1.3976, 0.4462, 0)
 SWEP.ViewModel  = "models/weapons/v_rif_aug.mdl"
 SWEP.WorldModel = "models/weapons/w_rif_aug.mdl"
 
-SWEP.Kind = WEAPON_EQUIP1
-
 SWEP.AutoSpawnable = false
 
 SWEP.AmmoEnt = "item_ammo_rifle_ttt"
