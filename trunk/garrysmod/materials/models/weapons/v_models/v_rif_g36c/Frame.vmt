@@ -1,7 +1,7 @@
 VertexLitGeneric
 {
-	"$basetexture"	"models\weapons\v_models\v_rif_g36c\frame"
-	"$bumpmap" 	"models\weapons\v_models\v_rif_g36c\frame_Normal"
+	"$basetexture"	"models\weapons\v_models\v_rif_g36c\Frame"
+	"$bumpmap" 	"models\weapons\v_models\v_rif_g36c\Frame_Normal"
  	"$envmap" "env_cubemap"
 	"$normalmapalphaenvmapmask" 1
 }
